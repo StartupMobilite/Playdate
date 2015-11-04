@@ -29,46 +29,42 @@ prx.types.ios7_navbar_buttons = {
 	,onDisplay: function(item,containerid,pageid,symbol) {
 		var _id = (!containerid) ? item.id : containerid+'-'+item.id;
 
-		var _props = (jQuery.inArray("bold",item.textProperties)>-1) ? " font-weight: bold;" : "";
-		_props += (jQuery.inArray("italic",item.textProperties)>-1) ? " font-style: italic;" : "";
-		_props += (jQuery.inArray("underline",item.textProperties)>-1) ? " text-decoration: underline;" : "";
+		var _props = prx.componentsHelper.getProp(item.textProperties,'props-text');
 
-		var _btnprops = (jQuery.inArray("bold",item.btnTextProperties)>-1) ? " font-weight: bold;" : "";
-		_btnprops += (jQuery.inArray("italic",item.btnTextProperties)>-1) ? " font-style: italic;" : "";
-		_btnprops += (jQuery.inArray("underline",item.btnTextProperties)>-1) ? " text-decoration: underline;" : "";
+		var _btnprops = prx.componentsHelper.getProp(item.btnTextProperties,'props-text');
 
 		var dims = prx.componentsHelper.getRealDims(item, symbol);
 
 		var cR = '';
-		cR += '<div id="'+_id+'" class="box pos type-ios7-navbar" '+((item.overlay)? 'data-mpoverlay="1"': '')+'>';
+		cR += '<div id="'+_id+'" class="box pos type-ios7-navbar" '+((prx.componentsHelper.getProp(item.overlay,'boolean'))? 'data-mpoverlay="1"': '')+'>';
 
 		cR += '<style>';
-		cR += '#'+_id+' .ios7-navbar-inner { background-color: '+prx.utils.getColor(item.backgroundColor)+'; border-'+item.borderPos+': '+item.borderWidth+'px solid '+prx.utils.getColor(item.borderColor)+'; }';
-		cR += '#'+_id+' .ios7-navbar-title { '+prx.componentsHelper.getFontCssFromFontFamily(item.textFont)+' color: '+prx.utils.getColor(item.textColor)+'; font-size: '+item.textSize+'px; '+_props+' }';
+		cR += '#'+_id+' .ios7-navbar-inner { background-color: '+prx.componentsHelper.getProp(item.backgroundColor,'color-background')+'; border-'+prx.componentsHelper.getProp(item.borderPos,'other')+': '+prx.componentsHelper.getProp(item.borderWidth,'num-border-width')+'px solid '+prx.componentsHelper.getProp(item.borderColor,'color-border')+'; }';
+		cR += '#'+_id+' .ios7-navbar-title { '+prx.componentsHelper.getProp(item.textFont,'font-family')+' color: '+prx.componentsHelper.getProp(item.textColor,'color-text')+'; font-size: '+prx.componentsHelper.getProp(item.textSize,'num-text-size')+'px; '+_props+' }';
 		if(item.type == "ios7_navbar_buttons") {
-			cR += '#'+_id+' .ios7-navbar-button-text { '+prx.componentsHelper.getFontCssFromFontFamily(item.btnTextFont)+' color: '+prx.utils.getColor(item.btnTextColor)+'; font-size: '+item.btnTextSize+'px; '+_btnprops+' }';
+			cR += '#'+_id+' .ios7-navbar-button-text { '+prx.componentsHelper.getProp(item.btnTextFont,'font-family')+' color: '+prx.componentsHelper.getProp(item.btnTextColor,'color-text')+'; font-size: '+prx.componentsHelper.getProp(item.btnTextSize,'num-text-size')+'px; '+_btnprops+' }';
 		}
 		cR += '</style>';
 
 		cR += '<div class="ios7-navbar-inner liveUpdate-backgroundColor liveUpdate-borderColor changeProperty-backgroundColor changeProperty-borderWidth changeProperty-borderColor">';
-		cR += '<div class="ios7-navbar-title liveUpdate-textColor changeProperty-textColor changeProperty-textSize changeProperty-textFont" data-editableproperty="title">'+item.title+'</div>';
-		if(item.type == "ios7_navbar_buttons" && item.leftBtnType != "none") {
-			cR += '<div class="ios7-navbar-button ios7-navbar-button-left ios7-navbar-button-left-'+item.leftBtnType+'">';
-			if((item.leftBtnType == "icon" || item.leftBtnType == "texticon") && item.leftBtnIcon.fileId != '') {
-				cR += '<img class="ios7-navbar-button-icon" src="'+prx.componentsHelper.getAssetUrl(item.leftBtnIcon)+'">';
+		cR += '<div class="ios7-navbar-title liveUpdate-textColor changeProperty-textColor changeProperty-textSize changeProperty-textFont" data-editableproperty="title">'+prx.componentsHelper.getProp(item.title,'text')+'</div>';
+		if(prx.componentsHelper.getProp(item.type,'other') == "ios7_navbar_buttons" && prx.componentsHelper.getProp(item.leftBtnType,'button-type') != "none") {
+			cR += '<div class="ios7-navbar-button ios7-navbar-button-left ios7-navbar-button-left-'+prx.componentsHelper.getProp(item.leftBtnType,'button-type')+'">';
+			if((prx.componentsHelper.getProp(item.leftBtnType,'button-type') == "icon" || prx.componentsHelper.getProp(item.leftBtnType,'button-type') == "texticon") && prx.componentsHelper.getProp(item.leftBtnIcon.fileId,'other') != '') {
+				cR += '<img class="ios7-navbar-button-icon" src="'+prx.componentsHelper.getProp(item.leftBtnIcon,'asset')+'">';
 			}
-			if(item.leftBtnType == "text" || item.leftBtnType == "texticon") {
-				cR += '<div class="ios7-navbar-button-text liveUpdate-btnTextColor changeProperty-btnTextColor changeProperty-btnTextSize changeProperty-btnTextFont" data-editableproperty="leftBtnText">'+item.leftBtnText+'</div>';
+			if(prx.componentsHelper.getProp(item.leftBtnType,'button-type') == "text" || prx.componentsHelper.getProp(item.leftBtnType,'button-type') == "texticon") {
+				cR += '<div class="ios7-navbar-button-text liveUpdate-btnTextColor changeProperty-btnTextColor changeProperty-btnTextSize changeProperty-btnTextFont" data-editableproperty="leftBtnText">'+prx.componentsHelper.getProp(item.leftBtnText,'text')+'</div>';
 			}
 			cR += '</div>';
 		}
-		if(item.type == "ios7_navbar_buttons" && item.rightBtnType != "none") {
-			cR += '<div class="ios7-navbar-button ios7-navbar-button-right ios7-navbar-button-right-'+item.rightBtnType+'">';
-			if(item.rightBtnType == "text" || item.rightBtnType == "texticon") {
-				cR += '<div class="ios7-navbar-button-text liveUpdate-btnTextColor changeProperty-btnTextColor changeProperty-btnTextSize changeProperty-btnTextFont" data-editableproperty="rightBtnText">'+item.rightBtnText+'</div>';
+		if(prx.componentsHelper.getProp(item.type,'other') == "ios7_navbar_buttons" && prx.componentsHelper.getProp(item.rightBtnType,'button-type') != "none") {
+			cR += '<div class="ios7-navbar-button ios7-navbar-button-right ios7-navbar-button-right-'+prx.componentsHelper.getProp(item.rightBtnType,'button-type')+'">';
+			if(prx.componentsHelper.getProp(item.rightBtnType,'button-type') == "text" || prx.componentsHelper.getProp(item.rightBtnType,'button-type') == "texticon") {
+				cR += '<div class="ios7-navbar-button-text liveUpdate-btnTextColor changeProperty-btnTextColor changeProperty-btnTextSize changeProperty-btnTextFont" data-editableproperty="rightBtnText">'+prx.componentsHelper.getProp(item.rightBtnText,'text')+'</div>';
 			}
-			if((item.rightBtnType == "icon" || item.rightBtnType == "texticon") && item.rightBtnIcon.fileId != '') {
-				cR += '<img class="ios7-navbar-button-icon" src="'+prx.componentsHelper.getAssetUrl(item.rightBtnIcon)+'">';
+			if((prx.componentsHelper.getProp(item.rightBtnType,'button-type') == "icon" || prx.componentsHelper.getProp(item.rightBtnType,'button-type') == "texticon") && prx.componentsHelper.getProp(item.rightBtnIcon.fileId,'other') != '') {
+				cR += '<img class="ios7-navbar-button-icon" src="'+prx.componentsHelper.getProp(item.rightBtnIcon,'asset')+'">';
 			}
 			cR += '</div>';
 		}
@@ -460,16 +456,16 @@ prx.types.ios7_toolbar = {
 		var _dims = prx.componentsHelper.getRealDims(item,symbol);
 
 		var cR = '';
-		cR += '<div id="'+_id+'" class="box pos type-ios7-toolbar" '+((item.overlay)? 'data-mpoverlay="1"': '')+'>';
+		cR += '<div id="'+_id+'" class="box pos type-ios7-toolbar" '+((prx.componentsHelper.getProp(item.overlay,'boolean'))? 'data-mpoverlay="1"': '')+'>';
 		cR += '<div class="ios7-toolbar-inner">';
 
 		cR += '<style>'
-		cR += '#'+_id+' .ios7-toolbar-inner { background-color: '+prx.utils.getColor(item.backgroundColor)+'; border-'+item.borderPos+': '+item.borderWidth+'px solid '+prx.utils.getColor(item.borderColor)+'; }';
+		cR += '#'+_id+' .ios7-toolbar-inner { background-color: '+prx.componentsHelper.getProp(item.backgroundColor,'color-background')+'; border-'+prx.componentsHelper.getProp(item.borderPos,'other')+': '+prx.componentsHelper.getProp(item.borderWidth,'num-border-width')+'px solid '+prx.componentsHelper.getProp(item.borderColor,'color-border')+'; }';
 		//cR += '#'+_id+' .ios7-toolbar-button { width: '+(_dims.width/item.buttons.length) +'px; }';
 		cR += '</style>'
 
 		$.each(item.buttons, function(i,elm){
-			cR += '<div class="ios7-toolbar-button dynamic-property" data-dynamic-property-index="'+i+'" id="'+_id+'-buttons-'+i+'" style="background-image: url(' +prx.componentsHelper.getAssetUrl(elm.icon)+');"></div>'
+			cR += '<div class="ios7-toolbar-button dynamic-property" data-dynamic-property-index="'+i+'" id="'+_id+'-buttons-'+i+'" style="background-image: url(' +prx.componentsHelper.getProp(elm.icon,'asset')+');"></div>'
 		});
 
 		cR += '</div>';
@@ -600,9 +596,10 @@ prx.types.ios7_statusbar = {
 		if(typeof(item.textFont) == "undefined") { item.textFont = 'HelveticaNeue-Light, Helvetica, Verdana, Arial, sans-serif';}
 
 		var cR = '';
-		cR += '<div id="'+_id+'" class="box pos type-ios7-statusbar" '+((item.overlay)? 'data-mpoverlay="1"': '')+'>';
+		cR += '<div id="'+_id+'" class="box pos type-ios7-statusbar" '+((prx.componentsHelper.getProp(item.overlay,'boolean'))? 'data-mpoverlay="1"': '')+'>';
 
 		cR += '<style>';
+
 		cR += '#'+_id+' .ios7-statusbar-inner { '+prx.componentsHelper.getFontCssFromFontFamily(item.textFont)+' background-color: '+prx.utils.getColor(item.backgroundColor)+'; color: '+prx.utils.getColor(item.foregroundColor)+'; }';
 		cR += '#'+_id+' .ios7-statusbar-signal-dot { width: '+signalDotDims+'px; height: '+signalDotDims+'px; margin-top: '+signalDotMargin+'px; margin-bottom: '+signalDotMargin+'px; background-color: '+prx.utils.getColor(item.foregroundColor)+'; border-color: '+prx.utils.getColor(item.foregroundColor)+'; }';
 		cR += '#'+_id+' .ios7-statusbar-battery-life-icon { width: '+batteryWidth+'px; height: '+batteryHeight+'px; margin-top: '+batteryMarginTop+'px; background-color: '+prx.utils.getColor(item.foregroundColor)+'; border-color: '+prx.utils.getColor(item.foregroundColor)+'; }';
@@ -687,26 +684,24 @@ prx.types.ios7_button_bg = {
 	,onDisplay: function(item,containerid,pageid,symbol) {
 		var _id = (!containerid) ? item.id : containerid+'-'+item.id;
 
-		var _props = (jQuery.inArray("bold",item.textProperties)>-1) ? " font-weight: bold;" : "";
-		_props += (jQuery.inArray("italic",item.textProperties)>-1) ? " font-style: italic;" : "";
-		_props += (jQuery.inArray("underline",item.textProperties)>-1) ? " text-decoration: underline;" : "";
+		var _props = prx.componentsHelper.getProp(item.textProperties,'props-text');
 
-		var text = '<div class="ios7-button-text liveUpdate-textColor changeProperty-textColor changeProperty-textFont changePropert-textSize"><span data-editableproperty="text">'+item.text+'</span></div>';
+		var text = '<div class="ios7-button-text liveUpdate-textColor changeProperty-textColor changeProperty-textFont changePropert-textSize"><span data-editableproperty="text">'+prx.componentsHelper.getProp(item.text,'text-textarea')+'</span></div>';
 
 		var icon = '';
-		if(item.iconpos != "none" && item.img.fileId != '') {
-			icon = '<img class="ios7-button-icon" src="'+prx.componentsHelper.getAssetUrl(item.img)+'">';
+		if(prx.componentsHelper.getProp(item.iconpos,'icon-position') != "none" && prx.componentsHelper.getProp(item.img.fileId,'other') != '') {
+			icon = '<img class="ios7-button-icon" src="'+prx.componentsHelper.getProp(item.img,'asset')+'">';
 		}
 
 		var cR = '';
 		cR += '<div id="'+_id+'" class="box pos type-ios7-button">';
 
 		cR += '<style>';
-		cR += '#'+_id+' .ios7-button-inner { '+prx.css.flexJustifyContent(item.textAlign)+' text-align: '+item.textAlign+'; background-color: '+prx.utils.getColor(item.backgroundColor)+'; border: '+item.borderWidth+'px solid '+prx.utils.getColor(item.borderColor)+'; border-radius: '+item.borderRadius+((item.borderRadius == parseInt(item.borderRadius)) ? 'px' : '')+'; }'
-		cR += '#'+_id+' .ios7-button-text { '+prx.componentsHelper.getFontCssFromFontFamily(item.textFont)+' color: '+prx.utils.getColor(item.textColor)+'; font-size: '+item.textSize+'px; '+_props+' }';
+		cR += '#'+_id+' .ios7-button-inner { '+prx.css.flexJustifyContent(prx.componentsHelper.getProp(item.textAlign,'align'))+' text-align: '+prx.componentsHelper.getProp(item.textAlign,'align')+'; background-color: '+prx.componentsHelper.getProp(item.backgroundColor,'color-background')+'; border: '+prx.componentsHelper.getProp(item.borderWidth,'num-border-width')+'px solid '+prx.componentsHelper.getProp(item.borderColor,'color-border')+'; border-radius: '+prx.componentsHelper.getProp(item.borderRadius,'num-border-radius')+((prx.componentsHelper.getProp(item.borderRadius,'num-border-radius') == parseInt(prx.componentsHelper.getProp(item.borderRadius,'num-border-radius'))) ? 'px' : '')+'; }'
+		cR += '#'+_id+' .ios7-button-text { '+prx.componentsHelper.getProp(item.textFont,'font-family')+' color: '+prx.componentsHelper.getProp(item.textColor,'color-text')+'; font-size: '+prx.componentsHelper.getProp(item.textSize,'num-text-size')+'px; '+_props+' }';
 		cR += '</style>';
 
-		cR += '<div class="ios7-button-inner ios7-button-icon-'+item.iconpos+' liveUpdate-backgroundColor liveUpdate-borderColor changeProperty-backgroundColor changeProperty-borderColor changeProperty-borderWidth changeProperty-borderRadius">';
+		cR += '<div class="ios7-button-inner ios7-button-icon-'+prx.componentsHelper.getProp(item.iconpos,'icon-position')+' liveUpdate-backgroundColor liveUpdate-borderColor changeProperty-backgroundColor changeProperty-borderColor changeProperty-borderWidth changeProperty-borderRadius">';
 
 		switch(item.iconpos) {
 		case "notext":
@@ -859,27 +854,26 @@ prx.types.ios7_segmentedcontrol = {
 		var _id = (!containerid) ? item.id : containerid+'-'+item.id;
 
 		if(typeof(item.changeActive) == "undefined") { item.changeActive = true; }
-		var _props = (jQuery.inArray("bold",item.textProperties)>-1) ? " font-weight: bold;" : "";
-		_props += (jQuery.inArray("italic",item.textProperties)>-1) ? " font-style: italic;" : "";
-		_props += (jQuery.inArray("underline",item.textProperties)>-1) ? " text-decoration: underline;" : "";
+		
+		var _props = prx.componentsHelper.getProp(item.textProperties,'props-text');
 
 		var cR = '';
 		cR += '<div id="'+_id+'" class="box pos type-ios7-segmentedcontrol">';
 
 		cR += '<style>';
-		cR += '#'+_id+' .ios7-segmentedcontrol-inner { background-color: '+prx.utils.getColor(item.backgroundColor)+'; border: '+item.borderWidth+'px solid '+prx.utils.getColor(item.borderColor)+'; border-radius: '+item.borderRadius+'px; '+prx.componentsHelper.getFontCssFromFontFamily(item.textFont)+' color: '+prx.utils.getColor(item.textColor)+'; font-size: '+item.textSize+'px; '+_props+' }';
-		cR += '#'+_id+' .ios7-segmentedcontrol-button { border-left: '+item.borderWidth+'px solid '+prx.utils.getColor(item.borderColor)+'; }';
-		cR += '#'+_id+' .ios7-segmentedcontrol-button input:checked + label { background-color: '+prx.utils.getColor(item.activeBackgroundColor)+'; color: '+prx.utils.getColor(item.activeTextColor)+'; }';
-		cR += '#'+_id+' .ios7-segmentedcontrol-button:first-child label { border-radius: '+(parseInt(item.borderRadius) - parseInt(item.borderWidth) -1)+'px 0 0 '+(parseInt(item.borderRadius) - parseInt(item.borderWidth) -1)+'px; }';
-		cR += '#'+_id+' .ios7-segmentedcontrol-button:last-child label { border-radius: 0 '+(parseInt(item.borderRadius) - parseInt(item.borderWidth) -1)+'px '+(parseInt(item.borderRadius) - parseInt(item.borderWidth) -1)+'px 0; }';
+		cR += '#'+_id+' .ios7-segmentedcontrol-inner { background-color: '+prx.componentsHelper.getProp(item.backgroundColor,'color-background')+'; border: '+prx.componentsHelper.getProp(item.borderWidth,'num-border-width')+'px solid '+prx.componentsHelper.getProp(item.borderColor,'color-border')+'; border-radius: '+prx.componentsHelper.getProp(item.borderRadius,'num-border-radius')+'px; '+prx.componentsHelper.getProp(item.textFont,'font-family')+' color: '+prx.componentsHelper.getProp(item.textColor,'color-text')+'; font-size: '+prx.componentsHelper.getProp(item.textSize,'num-text-size')+'px; '+_props+' }';
+		cR += '#'+_id+' .ios7-segmentedcontrol-button { border-left: '+prx.componentsHelper.getProp(item.borderWidth,'num-border-width')+'px solid '+prx.componentsHelper.getProp(item.borderColor,'color-border')+'; }';
+		cR += '#'+_id+' .ios7-segmentedcontrol-button input:checked + label { background-color: '+prx.componentsHelper.getProp(item.activeBackgroundColor,'color-background')+'; color: '+prx.componentsHelper.getProp(item.activeTextColor,'color-text')+'; }';
+		cR += '#'+_id+' .ios7-segmentedcontrol-button:first-child label { border-radius: '+(parseInt(prx.componentsHelper.getProp(item.borderRadius,'num-border-radius')) - parseInt(prx.componentsHelper.getProp(item.borderWidth,'num-border-width')) -1)+'px 0 0 '+(parseInt(prx.componentsHelper.getProp(item.borderRadius,'num-border-radius')) - parseInt(prx.componentsHelper.getProp(item.borderWidth,'num-border-width')) -1)+'px; }';
+		cR += '#'+_id+' .ios7-segmentedcontrol-button:last-child label { border-radius: 0 '+(parseInt(prx.componentsHelper.getProp(item.borderRadius,'num-border-radius')) - parseInt(prx.componentsHelper.getProp(item.borderWidth,'num-border-width')) -1)+'px '+(parseInt(prx.componentsHelper.getProp(item.borderRadius,'num-border-radius')) - parseInt(prx.componentsHelper.getProp(item.borderWidth,'num-border-width')) -1)+'px 0; }';
 		cR += '</style>';
 
 		cR += '<div class="ios7-segmentedcontrol-inner liveUpdate-backgroundColor liveUpdate-textColor liveUpdate-borderColor changeProperty-backgroundColor changeProperty-borderColor changeProperty-borderRadius changeProperty-borderWidth changeProperty-textColor changeProperty-textSize changeProperty-textFont">';
 		$.each(item.buttons, function(i,elm) {
 			cR += '<div id="'+_id+'-buttons-'+i+'" class="ios7-segmentedcontrol-button dynamic-property liveUpdate-borderColor" data-dynamic-property-index="'+i+'">';
-			cR += '<input type="radio" name="'+_id+'-radio-input" id="'+_id+'-radio-'+i+'" '+((item.selected == i) ? 'checked' : '')+' data-role="none" '+((item.active == i) ? 'class="liveUpdate-activeBackgroundColor liveUpdate-activeTextColor"' : '')+' ' +((!item.changeActive) ? 'disabled' : '')+ '>'
-			cR += '<label for="'+_id+'-radio-'+i+'" '+((item.selected == i) ? 'class="liveUpdate-activeBackgroundColor liveUpdate-activeTextColor"' : '')+' >'
-			cR += '<span data-editableproperty="text" data-dynamic-property-index="'+i+'">' + elm.text + '</span>';
+			cR += '<input type="radio" name="'+_id+'-radio-input" id="'+_id+'-radio-'+i+'" '+((prx.componentsHelper.getProp(item.selected,'num-other') == i) ? 'checked' : '')+' data-role="none" '+((prx.componentsHelper.getProp(item.active,'num-other') == i) ? 'class="liveUpdate-activeBackgroundColor liveUpdate-activeTextColor"' : '')+' ' +((!prx.componentsHelper.getProp(item.changeActive,'boolean')) ? 'disabled' : '')+ '>'
+			cR += '<label for="'+_id+'-radio-'+i+'" '+((prx.componentsHelper.getProp(item.selected,'num-other') == i) ? 'class="liveUpdate-activeBackgroundColor liveUpdate-activeTextColor"' : '')+' >'
+			cR += '<span data-editableproperty="text" data-dynamic-property-index="'+i+'">' + prx.componentsHelper.getProp(elm.text,'text') + '</span>';
 			cR += '</label>'
 			cR += '</div>';
 		});
@@ -1039,23 +1033,22 @@ prx.types.ios7_pagecontroller = {
 		var _dims = prx.componentsHelper.getRealDims(item,symbol);
 
 		if(typeof(item.changeActive) == "undefined") { item.changeActive = true; }
-		var _props = (jQuery.inArray("bold",item.textProperties)>-1) ? " font-weight: bold;" : "";
-		_props += (jQuery.inArray("italic",item.textProperties)>-1) ? " font-style: italic;" : "";
-		_props += (jQuery.inArray("underline",item.textProperties)>-1) ? " text-decoration: underline;" : "";
+		
+		var _props = prx.componentsHelper.getProp(item.textProperties,'props-text');
 
 		var cR = '';
 		cR += '<div id="'+_id+'" class="box pos type-ios7-pagecontroller">';
 
 		cR += '<style>';
-		cR += '#'+_id+' .ios7-pagecontroller-button label { background-color: '+prx.utils.getColor(item.backgroundColor)+'; border-radius: '+item.borderRadius+((item.borderRadius==parseInt(item.borderRadius)) ? 'px': '')+'; width: '+_dims.height+'px; }';
-		cR += '#'+_id+' .ios7-pagecontroller-button input:checked + label { background-color: '+prx.utils.getColor(item.activeBackgroundColor)+'; }';
+		cR += '#'+_id+' .ios7-pagecontroller-button label { background-color: '+prx.componentsHelper.getProp(item.backgroundColor,'color-background')+'; border-radius: '+prx.componentsHelper.getProp(item.borderRadius,'num-border-radius')+((prx.componentsHelper.getProp(item.borderRadius,'num-border-radius')==parseInt(prx.componentsHelper.getProp(item.borderRadius,'num-border-radius'))) ? 'px': '')+'; width: '+_dims.height+'px; }';
+		cR += '#'+_id+' .ios7-pagecontroller-button input:checked + label { background-color: '+prx.componentsHelper.getProp(item.activeBackgroundColor,'color-background')+'; }';
 		cR += '</style>';
 
 		cR += '<div class="ios7-pagecontroller-inner">';
 		$.each(item.buttons, function(i,elm) {
 			cR += '<div class="ios7-pagecontroller-button dynamic-property" data-dynamic-property-index="'+i+'" id="'+_id+'-buttons-'+i+'">';
-			cR += '<input type="radio" name="'+_id+'-radio-input" id="'+_id+'-radio-'+i+'" '+((item.selected == i) ? 'checked' : '')+' data-role="none" '+((item.active == i) ? 'class="liveUpdate-activeBackgroundColor liveUpdate-activeTextColor"' : '')+' ' +((!item.changeActive) ? 'disabled' : '')+ '>'
-			cR += '<label for="'+_id+'-radio-'+i+'" class="changeProperty-backgroundColor changeProperty-borderRadius '+((item.selected == i) ? 'liveUpdate-activeBackgroundColor' : 'liveUpdate-backgroundColor')+'" ></label>';
+			cR += '<input type="radio" name="'+_id+'-radio-input" id="'+_id+'-radio-'+i+'" '+((prx.componentsHelper.getProp(item.selected,'num-other') == i) ? 'checked' : '')+' data-role="none" '+((prx.componentsHelper.getProp(item.active,'num-other') == i) ? 'class="liveUpdate-activeBackgroundColor liveUpdate-activeTextColor"' : '')+' ' +((!prx.componentsHelper.getProp(item.changeActive,'num-other')) ? 'disabled' : '')+ '>'
+			cR += '<label for="'+_id+'-radio-'+i+'" class="changeProperty-backgroundColor changeProperty-borderRadius '+((prx.componentsHelper.getProp(item.selected,'num-other') == i) ? 'liveUpdate-activeBackgroundColor' : 'liveUpdate-backgroundColor')+'" ></label>';
 			cR += '</div>';
 		});
 		cR += '</div>'
@@ -1065,6 +1058,7 @@ prx.types.ios7_pagecontroller = {
 	onResize: function(item,containerid,pageid,symbol) {
 		var _id = (!containerid) ? item.id : containerid+'-'+item.id;
 		var _dims = prx.componentsHelper.getRealDims(item,symbol);
+		
 		$('#'+_id+' label').width(_dims.height);
 	},
 	propertyGroups: [
@@ -1183,20 +1177,18 @@ prx.types.ios7_label = {
 	,onDisplay: function(item,containerid,pageid,symbol) {
 		var _id = (!containerid) ? item.id : containerid+'-'+item.id;
 
-		var _props = (jQuery.inArray("bold",item.textProperties)>-1) ? " font-weight: bold;" : "";
-		_props += (jQuery.inArray("italic",item.textProperties)>-1) ? " font-style: italic;" : "";
-		_props += (jQuery.inArray("underline",item.textProperties)>-1) ? " text-decoration: underline;" : "";
+		var _props = prx.componentsHelper.getProp(item.textProperties,'props-text');
 
 		var cR = '';
 		cR += '<div id="'+_id+'" class="box pos type-ios7-label">';
 
 		cR += '<style>';
-		cR += '#'+_id+' .ios7-label-inner { '+prx.css.flexJustifyContent(item.textAlign)+' text-align: '+item.textAlign+'; }'
-		cR += '#'+_id+' .ios7-label-text { '+prx.componentsHelper.getFontCssFromFontFamily(item.textFont)+' color: '+prx.utils.getColor(item.textColor)+'; font-size: '+item.textSize+'px; '+_props+' }';
+		cR += '#'+_id+' .ios7-label-inner { '+prx.css.flexJustifyContent(prx.componentsHelper.getProp(item.textAlign,'align'))+' text-align: '+prx.componentsHelper.getProp(item.textAlign,'align')+'; }'
+		cR += '#'+_id+' .ios7-label-text { '+prx.componentsHelper.getProp(item.textFont,'font-family')+' color: '+prx.componentsHelper.getProp(item.textColor,'color-text')+'; font-size: '+prx.componentsHelper.getProp(item.textSize,'num-text-size')+'px; '+_props+' }';
 		cR += '</style>';
 
 		cR += '<div class="ios7-label-inner">';
-		cR += '<div class="ios7-label-text liveUpdate-textColor changeProperty-textColor changeProperty-textFont changePropert-textSize"><span data-editableproperty="text">'+item.text+'</span></div>';
+		cR += '<div class="ios7-label-text liveUpdate-textColor changeProperty-textColor changeProperty-textFont changePropert-textSize"><span data-editableproperty="text">'+prx.componentsHelper.getProp(item.text,'text-textarea')+'</span></div>';
 		cR += '</div>';
 		cR += '</div>';
 		return cR;
@@ -1237,28 +1229,26 @@ prx.types.ios7_textfield = {
 	,onDisplay: function(item,containerid,pageid,symbol) {
 		var _id = (!containerid) ? item.id : containerid+'-'+item.id;
 
-		var _props = (jQuery.inArray("bold",item.textProperties)>-1) ? " font-weight: bold;" : "";
-		_props += (jQuery.inArray("italic",item.textProperties)>-1) ? " font-style: italic;" : "";
-		_props += (jQuery.inArray("underline",item.textProperties)>-1) ? " text-decoration: underline;" : "";
+		var _props = prx.componentsHelper.getProp(item.textProperties,'props-text');
 
 		var _dims = prx.componentsHelper.getRealDims(item, symbol);
 
 		var cR = '';
-		cR += '<div id="' + _id + '" class="box pos type-ios7-textfield type-ios7-textfield-'+item.inputtype+'">';
+		cR += '<div id="' + _id + '" class="box pos type-ios7-textfield type-ios7-textfield-'+prx.componentsHelper.getProp(item.inputtype,'text-other')+'">';
 		cR += '<style>';
-		cR += '#'+_id+' input, #'+_id+' .faux-input { background-color: '+prx.utils.getColor(item.backgroundColor)+'; color: '+prx.utils.getColor(item.textColor)+'; font-size: '+item.textSize+'px; '+prx.componentsHelper.getFontCssFromFontFamily(item.textFont)+' border: '+item.borderWidth+'px solid '+prx.utils.getColor(item.borderColor)+'; border-radius: '+item.borderRadius+'px; text-align: '+item.textAlign+'; '+ _props + ' }';
-		cR += '#'+_id+' .faux-input.placeholder-input { color: '+prx.utils.getColor(item.placeholderColor)+'; }'
-		cR += '#'+_id+' .faux-input { '+prx.css.flexJustifyContent(item.textAlign)+'; }'
-		cR += '#'+_id+' input:-moz-placeholder { color: '+prx.utils.getColor(item.placeholderColor)+'!important; }'
-		cR += '#'+_id+' input::-moz-placeholder { color: '+prx.utils.getColor(item.placeholderColor)+'!important; }'
-		cR += '#'+_id+' input::-webkit-input-placeholder { color: '+prx.utils.getColor(item.placeholderColor)+'!important; }'
+		cR += '#'+_id+' input, #'+_id+' .faux-input { background-color: '+prx.componentsHelper.getProp(item.backgroundColor,'color-background')+'; color: '+prx.componentsHelper.getProp(item.textColor,'color-text')+'; font-size: '+prx.componentsHelper.getProp(item.textSize,'num-text-size')+'px; '+prx.componentsHelper.getProp(item.textFont,'font-family')+' border: '+prx.componentsHelper.getProp(item.borderWidth,'num-border-width')+'px solid '+prx.componentsHelper.getProp(item.borderColor,'color-border')+'; border-radius: '+prx.componentsHelper.getProp(item.borderRadius,'num-border-radius')+'px; text-align: '+prx.componentsHelper.getProp(item.textAlign,'align')+'; '+ _props + ' }';
+		cR += '#'+_id+' .faux-input.placeholder-input { color: '+prx.componentsHelper.getProp(item.placeholderColor,'color-text')+'; }'
+		cR += '#'+_id+' .faux-input { '+prx.css.flexJustifyContent(prx.componentsHelper.getProp(item.textAlign,'align'))+'; }'
+		cR += '#'+_id+' input:-moz-placeholder { color: '+prx.componentsHelper.getProp(item.placeholderColor,'color-text')+'!important; }'
+		cR += '#'+_id+' input::-moz-placeholder { color: '+prx.componentsHelper.getProp(item.placeholderColor,'color-text')+'!important; }'
+		cR += '#'+_id+' input::-webkit-input-placeholder { color: '+prx.componentsHelper.getProp(item.placeholderColor,'color-text')+'!important; }'
 		cR += '</style>'
 
 		if(prx.editor) {
-			cR += '<div class="faux-input liveUpdate-textColor liveUpdate-borderColor liveUpdate-backgroundColor" data-editableproperty="value">'+item.value+'</div>';
-			cR += '<div class="faux-input placeholder-input liveUpdate-placeholderColor liveUpdate-borderColor liveUpdate-backgroundColor">'+item.placeholder+'</div>'
+			cR += '<div class="faux-input liveUpdate-textColor liveUpdate-borderColor liveUpdate-backgroundColor" data-editableproperty="value">'+prx.componentsHelper.getProp(item.value,'text')+'</div>';
+			cR += '<div class="faux-input placeholder-input liveUpdate-placeholderColor liveUpdate-borderColor liveUpdate-backgroundColor">'+prx.componentsHelper.getProp(item.placeholder,'other')+'</div>'
 		} else {
-			cR += '<input type="'+item.inputtype+'" value="'+item.value+'" placeholder="'+item.placeholder+'" data-role="none" class="real-input changeProperty-backgroundColor changeProperty-textColor changeProperty-textSize changeProperty-textFont changeProperty-borderColor changeProperty-borderWidth changeProperty-borderRadius changeProperty-textAlign" />'
+			cR += '<input type="'+prx.componentsHelper.getProp(item.inputtype,'other')+'" value="'+prx.componentsHelper.getProp(item.value,'other')+'" placeholder="'+prx.componentsHelper.getProp(item.placeholder,'other')+'" data-role="none" class="real-input changeProperty-backgroundColor changeProperty-textColor changeProperty-textSize changeProperty-textFont changeProperty-borderColor changeProperty-borderWidth changeProperty-borderRadius changeProperty-textAlign" />'
 		}
 		cR += '</div>';
 		return cR;
@@ -1408,26 +1398,24 @@ prx.types.ios7_textarea = {
 	,onDisplay: function(item,containerid,pageid,symbol) {
 		var _id = (!containerid) ? item.id : containerid+'-'+item.id;
 
-		var _props = (jQuery.inArray("bold",item.textProperties)>-1) ? " font-weight: bold;" : "";
-		_props += (jQuery.inArray("italic",item.textProperties)>-1) ? " font-style: italic;" : "";
-		_props += (jQuery.inArray("underline",item.textProperties)>-1) ? " text-decoration: underline;" : "";
+		var _props = prx.componentsHelper.getProp(item.textProperties,'props-text');
 
 		var cR = '';
 
 		cR += '<div id="' + _id + '" class="box pos type-ios7-textarea">';
 		cR += '<style>';
-		cR += '#'+_id+' > textarea, #'+_id+' .faux-input { background-color: '+prx.utils.getColor(item.backgroundColor)+'; color: '+prx.utils.getColor(item.textColor)+'; font-size: '+item.textSize+'px; '+prx.componentsHelper.getFontCssFromFontFamily(item.textFont)+' border: '+item.borderWidth+'px solid '+prx.utils.getColor(item.borderColor)+'; text-align: '+item.textAlign+'; '+prx.css.borderRadius(item.borderRadius + 'px')+ _props + '}';
-		cR += '#'+_id+' .faux-input { '+prx.css.flexJustifyContent(item.textAlign)+'; }'
-		cR += '#'+_id+' .faux-input.placeholder-input { color: '+prx.utils.getColor(item.placeholderColor)+'; }'
-		cR += '#'+_id+' textarea:-moz-placeholder { color: '+prx.utils.getColor(item.placeholderColor)+'!important; }'
-		cR += '#'+_id+' textarea::-webkit-input-placeholder { color: '+prx.utils.getColor(item.placeholderColor)+'!important; }'
-		cR += '#'+_id+' textarea::-moz-placeholder { color: '+prx.utils.getColor(item.placeholderColor)+'!important; }'
+		cR += '#'+_id+' > textarea, #'+_id+' .faux-input { background-color: '+prx.componentsHelper.getProp(item.backgroundColor,'color-background')+'; color: '+prx.componentsHelper.getProp(item.textColor,'color-text')+'; font-size: '+prx.componentsHelper.getProp(item.textSize,'num-text-size')+'px; '+prx.componentsHelper.getProp(item.textFont,'font-family')+' border: '+prx.componentsHelper.getProp(item.borderWidth,'num-border-width')+'px solid '+prx.componentsHelper.getProp(item.borderColor,'color-border')+'; text-align: '+prx.componentsHelper.getProp(item.textAlign,'align')+'; border-radius: '+prx.componentsHelper.getProp(item.borderRadius,'num-border-radius')+'px;  '+ _props + '}';
+		cR += '#'+_id+' .faux-input { '+prx.css.flexJustifyContent(prx.componentsHelper.getProp(item.textAlign,'align'))+'; }'
+		cR += '#'+_id+' .faux-input.placeholder-input { color: '+prx.componentsHelper.getProp(item.placeholderColor,'color=text')+'; }'
+		cR += '#'+_id+' textarea:-moz-placeholder { color: '+prx.componentsHelper.getProp(item.placeholderColor,'color-text')+'!important; }'
+		cR += '#'+_id+' textarea::-webkit-input-placeholder { color: '+prx.componentsHelper.getProp(item.placeholderColor,'color-text')+'!important; }'
+		cR += '#'+_id+' textarea::-moz-placeholder { color: '+prx.componentsHelper.getProp(item.placeholderColor,'color-text')+'!important; }'
 		cR += '</style>'
 		if(prx.editor) {
-			cR += '<div class="faux-input liveUpdate-textColor liveUpdate-borderColor liveUpdate-backgroundColor" data-editableproperty="value">'+item.value+'</div>';
-			cR += '<div class="faux-input placeholder-input liveUpdate-placeholderColor liveUpdate-borderColor liveUpdate-backgroundColor">'+item.placeholder+'</div>'
+			cR += '<div class="faux-input liveUpdate-textColor liveUpdate-borderColor liveUpdate-backgroundColor" data-editableproperty="value">'+prx.componentsHelper.getProp(item.value,'text-textarea')+'</div>';
+			cR += '<div class="faux-input placeholder-input liveUpdate-placeholderColor liveUpdate-borderColor liveUpdate-backgroundColor">'+prx.componentsHelper.getProp(item.placeholder,'other')+'</div>'
 		} else {
-			cR += '<textarea class="liveUpdate-placeholderColor liveUpdate-backgroundColor liveUpdate-textColor liveUpdate-borderColor changeProperty-backgroundColor changeProperty-borderColor changeProperty-borderWidth changeProperty-borderRadius changeProperty-textSize changeProperty-textFont changeProperty-textColor changeProperty-textAlign" placeholder="'+item.placeholder+'" style="background-color: '+prx.utils.getColor(item.backgroundColor)+'; color: '+prx.utils.getColor(item.textColor)+'; font-size: '+item.textSize+'px; '+prx.componentsHelper.getFontCssFromFontFamily(item.textFont)+'; border: '+item.borderWidth+'px solid '+prx.utils.getColor(item.borderColor)+'; '+prx.css.borderRadius(item.borderRadius + 'px')+_props+'" data-role="none">'+item.value.replace(/<br \/>/g, "\n")+'</textarea>'
+			cR += '<textarea class="real-input liveUpdate-placeholderColor liveUpdate-backgroundColor liveUpdate-textColor liveUpdate-borderColor changeProperty-backgroundColor changeProperty-borderColor changeProperty-borderWidth changeProperty-borderRadius changeProperty-textSize changeProperty-textFont changeProperty-textColor changeProperty-textAlign" placeholder="'+prx.componentsHelper.getProp(item.placeholder,'other')+'" data-role="none">'+prx.componentsHelper.getProp(item.value,'text-textarea').replace(/<br \/>/g, "\n")+'</textarea>'
 		}
 		cR += '</div>'
 		return cR;
@@ -1559,13 +1547,13 @@ prx.types.ios7_checkbox = {
 		cR += '<div id="'+_id+'" class="box pos type-ios7-checkbox">';
 
 		cR += '<style>';
-		cR += '#'+_id+' .ios7-checkbox-inner { background-color: '+prx.utils.getColor(item.backgroundColor)+'; border: '+item.borderWidth+'px solid '+prx.utils.getColor(item.borderColor)+'; border-radius: '+item.borderRadius+((item.borderRadius == parseInt(item.borderRadius)) ? 'px' : '')+'; }'
-		cR += '#'+_id+' input:checked + .ios7-checkbox-inner { background-color: '+prx.utils.getColor(item.activeBackgroundColor)+'; }'
+		cR += '#'+_id+' .ios7-checkbox-inner { background-color: '+prx.componentsHelper.getProp(item.backgroundColor,'color-background')+'; border: '+prx.componentsHelper.getProp(item.borderWidth,'num-border-width')+'px solid '+prx.componentsHelper.getProp(item.borderColor,'color-border')+'; border-radius: '+prx.componentsHelper.getProp(item.borderRadius,'num-border-radius')+((prx.componentsHelper.getProp(item.borderRadius,'num-border-radius') == parseInt(prx.componentsHelper.getProp(item.borderRadius,'num-border-radius'))) ? 'px' : '')+'; }'
+		cR += '#'+_id+' input:checked + .ios7-checkbox-inner { background-color: '+prx.componentsHelper.getProp(item.activeBackgroundColor,'color-background')+'; }'
 		cR += '</style>';
 
-		cR += '<input type="checkbox" id="'+_id+'-checkbox" '+((item.active) ? 'checked="checked"' : '') + ' data-role="none" />';
-		cR += '<label for="'+_id+'-checkbox" class="ios7-checkbox-inner '+((item.active) ? 'liveUpdate-activeBackgroundColor' : 'liveUpdate-backgroundColor liveUpdate-borderColor') + ' changeProperty-borderColor changeProperty-borderWidth changeProperty-borderRadius" data-clickable="true">';
-		cR += '<img class="ios7-checkbox-icon" src="'+prx.componentsHelper.getAssetUrl(item.img)+'">';
+		cR += '<input type="checkbox" id="'+_id+'-checkbox" '+((prx.componentsHelper.getProp(item.active,'boolean')) ? 'checked="checked"' : '') + ' data-role="none" />';
+		cR += '<label for="'+_id+'-checkbox" class="ios7-checkbox-inner '+((prx.componentsHelper.getProp(item.active,'boolean')) ? 'liveUpdate-activeBackgroundColor' : 'liveUpdate-backgroundColor liveUpdate-borderColor') + ' changeProperty-borderColor changeProperty-borderWidth changeProperty-borderRadius" data-clickable="true">';
+		cR += '<img class="ios7-checkbox-icon" src="'+prx.componentsHelper.getProp(item.img,'asset')+'">';
 		cR += '</label>';
 		cR += '</div>';
 		return cR;
@@ -1732,14 +1720,14 @@ prx.types.ios7_switch = {
 		cR += '<div id="' + _id + '" class="box pos type-ios7-switch">';
 
 		cR += '<style>'
-		cR += '#'+_id+' label { border-radius: '+(_dims.height/2)+'px; border: '+item.borderWidth+'px solid '+prx.utils.getColor(item.inactiveBorderColor)+'; background-color: '+prx.utils.getColor(item.inactiveLabelColor)+'; }'
-		cR += '#'+_id+' input:checked + label { border-color: '+prx.utils.getColor(item.activeBorderColor)+'; background-color: '+prx.utils.getColor(item.activeLabelColor)+'; }'
-		cR += '#'+_id+' .switch { width: '+_dims.height+'px; background-color: '+prx.utils.getColor(item.switchColor)+'; border: '+item.borderWidth+'px solid '+prx.utils.getColor(item.inactiveBorderColor)+'; }'
-		cR += '#'+_id+' input:checked + label .switch { left: '+(_dims.width - _dims.height + parseInt(item.borderWidth))+'px; border-color: '+prx.utils.getColor(item.activeBorderColor)+'; }'
+		cR += '#'+_id+' label { border-radius: '+(_dims.height/2)+'px; border: '+prx.componentsHelper.getProp(item.borderWidth,'num-border-width')+'px solid '+prx.componentsHelper.getProp(item.inactiveBorderColor,'color-border')+'; background-color: '+prx.componentsHelper.getProp(item.inactiveLabelColor,'color-background')+'; }'
+		cR += '#'+_id+' input:checked + label { border-color: '+prx.componentsHelper.getProp(item.activeBorderColor,'color-border')+'; background-color: '+prx.componentsHelper.getProp(item.activeLabelColor,'color-background')+'; }'
+		cR += '#'+_id+' .switch { width: '+_dims.height+'px; background-color: '+prx.componentsHelper.getProp(item.switchColor,'color-background')+'; border: '+prx.componentsHelper.getProp(item.borderWidth,'num-border-width')+'px solid '+prx.componentsHelper.getProp(item.inactiveBorderColor,'color-border')+'; }'
+		cR += '#'+_id+' input:checked + label .switch { left: '+(_dims.width - _dims.height + parseInt(prx.componentsHelper.getProp(item.borderWidth,'num-border-width')))+'px; border-color: '+prx.componentsHelper.getProp(item.activeBorderColor,'color-border')+'; }'
 		cR += '</style>'
 
-		cR += '<input type="checkbox" '+((item.active) ? 'checked' : '')+ ' id="'+_id+'-flipswitch" data-role="none" />';
-		cR += '<label for="'+_id+'-flipswitch" class="'+((item.active) ? 'liveUpdate-activeBorderColor liveUpdate-activeLabelColor' : 'liveUpdate-inactiveBorderColor liveUpdate-inactiveLabelColor')+'" data-clickable="true">'; // data-clickable for greensock draggable - if draggable or in draggable container clicking on the flipswitch wont change state
+		cR += '<input type="checkbox" '+((prx.componentsHelper.getProp(item.active,'boolean')) ? 'checked' : '')+ ' id="'+_id+'-flipswitch" data-role="none" />';
+		cR += '<label for="'+_id+'-flipswitch" class="'+((prx.componentsHelper.getProp(item.active,'boolean')) ? 'liveUpdate-activeBorderColor liveUpdate-activeLabelColor' : 'liveUpdate-inactiveBorderColor liveUpdate-inactiveLabelColor')+'" data-clickable="true">'; // data-clickable for greensock draggable - if draggable or in draggable container clicking on the flipswitch wont change state
 		cR += '<div class="switch liveUpdate-switchColor"></div>';
 		cR += '</label>';
 		cR += '</div>';
@@ -1750,7 +1738,7 @@ prx.types.ios7_switch = {
 		var _dims = prx.componentsHelper.getRealDims(item,symbol);
 
 		$('#'+_id+' label').css('border-radius', (_dims.height/2)+'px');
-		$('#'+_id+' .switch').width(_dims.height-item.borderWidth*2);
+		$('#'+_id+' .switch').width(_dims.height-prx.componentsHelper.getProp(item.borderWidth,'num-border-width')*2);
 		if($('#'+_id+'-flipswitch').is(':checked')) {
 			$('#'+_id+' .switch').css('left', (_dims.width - _dims.height)+'px');
 		}
@@ -1944,9 +1932,9 @@ prx.types.ios7_slider = {
 		var cR = '';
 		cR += '<div id="' + _id + '" class="box pos type-ios7-slider">';
 		cR += '<style>'
-		cR += '#'+_id+' .slider-bar { height: '+item.barThickness+'px; background-color: '+prx.utils.getColor(item.barColor)+'; margin-top: -'+(item.barThickness/2)+'px; }'
-		cR += '#'+_id+' .slider-bar-filled { width: '+item.sliderPosition+'%; background-color: '+prx.utils.getColor(item.fillBarColor)+' }'
-		cR += '#'+_id+' .slider-button { background-color: '+prx.utils.getColor(item.sliderColor)+'; border-radius: '+item.sliderBorderRadius + ((item.sliderBorderRadius == parseInt(item.sliderBorderRadius)) ? 'px' : '')+'; width: '+_dims.height+'px; margin-left: -'+(_dims.height/2)+'px; margin-right: -'+(_dims.height/2)+'px; }';
+		cR += '#'+_id+' .slider-bar { height: '+prx.componentsHelper.getProp(item.barThickness,'num-other')+'px; background-color: '+prx.componentsHelper.getProp(item.barColor,'color-background')+'; margin-top: -'+(prx.componentsHelper.getProp(item.barThickness,'num-other')/2)+'px; }'
+		cR += '#'+_id+' .slider-bar-filled { width: '+prx.componentsHelper.getProp(item.sliderPosition,'num-percentage')+'%; background-color: '+prx.componentsHelper.getProp(item.fillBarColor,'color-fill')+' }'
+		cR += '#'+_id+' .slider-button { background-color: '+prx.componentsHelper.getProp(item.sliderColor,'color-switch')+'; border-radius: '+prx.componentsHelper.getProp(item.sliderBorderRadius,'num-border-radius') + ((prx.componentsHelper.getProp(item.sliderBorderRadius,'num-border-radius') == parseInt(prx.componentsHelper.getProp(item.sliderBorderRadius,'num-border-radius'))) ? 'px' : '')+'; width: '+_dims.height+'px; margin-left: -'+(_dims.height/2)+'px; margin-right: -'+(_dims.height/2)+'px; }';
 		cR += '</style>'
 		cR += '<div class="slider-bar liveUpdate-barColor">';
 		cR += '<div class="slider-bar-filled liveUpdate-fillBarColor"></div>'
@@ -1967,7 +1955,7 @@ prx.types.ios7_slider = {
 		
 		if(prx.editor){
 			$('#'+_id).find('.slider-button').css({
-				'left': ((_dims.width)*(item.sliderPosition*0.01)) + 'px'
+				'left': ((_dims.width)*(prx.componentsHelper.getProp(item.sliderPosition,'num-percentage')*0.01)) + 'px'
 			});
 		}
 
@@ -2202,18 +2190,17 @@ prx.types.ios7_picker = {
 			var _id = (!containerid) ? item.id : containerid+'-'+item.id;
 
 			var _dims = prx.componentsHelper.getRealDims(item,symbol);
-			var _options = item.values.split("<br />");
-			var _props = (jQuery.inArray("bold",item.textProperties)>-1) ? " font-weight: bold;" : "";
-			_props += (jQuery.inArray("italic",item.textProperties)>-1) ? " font-style: italic;" : "";
-			_props += (jQuery.inArray("underline",item.textProperties)>-1) ? " text-decoration: underline;" : "";
+			var _options = prx.componentsHelper.getProp(item.values,'text-list').split("<br />");
+			
+			var _props = prx.componentsHelper.getProp(item.textProperties,'props-text');
 
 			var cR = '<div id="' + _id + '" class="box pos type-ios7-picker"><div class="outer">';
 
 			cR += '<style>';
-			cR += '#'+_id+' .inner { background-color: '+prx.utils.getColor(item.backgroundColor)+'; color: '+prx.utils.getColor(item.textColor)+'; font-size: '+item.textSize+'px; text-align: '+item.textAlign+'; '+prx.componentsHelper.getFontCssFromFontFamily(item.textFont)+' '+_props+' }'
+			cR += '#'+_id+' .inner { background-color: '+prx.componentsHelper.getProp(item.backgroundColor,'color-background')+'; color: '+prx.componentsHelper.getProp(item.textColor,'color-text')+'; font-size: '+prx.componentsHelper.getProp(item.textSize,'num-text-size')+'px; text-align: '+prx.componentsHelper.getProp(item.textAlign,'align')+'; '+prx.componentsHelper.getProp(item.textFont,'font-family')+' '+_props+' }'
 			// cR += '#'+_id+' ul { padding: '+(_dims.height/2-32)+'px 0; }'; // chrome needs this to be inline otherwise iscroll height is not correctly calculated :S
-			cR += '#'+_id+' input:checked + label { color: '+prx.utils.getColor(item.activeTextColor)+'; }'
-			cR += '#'+_id+' .bar { border-color: '+prx.utils.getColor(item.textColor)+'; } ';
+			cR += '#'+_id+' input:checked + label { color: '+prx.componentsHelper.getProp(item.activeTextColor,'color-text')+'; }'
+			cR += '#'+_id+' .bar { border-color: '+prx.componentsHelper.getProp(item.textColor,'color-border')+'; } ';
 			cR += '</style>';
 
 			cR += '<div class="inner liveUpdate-backgroundColor changeProperty-backgroundColor liveUpdate-textColor-color changeProperty-textColor changeProperty-textFont changeProperty-textSize changeProperty-textAlign" id="' + _id + '-inner">';
@@ -2221,8 +2208,8 @@ prx.types.ios7_picker = {
 
 			for(var i = 0; i < _options.length; i++) {
 				cR += '<li>';
-				cR += '<input type="radio" data-role="none" id="'+_id+'-option'+i+'" name="'+_id+'-input" '+((i == item.selectedValue) ? 'checked' : '' )+'/>';
-				cR += '<label '+((i == item.selectedValue) ? 'class="liveUpdate-activeTextColor"' : '' )+' for="'+_id+'-option'+i+'">' + _options[i] + '</label>';
+				cR += '<input type="radio" data-role="none" id="'+_id+'-option'+i+'" name="'+_id+'-input" '+((i == prx.componentsHelper.getProp(item.selectedValue,'boolean')) ? 'checked' : '' )+'/>';
+				cR += '<label '+((i == prx.componentsHelper.getProp(item.selectedValue,'boolean')) ? 'class="liveUpdate-activeTextColor"' : '' )+' for="'+_id+'-option'+i+'">' + _options[i] + '</label>';
 				cR += '</li>';
 			};
 			cR += '</ul>'
@@ -2235,7 +2222,7 @@ prx.types.ios7_picker = {
 		}
 		,onResize: function(item,containerid) {
 			var _id = (!containerid) ? item.id : containerid+'-'+item.id;
-			$('#' + _id + ' ul').css('padding', (item.height/2-(16*prx.componentsHelper.getScale(item.lib)))+'px 0');
+			$('#' + _id + ' ul').css('padding', (prx.componentsHelper.getProp(item.height,'num-other')/2-(16*prx.componentsHelper.getScale(item.lib)))+'px 0');
 		}
 		,afterDisplay: function(item,containerid) {
 			var _id = (!containerid) ? item.id : containerid+'-'+item.id;
@@ -2453,9 +2440,7 @@ prx.types.ios8_searchbar = {
 	,onDisplay: function(item,containerid,pageid,symbol) {
 		var _id = (!containerid) ? item.id : containerid+'-'+item.id;
 
-		var _props = (jQuery.inArray("bold",item.textProperties)>-1) ? " font-weight: bold;" : "";
-		_props += (jQuery.inArray("italic",item.textProperties)>-1) ? " font-style: italic;" : "";
-		_props += (jQuery.inArray("underline",item.textProperties)>-1) ? " text-decoration: underline;" : "";
+		var _props = prx.componentsHelper.getProp(item.textProperties,'props-text');
 
 		var _dims = prx.componentsHelper.getRealDims(item, symbol);
 
@@ -2463,33 +2448,33 @@ prx.types.ios8_searchbar = {
 		cR += '<div id="' + _id + '" class="box pos type-ios8-searchbar type-ios8-searchbar-text">';
 
 		cR += '<style>';
-		cR += '#'+_id+'  input { color: '+prx.utils.getColor(item.textColor)+'; font-size: '+item.textSize+'px; '+prx.componentsHelper.getFontCssFromFontFamily(item.textFont)+' '+ _props + ' ;}';
-		cR += '#'+_id+' .ios8-searchbar-faux-input { background-color: '+prx.utils.getColor(item.backgroundColor)+'; color: '+prx.utils.getColor(item.textColor)+'; font-size: '+item.textSize+'px; '+prx.componentsHelper.getFontCssFromFontFamily(item.textFont)+' line-height: '+_dims.height+'px; '+ _props + ' }';
-		cR += '#'+_id+' .ios8-searchbar-faux-input-overlay .placeholder-input, #'+_id+' .ios8-searchbar-input-overlay .placeholder-input { color: '+prx.utils.getColor(item.placeholderColor)+';  font-size: '+item.textSize+'px;}';
-		if(item.imgSrc.fileId != '') {
-			cR += '#' + _id + ' .ios8-searchbar-icon { width: '+item.textSize+'px; background-image: url('+prx.componentsHelper.getAssetUrl(item.imgSrc)+');}';
-			cR += '#' + _id + ' .ios8-searchbar-icon-faux { width: '+item.textSize+'px;}';
+		cR += '#'+_id+'  input { color: '+prx.componentsHelper.getProp(item.textColor,'color-text')+'; font-size: '+prx.componentsHelper.getProp(item.textSize,'num-text-size')+'px; '+prx.componentsHelper.getProp(item.textFont,'font-family')+' '+ _props + ' ;}';
+		cR += '#'+_id+' .ios8-searchbar-faux-input { background-color: '+prx.componentsHelper.getProp(item.backgroundColor,'color-background')+'; color: '+prx.componentsHelper.getProp(item.textColor,'color-text')+'; font-size: '+prx.componentsHelper.getProp(item.textSize,'num-text-size')+'px; '+prx.componentsHelper.getProp(item.textFont,'font-family')+' line-height: '+_dims.height+'px; '+ _props + ' }';
+		cR += '#'+_id+' .ios8-searchbar-faux-input-overlay .placeholder-input, #'+_id+' .ios8-searchbar-input-overlay .placeholder-input { color: '+prx.componentsHelper.getProp(item.placeholderColor,'color-text')+';  font-size: '+prx.componentsHelper.getProp(item.textSize,'num-text-size')+'px;}';
+		if(prx.componentsHelper.getProp(item.imgSrc.fileId,'other') != '') {
+			cR += '#' + _id + ' .ios8-searchbar-icon { width: '+prx.componentsHelper.getProp(item.textSize,'num-text-size')+'px; background-image: url('+prx.componentsHelper.getProp(item.imgSrc,'asset')+');}';
+			cR += '#' + _id + ' .ios8-searchbar-icon-faux { width: '+prx.componentsHelper.getProp(item.textSize,'num-text-size')+'px;}';
 		}
-		cR += '#'+_id+' .ios8-searchbar-input-flex { background-color: '+prx.utils.getColor(item.backgroundColor)+'; border: '+item.borderWidth+'px solid '+prx.utils.getColor(item.borderColor)+'; border-radius: '+item.borderRadius+'px; }';
-		cR += '#' + _id + ' .ios8-searchbar-icon-erase { width: '+(_dims.height*0.4)+'px; background-image: url('+prx.componentsHelper.getAssetUrl(item.imgSrc2)+'); color: '+prx.utils.getColor(item.placeholderColor)+';}';
+		cR += '#'+_id+' .ios8-searchbar-input-flex { background-color: '+prx.componentsHelper.getProp(item.backgroundColor,'color-background')+'; border: '+prx.componentsHelper.getProp(item.borderWidth,'num-border-width')+'px solid '+prx.componentsHelper.getProp(item.borderColor,'color-border')+'; border-radius: '+prx.componentsHelper.getProp(item.borderRadius,'num-border-radius')+'px; }';
+		cR += '#' + _id + ' .ios8-searchbar-icon-erase { width: '+(_dims.height*0.4)+'px; background-image: url('+prx.componentsHelper.getProp(item.imgSrc2,'asset')+'); color: '+prx.componentsHelper.getProp(item.placeholderColor,'color-text')+';}';
 		cR += '</style>'
 
 		if(prx.editor) {
 			cR += '<div class="ios8-searchbar-input-flex liveUpdate-backgroundColor liveUpdate-borderColor changeProperty-backgroundColor  changeProperty-borderColor changeProperty-borderWidth changeProperty-borderRadius">';
-			if(item.imgSrc.fileId != '') {
+			if(prx.componentsHelper.getProp(item.imgSrc.fileId,'other') != '') {
 			cR += '<span class="ios8-searchbar-icon-faux"></span>';
 			}
-			cR += '<div class="ios8-searchbar-faux-input changeProperty-textColor changeProperty-textSize changeProperty-textFont" data-editableproperty="value">'+item.value+'</div>';
-			cR += '<div class="ios8-searchbar-faux-input-overlay liveUpdate-placeholderColor liveUpdate-backgroundColor">'+(item.imgSrc.fileId != '' ? '<span class="ios8-searchbar-icon"></span>': '')+'<span class="placeholder-input">'+item.placeholder+'</span></div>';
+			cR += '<div class="ios8-searchbar-faux-input changeProperty-textColor changeProperty-textSize changeProperty-textFont" data-editableproperty="value">'+prx.componentsHelper.getProp(item.value,'text')+'</div>';
+			cR += '<div class="ios8-searchbar-faux-input-overlay liveUpdate-placeholderColor liveUpdate-backgroundColor">'+(prx.componentsHelper.getProp(item.imgSrc.fileId,'other') != '' ? '<span class="ios8-searchbar-icon"></span>': '')+'<span class="placeholder-input">'+prx.componentsHelper.getProp(item.placeholder,'other')+'</span></div>';
 			cR += '<span class="ios8-searchbar-icon-erase"></span>';
 			cR += '</div>';
 		} else {
 			cR += '<div class="ios8-searchbar-input-flex liveUpdate-backgroundColor liveUpdate-borderColor changeProperty-backgroundColor  changeProperty-borderColor changeProperty-borderWidth changeProperty-borderRadius">';
-			if(item.imgSrc.fileId != '') {
+			if(prx.componentsHelper.getProp(item.imgSrc.fileId,'other') != '') {
 			cR += '<span class="ios8-searchbar-icon-faux"></span>';
 			}
-			cR += '<input type="text" value="'+item.value+'" data-role="none" required class="real-input changeProperty-textColor changeProperty-textSize changeProperty-textFont" />';
-			cR += '<div class="ios8-searchbar-input-overlay">'+(item.imgSrc.fileId != '' ? '<span class="ios8-searchbar-icon"></span>': '')+'<span class="placeholder-input">'+item.placeholder+'</span></div>';
+			cR += '<input type="text" value="'+prx.componentsHelper.getProp(item.value,'other')+'" data-role="none" required class="real-input changeProperty-textColor changeProperty-textSize changeProperty-textFont" />';
+			cR += '<div class="ios8-searchbar-input-overlay">'+(prx.componentsHelper.getProp(item.imgSrc.fileId,'other') != '' ? '<span class="ios8-searchbar-icon"></span>': '')+'<span class="placeholder-input">'+prx.componentsHelper.getProp(item.placeholder,'other')+'</span></div>';
 			cR += '<span class="ios8-searchbar-icon-erase"></span>';
 			cR += '</div>';
 		}
@@ -2500,8 +2485,8 @@ prx.types.ios8_searchbar = {
 		var _id = (!containerid) ? item.id : containerid+'-'+item.id;
 		var _dims = prx.componentsHelper.getRealDims(item,symbol);
 
-		if(item.imgSrc.fileId != '') {
-			$('#' + _id + ' .ios8-searchbar-icon, #' + _id + ' .ios8-searchbar-icon-faux').css('width', item.textSize+'px');
+		if(prx.componentsHelper.getProp(item.imgSrc.fileId,'other') != '') {
+			$('#' + _id + ' .ios8-searchbar-icon, #' + _id + ' .ios8-searchbar-icon-faux').css('width', prx.componentsHelper.getProp(item.textSize,'num-text-size')+'px');
 		}
 		$('#'+_id).find('.ios8-searchbar-icon-erase').css('width', (_dims.height*0.4)+'px')
 		$('#'+_id).find('.ios8-searchbar-faux-input').css('line-height', _dims.height+'px')
@@ -2674,24 +2659,17 @@ prx.types.ios7_listcomplex = {
 		var cR = '';
 
 		if(typeof(item.textProperties) == "undefined") { item.textProperties = []; }
-		var _textprops = (jQuery.inArray("bold",item.textProperties)>-1) ? " font-weight: bold;" : "";
-		_textprops += (jQuery.inArray("italic",item.textProperties)>-1) ? " font-style: italic;" : "";
-		_textprops += (jQuery.inArray("underline",item.textProperties)>-1) ? " text-decoration: underline;" : "";
+		
+		var _textprops = prx.componentsHelper.getProp(item.textProperties,'props-text');
 
 		if(typeof(item.subProperties) != "undefined") {
-			var _subprops = (jQuery.inArray("bold",item.subProperties)>-1) ? " font-weight: bold;" : "";
-			_subprops += (jQuery.inArray("italic",item.subProperties)>-1) ? " font-style: italic;" : "";
-			_subprops += (jQuery.inArray("underline",item.subProperties)>-1) ? " text-decoration: underline;" : "";
+			var _subprops = prx.componentsHelper.getProp(item.subProperties,'props-text');
 		}
 		if(typeof(item.valueProperties) != "undefined") {
-			var _valueprops = (jQuery.inArray("bold",item.valueProperties)>-1) ? " font-weight: bold;" : "";
-			_valueprops += (jQuery.inArray("italic",item.valueProperties)>-1) ? " font-style: italic;" : "";
-			_valueprops += (jQuery.inArray("underline",item.valueProperties)>-1) ? " text-decoration: underline;" : "";
+			var _valueprops = prx.componentsHelper.getProp(item.valueProperties,'props-text');
 		}
 		if(typeof(item.badgeProperties) != "undefined") {
-			var _badgeprops = (jQuery.inArray("bold",item.badgeProperties)>-1) ? " font-weight: bold;" : "";
-			_badgeprops += (jQuery.inArray("italic",item.badgeProperties)>-1) ? " font-style: italic;" : "";
-			_badgeprops += (jQuery.inArray("underline",item.badgeProperties)>-1) ? " text-decoration: underline;" : "";
+			var _badgeprops = prx.componentsHelper.getProp(item.badgeProperties,'props-text');
 		}
 
 		if(typeof(item.maintainstate) == "undefined") { item.maintainstate = false; }
@@ -2700,7 +2678,7 @@ prx.types.ios7_listcomplex = {
 		var _dims = prx.componentsHelper.getRealDims(item,symbol);
 
 		// :(
-		var _listitemH = (_dims.height - item.borderWidth*(item.listitems.length+1))/item.listitems.length;
+		var _listitemH = (_dims.height - prx.componentsHelper.getProp(item.borderWidth,'num-border-width')*(item.listitems.length+1))/item.listitems.length;
 
 		var hasThumbs = false;
 		for(var i=0;i<item.listitems.length;i++) {
@@ -2713,19 +2691,19 @@ prx.types.ios7_listcomplex = {
 		cR += '<div id="' + _id + '" class="box pos type-ios7-list">';
 
 		cR += '<style>'
-		cR += '#' + _id + ' .ios7-list-inner { text-align: '+item.textAlign+'; '+prx.css.flexJustifyContent(item.textAlign)+' background-color: '+prx.utils.getColor(item.backgroundColor)+'; '+prx.componentsHelper.getFontCssFromFontFamily(item.textFont)+'; font-size: '+item.textSize+'px; color: '+prx.utils.getColor(item.textColor)+'; border: '+item.borderWidth+'px solid '+prx.utils.getColor(item.borderColor)+';  }';
+		cR += '#' + _id + ' .ios7-list-inner { text-align: '+prx.componentsHelper.getProp(item.textAlign,'align')+'; '+prx.css.flexJustifyContent(prx.componentsHelper.getProp(item.textAlign,'align'))+' background-color: '+prx.componentsHelper.getProp(item.backgroundColor,'color-background')+'; '+prx.componentsHelper.getProp(item.textFont,'font-family')+'; font-size: '+prx.componentsHelper.getProp(item.textSize,'num-text-size')+'px; color: '+prx.componentsHelper.getProp(item.textColor,'color-text')+'; border: '+prx.componentsHelper.getProp(item.borderWidth,'num-border-width')+'px solid '+prx.componentsHelper.getProp(item.borderColor,'color-border')+';  }';
 		cR += '#' + _id + ' .ios7-list-thumb { width: '+parseInt(_listitemH*0.6)+'px }';
 		if(typeof(item.iconSize) != "undefined") {
-			cR += '#' + _id + ' .ios7-list-icon { width: '+parseInt(_listitemH*(item.iconSize/5))+'px; height: '+parseInt(_listitemH*(item.iconSize/5))+'px; }';
+			cR += '#' + _id + ' .ios7-list-icon { width: '+parseInt(_listitemH*(prx.componentsHelper.getProp(item.iconSize,'icon-size')/5))+'px; height: '+parseInt(_listitemH*(prx.componentsHelper.getProp(item.iconSize,'icon-size')/5))+'px; }';
 		}
-		cR += '#' + _id + ' .bordered-container { border-top: '+item.borderWidth+'px solid '+prx.utils.getColor(item.borderColor)+'; }'
+		cR += '#' + _id + ' .bordered-container { border-top: '+prx.componentsHelper.getProp(item.borderWidth,'num-border-width')+'px solid '+prx.componentsHelper.getProp(item.borderColor,'color-border')+'; }'
 		cR += '#' + _id + ' .ios7-list-text { '+_textprops+' }';
-		cR += '#' + _id + ' .ios7-list-subtitle { '+prx.componentsHelper.getFontCssFromFontFamily(item.subFont)+_subprops+' font-size: '+item.subSize+'px; color: '+prx.utils.getColor(item.subColor)+'; }'
-		cR += '#' + _id + ' .ios7-list-badge { '+prx.componentsHelper.getFontCssFromFontFamily(item.badgeFont)+_badgeprops+'; font-size: '+item.badgeSize+'px; color: '+prx.utils.getColor(item.badgeColor)+'; background-color: '+prx.utils.getColor(item.badgeBackgroundColor)+'; }';
-		cR += '#' + _id + ' .ios7-list-value { '+prx.componentsHelper.getFontCssFromFontFamily(item.valueFont)+_valueprops+'; font-size: '+item.valueSize+'px; color: '+prx.utils.getColor(item.valueColor)+'; }'
-		cR += '#' + _id + ' label:active, #' + _id + ' input:checked + label { background: '+prx.utils.getColor(item.activeBackgroundColor)+'; color: '+prx.utils.getColor(item.activeTextColor)+'; }'
-		cR += '#' + _id + ' label:active .ios7-list-value, #' + _id + ' input:checked +  label .ios7-list-value { color: '+prx.utils.getColor(item.activeValueColor)+'; }'
-		cR += '#' + _id + ' label:active .ios7-list-subtitle, #' + _id + ' input:checked + label .ios7-list-subtitle { color: '+prx.utils.getColor(item.activeSubColor)+'; }'
+		cR += '#' + _id + ' .ios7-list-subtitle { '+prx.componentsHelper.getProp(item.subFont,'font-family')+_subprops+' font-size: '+prx.componentsHelper.getProp(item.subSize,'num-text-size')+'px; color: '+prx.componentsHelper.getProp(item.subColor,'color-text')+'; }'
+		cR += '#' + _id + ' .ios7-list-badge { '+prx.componentsHelper.getProp(item.badgeFont,'font-family')+_badgeprops+'; font-size: '+prx.componentsHelper.getProp(item.badgeSize,'num-text-size')+'px; color: '+prx.componentsHelper.getProp(item.badgeColor,'color-text')+'; background-color: '+prx.componentsHelper.getProp(item.badgeBackgroundColor,'color-background')+'; }';
+		cR += '#' + _id + ' .ios7-list-value { '+prx.componentsHelper.getProp(item.valueFont,'font-family')+_valueprops+'; font-size: '+prx.componentsHelper.getProp(item.valueSize,'num-text-size')+'px; color: '+prx.componentsHelper.getProp(item.valueColor,'color-text')+'; }'
+		cR += '#' + _id + ' label:active, #' + _id + ' input:checked + label { background: '+prx.componentsHelper.getProp(item.activeBackgroundColor,'color-background')+'; color: '+prx.componentsHelper.getProp(item.activeTextColor,'color-text')+'; }'
+		cR += '#' + _id + ' label:active .ios7-list-value, #' + _id + ' input:checked +  label .ios7-list-value { color: '+prx.componentsHelper.getProp(item.activeValueColor,'color-text')+'; }'
+		cR += '#' + _id + ' label:active .ios7-list-subtitle, #' + _id + ' input:checked + label .ios7-list-subtitle { color: '+prx.componentsHelper.getProp(item.activeSubColor,'color-text')+'; }'
 		cR += '</style>'
 
 		cR += '<div class="ios7-list-inner liveUpdate-borderColor liveUpdate-textColor liveUpdate-backgroundColor changeProperty-backgroundColor changeProperty-textColor changeProperty-borderColor changeProperty-textAlign changeProperty-textFont changeProperty-textSize">';
@@ -2734,47 +2712,61 @@ prx.types.ios7_listcomplex = {
 		$.each(item.listitems, function(i,elm){
 
 			var icon = '';
-			if(elm.itemtype == 'nested' || elm.itemtype == 'checkbox' || elm.itemtype == 'radio' || elm.itemtype == 'nestedWithValue' || elm.itemtype == 'withIcon' || elm.itemtype == 'withIconAndValue' || elm.itemtype == 'nestedWithBadge' || elm.itemtype == 'withIconAndBadge' || elm.itemtype == 'nestedWithBadgeAndValue') {
-				icon = '<div class="ios7-list-icon ios7-list-icon-'+item.iconpos+'" '+((typeof (elm.buttonicon) != "undefined" && elm.buttonicon.fileId != '') ? 'style="background-image: url('+ prx.componentsHelper.getAssetUrl(elm.buttonicon)+');"' : '' ) + '></div>';
+			if(prx.componentsHelper.getProp(elm.itemtype,'other') == 'nested' || 
+				prx.componentsHelper.getProp(elm.itemtype,'other') == 'checkbox' || 
+				prx.componentsHelper.getProp(elm.itemtype,'other') == 'radio' || 
+				prx.componentsHelper.getProp(elm.itemtype,'other') == 'nestedWithValue' || 
+				prx.componentsHelper.getProp(elm.itemtype,'other') == 'withIcon' || 
+				prx.componentsHelper.getProp(elm.itemtype,'other') == 'withIconAndValue' || 
+				prx.componentsHelper.getProp(elm.itemtype,'other') == 'nestedWithBadge' || 
+				prx.componentsHelper.getProp(elm.itemtype,'other') == 'withIconAndBadge' || 
+				prx.componentsHelper.getProp(elm.itemtype,'other') == 'nestedWithBadgeAndValue') {
+				icon = '<div class="ios7-list-icon ios7-list-icon-'+prx.componentsHelper.getProp(item.iconpos,'icon-position')+'" '+((typeof (elm.buttonicon) != "undefined" && prx.componentsHelper.getProp(elm.buttonicon.fileId,'other') != '') ? 'style="background-image: url('+ prx.componentsHelper.getProp(elm.buttonicon,'asset')+');"' : '' ) + '></div>';
 			}
 
-			cR += '<div id="'+_id+'-listitems-'+i+'" class="dynamic-property ios7-list-listitem ios7-list-listitem-type-'+elm.itemtype+'" data-dynamic-property-index="'+i+'">';
-			if(elm.itemtype == 'checkbox' || elm.itemtype == 'radio' || item.maintainstate) {
-				cR += '<input type="'+((elm.itemtype == 'checkbox') ? 'checkbox': 'radio') +'" name="'+_id+'-checkbox" id="'+_id+'-checkbox-'+i+'" data-role="none" '+ ((typeof(elm.checked) != "undefined" && elm.checked) ? 'checked' : '') +' />';
+			cR += '<div id="'+_id+'-listitems-'+i+'" class="dynamic-property ios7-list-listitem ios7-list-listitem-type-'+prx.componentsHelper.getProp(elm.itemtype,'other')+'" data-dynamic-property-index="'+i+'">';
+			if(prx.componentsHelper.getProp(elm.itemtype,'other') == 'checkbox' || prx.componentsHelper.getProp(elm.itemtype,'other') == 'radio' || prx.componentsHelper.getProp(item.maintainstate,'boolean')) {
+				cR += '<input type="'+((prx.componentsHelper.getProp(elm.itemtype,'other') == 'checkbox') ? 'checkbox': 'radio') +'" name="'+_id+'-checkbox" id="'+_id+'-checkbox-'+i+'" data-role="none" '+ ((typeof(elm.checked) != "undefined" && prx.componentsHelper.getProp(elm.checked,'boolean')) ? 'checked' : '') +' />';
 			}
 			//cR +='<label '+ (((elm.itemtype == 'checkbox' || elm.itemtype == 'radio') && elm.checked) ? 'class="liveUpdate-activeTextColor liveUpdate-activeBackgroundColor"' : '') +' for="'+_id+'-checkbox-'+i+'" ' +((elm.itemtype == 'checkbox' || elm.itemtype == 'radio' || item.maintainstate) ? ' data-clickable="true"' : '') + '>'
-			cR +='<label '+ (((elm.itemtype == 'checkbox' || elm.itemtype == 'radio') && elm.checked) ? 'class="liveUpdate-activeTextColor liveUpdate-activeBackgroundColor"' : '') +' for="'+_id+'-checkbox-'+i+'">'
+			cR +='<label '+ (((prx.componentsHelper.getProp(elm.itemtype,'other') == 'checkbox' || prx.componentsHelper.getProp(elm.itemtype,'other') == 'radio') && prx.componentsHelper.getProp(elm.checked,'boolean')) ? 'class="liveUpdate-activeTextColor liveUpdate-activeBackgroundColor"' : '') +' for="'+_id+'-checkbox-'+i+'">'
 
-			if(item.iconpos == "left") { cR += icon; }
+			if(prx.componentsHelper.getProp(item.iconpos,'icon-position') == "left") { cR += icon; }
 
 			if(hasThumbs) {
-				cR += '<div class="ios7-list-thumb" '+((typeof(elm.thumbnail) != "undefined" && elm.thumbnail.fileId != '') ? 'style="background-image: url('+ prx.componentsHelper.getAssetUrl(elm.thumbnail)+');"' : '') + '></div>';
+				cR += '<div class="ios7-list-thumb" '+((typeof(elm.thumbnail) != "undefined" && prx.componentsHelper.getProp(elm.thumbnail.fileId,'other') != '') ? 'style="background-image: url('+ prx.componentsHelper.getProp(elm.thumbnail,'asset')+');"' : '') + '></div>';
 			}
 
 			cR += '<div class="bordered-container liveUpdate-borderColor">';
 
 			cR += '<div class="text-and-subtitle">';
 			cR += '<div class="ios7-list-text">';
-			cR += '<span data-editableproperty="text" data-dynamic-property-index="'+i+'">'+elm.text+'</span>';
+			cR += '<span data-editableproperty="text" data-dynamic-property-index="'+i+'">'+prx.componentsHelper.getProp(elm.text,'text')+'</span>';
 			cR += '</div>';
 			cR += '<div class="ios7-list-subtitle liveUpdate-subColor changeProperty-subColor changeProperty-subFont changeProperty-subSize">';
-			cR += '<span data-editableproperty="subtitle" data-dynamic-property-index="'+i+'">'+elm.subtitle+'</span>';
+			cR += '<span data-editableproperty="subtitle" data-dynamic-property-index="'+i+'">'+prx.componentsHelper.getProp(elm.subtitle,'text')+'</span>';
 			cR += '</div>';
 			cR += '</div>';
 
-			if(elm.itemtype == 'withValue' || elm.itemtype == 'nestedWithValue' || elm.itemtype == 'withIconAndValue' || elm.itemtype == 'nestedWithBadgeAndValue') {
+			if(prx.componentsHelper.getProp(elm.itemtype,'other') == 'withValue' || 
+				prx.componentsHelper.getProp(elm.itemtype,'other') == 'nestedWithValue' || 
+				prx.componentsHelper.getProp(elm.itemtype,'other') == 'withIconAndValue' || 
+				prx.componentsHelper.getProp(elm.itemtype,'other') == 'nestedWithBadgeAndValue') {
 				cR += '<div class="ios7-list-value liveUpdate-valueColor changeProperty-valueColor changeProperty-valueFont changeProperty-valueSize">';
-				cR += '<span data-editableproperty="value" data-dynamic-property-index="'+i+'">'+elm.value+'</span>';
+				cR += '<span data-editableproperty="value" data-dynamic-property-index="'+i+'">'+prx.componentsHelper.getProp(elm.value,'text')+'</span>';
 				cR += '</div>';
 			}
 
-			if(elm.itemtype == 'withBadge' || elm.itemtype == 'nestedWithBadge' || elm.itemtype == 'withIconAndBadge' || elm.itemtype == 'nestedWithBadgeAndValue') {
+			if(prx.componentsHelper.getProp(elm.itemtype,'other') == 'withBadge' || 
+					prx.componentsHelper.getProp(elm.itemtype,'other') == 'nestedWithBadge' || 
+					prx.componentsHelper.getProp(elm.itemtype,'other') == 'withIconAndBadge' || 
+					prx.componentsHelper.getProp(elm.itemtype,'other') == 'nestedWithBadgeAndValue') {
 				cR += '<div class="ios7-list-badge liveUpdate-badgeColor changeProperty-badgeColor liveUpdate-badgeBackgroundColor changeProperty-badgeBackgroundColor changeProperty-badgeFont changeProperty-badgeSize">';
-				cR += '<span data-editableproperty="badgeText" data-dynamic-property-index="'+i+'">'+elm.badgeText+'</span>';
+				cR += '<span data-editableproperty="badgeText" data-dynamic-property-index="'+i+'">'+prx.componentsHelper.getProp(elm.badgeText,'text')+'</span>';
 				cR += '</div>';
 			}
 
-			if(item.iconpos == "right") { cR += icon; }
+			if(prx.componentsHelper.getProp(item.iconpos,'icon-position') == "right") { cR += icon; }
 
 			cR += '</div>';
 
@@ -2790,7 +2782,7 @@ prx.types.ios7_listcomplex = {
 		var _listitemH = (_dims.height - item.borderWidth*(item.listitems.length+1))/item.listitems.length;
 
 		$('#' + _id + ' .ios7-list-thumb').width(parseInt(_listitemH*0.6));
-		$('#' + _id + ' .ios7-list-icon').width(parseInt(_listitemH*(item.iconSize/5))).height(parseInt(_listitemH*(item.iconSize/5)));
+		$('#' + _id + ' .ios7-list-icon').width(parseInt(_listitemH*(prx.componentsHelper.getProp(item.iconSize,'icon-size')/5))).height(parseInt(_listitemH*(prx.componentsHelper.getProp(item.iconSize,'icon-size')/5)));
 	}
 	,propertyGroups:	[
 		{
@@ -3552,19 +3544,17 @@ prx.types.ios7_list_header = {
 	,onDisplay: function(item,containerid,pageid,symbol) {
 		var _id = (!containerid) ? item.id : containerid+'-'+item.id;
 
-		var _props = (jQuery.inArray("bold",item.textProperties)>-1) ? " font-weight: bold;" : "";
-		_props += (jQuery.inArray("italic",item.textProperties)>-1) ? " font-style: italic;" : "";
-		_props += (jQuery.inArray("underline",item.textProperties)>-1) ? " text-decoration: underline;" : "";
+		var _props = prx.componentsHelper.getProp(item.textProperties,'props-text');
 
 		var cR = '';
 		cR += '<div id="'+_id+'" class="box pos type-ios7-list-header">';
 
 		cR += '<style>';
-		cR += '#'+_id+' .ios7-list-header-inner { background-color: '+prx.utils.getColor(item.backgroundColor)+'; '+prx.componentsHelper.getFontCssFromFontFamily(item.textFont)+' color: '+prx.utils.getColor(item.textColor)+'; font-size: '+item.textSize+'px; '+prx.css.flexJustifyContent(item.textAlign)+_props+' }';
+		cR += '#'+_id+' .ios7-list-header-inner { background-color: '+prx.componentsHelper.getProp(item.backgroundColor,'color-background')+'; '+prx.componentsHelper.getProp(item.textFont,'font-family')+' color: '+prx.componentsHelper.getProp(item.textColor,'color-text')+'; font-size: '+prx.componentsHelper.getProp(item.textSize,'num-text-size')+'px; '+prx.css.flexJustifyContent(prx.componentsHelper.getProp(item.textAlign,'align'))+_props+' }';
 		cR += '</style>';
 
 		cR += '<div class="ios7-list-header-inner liveUpdate-backgroundColor liveUpdate-textColor liveUpdate-borderColor changeProperty-backgroundColor changeProperty-textColor changeProperty-textSize changeProperty-textFont changeProperty-text">';
-		cR += '<span data-editableproperty="text">'+item.text+'</span>';
+		cR += '<span data-editableproperty="text">'+prx.componentsHelper.getProp(item.text,'text')+'</span>';
 		cR += '</div>';
 		cR += '</div>';
 		return cR;
@@ -3608,25 +3598,23 @@ prx.types.ios7_alert = {
 		cR += '<div id="'+_id+'" class="box pos type-ios7-alert">';
 
 		cR += '<style>';
-		cR += '#'+_id+' .ios7-alert-inner { background-color: '+prx.utils.getColor(item.backgroundColor)+'; border-radius: '+item.borderRadius+'px; '+prx.componentsHelper.getFontCssFromFontFamily(item.textFont)+' color: '+prx.utils.getColor(item.textColor)+'; font-size: '+item.textSize+'px; }';
-		cR += '#'+_id+' .ios7-alert-buttons, #'+_id+' .ios7-alert-button { border-color: '+prx.utils.getColor(item.borderColor)+'; }';
+		cR += '#'+_id+' .ios7-alert-inner { background-color: '+prx.componentsHelper.getProp(item.backgroundColor,'color-background')+'; border-radius: '+prx.componentsHelper.getProp(item.borderRadius,'num-border-radius')+'px; '+prx.componentsHelper.getProp(item.textFont,'font-family')+' color: '+prx.componentsHelper.getProp(item.textColor,'color-text')+'; font-size: '+prx.componentsHelper.getProp(item.textSize,'num-text-size')+'px; }';
+		cR += '#'+_id+' .ios7-alert-buttons, #'+_id+' .ios7-alert-button { border-color: '+prx.componentsHelper.getProp(item.borderColor,'color-border')+'; }';
 		cR += '</style>';
 
 		cR += '<div class="ios7-alert-inner liveUpdate-backgroundColor liveUpdate-textColor liveUpdate-borderColor changeProperty-backgroundColor changeProperty-borderColor changeProperty-borderRadius changeProperty-borderWidth changeProperty-textColor changeProperty-textSize changeProperty-textFont">';
 		cR += '<div class="ios7-alert-title changeProperty-title">';
-		cR += '<span data-editableproperty="title">'+item.title+'</span>';
+		cR += '<span data-editableproperty="title">'+prx.componentsHelper.getProp(item.title,'text')+'</span>';
 		cR += '</div>';
 		cR += '<div class="ios7-alert-text changeProperty-text">';
-		cR += '<span data-editableproperty="text">'+item.text+'</span>';
+		cR += '<span data-editableproperty="text">'+prx.componentsHelper.getProp(item.text,'text')+'</span>';
 		cR += '</div>';
 		cR += '<div class="ios7-alert-buttons liveUpdate-borderColor">'
 		$.each(item.buttons, function(i,elm) {
-			var _props = (jQuery.inArray("bold",elm.textProperties)>-1) ? " font-weight: bold;" : "";
-			_props += (jQuery.inArray("italic",elm.textProperties)>-1) ? " font-style: italic;" : "";
-			_props += (jQuery.inArray("underline",elm.textProperties)>-1) ? " text-decoration: underline;" : "";
+			var _props = prx.componentsHelper.getProp(elm.textProperties,'props-text');
 
-			cR += '<div id="'+_id+'-buttons-'+i+'" class="ios7-alert-button dynamic-property liveUpdate-borderColor liveUpdate-textColor-'+i+' changeProperty-borderColor changeProperty-textColor" data-dynamic-property-index="'+i+'" style="'+_props+' color: '+prx.utils.getColor(elm.textColor)+';">';
-			cR += '<span data-editableproperty="text" data-dynamic-property-index="'+i+'">' + elm.text + '</span>';
+			cR += '<div id="'+_id+'-buttons-'+i+'" class="ios7-alert-button dynamic-property liveUpdate-borderColor liveUpdate-textColor-'+i+' changeProperty-borderColor changeProperty-textColor" data-dynamic-property-index="'+i+'" style="'+_props+' color: '+prx.componentsHelper.getProp(elm.textColor,'color-text')+';">';
+			cR += '<span data-editableproperty="text" data-dynamic-property-index="'+i+'">' + prx.componentsHelper.getProp(elm.text,'text') + '</span>';
 			cR += '</div>';
 		});
 		cR += '</div>';
@@ -3760,45 +3748,42 @@ prx.types.ios7_actionsheet = {
 	,onDisplay: function(item,containerid,pageid,symbol) {
 		var _id = (!containerid) ? item.id : containerid+'-'+item.id;
 
-		if( item.detachlast && item.buttons.length == 1) item.detachlast = false;
+		if( prx.componentsHelper.getProp(item.detachlast,'boolean') && item.buttons.length == 1) item.detachlast = false;
 
 		var cR = '';
 		cR += '<div id="'+_id+'" class="box pos type-ios7-actionsheet">';
 
 		cR += '<style>';
-		cR += '#'+_id+' .ios7-actionsheet-buttons { background-color: '+prx.utils.getColor(item.backgroundColor)+'; border-radius: '+item.borderRadius+'px; '+prx.componentsHelper.getFontCssFromFontFamily(item.textFont)+' color: '+prx.utils.getColor(item.textColor)+'; font-size: '+item.textSize+'px; }';
-		if(item.detachlast) {
+		cR += '#'+_id+' .ios7-actionsheet-buttons { background-color: '+prx.componentsHelper.getProp(item.backgroundColor,'color-background')+'; border-radius: '+prx.componentsHelper.getProp(item.borderRadius,'num-border-radius')+'px; '+prx.componentsHelper.getProp(item.textFont,'font-family')+' color: '+prx.componentsHelper.getProp(item.textColor,'color-text')+'; font-size: '+prx.componentsHelper.getProp(item.textSize,'num-text-size')+'px; }';
+		if(prx.componentsHelper.getProp(item.detachlast,'boolean')) {
 			cR += '#'+_id+' .ios7-actionsheet-buttons:first-child { '+prx.css.flexJustifyGrow(item.buttons.length-1)+' }';
 		}
-		cR += '#'+_id+' .ios7-actionsheet-button { border-color: '+prx.utils.getColor(item.borderColor)+'; }';
-		if(item.showtitle && item.buttons.length > 0) {
-			cR += '#'+_id+' .ios7-actionsheet-button-title { font-size: '+item.buttons[0].titleTextSize+'px; }';
+		cR += '#'+_id+' .ios7-actionsheet-button { border-color: '+prx.componentsHelper.getProp(item.borderColor,'color-border')+'; }';
+		if(prx.componentsHelper.getProp(item.showtitle,'boolean') && item.buttons.length > 0) {
+			cR += '#'+_id+' .ios7-actionsheet-button-title { font-size: '+prx.componentsHelper.getProp(item.buttons[0].titleTextSize,'num-text-size')+'px; }';
 		}
 		cR += '</style>';
 
 		cR += '<div class="ios7-actionsheet-inner">';
 		cR += '<div class="ios7-actionsheet-buttons liveUpdate-backgroundColor liveUpdate-textColor liveUpdate-borderColor changeProperty-backgroundColor changeProperty-borderColor changeProperty-borderRadius changeProperty-borderWidth changeProperty-textColor changeProperty-textSize changeProperty-textFont">'
 		$.each(item.buttons, function(i,elm) {
-			if(item.detachlast && i==item.buttons.length-1) { return }
-			var _props = (jQuery.inArray("bold",elm.textProperties)>-1) ? " font-weight: bold;" : "";
-			_props += (jQuery.inArray("italic",elm.textProperties)>-1) ? " font-style: italic;" : "";
-			_props += (jQuery.inArray("underline",elm.textProperties)>-1) ? " text-decoration: underline;" : "";
+			if(prx.componentsHelper.getProp(item.detachlast,'boolean') && i==item.buttons.length-1) { return }
+			
+			var _props = prx.componentsHelper.getProp(elm.textProperties,'props-text');
 
-			cR += '<div id="'+_id+'-buttons-'+i+'" class="ios7-actionsheet-button '+((item.showtitle && i == 0) ? 'ios7-actionsheet-button-title ' : '')+'dynamic-property liveUpdate-borderColor liveUpdate-textColor-'+i+' changeProperty-borderColor" data-dynamic-property-index="'+i+'" style="'+_props+' color: '+prx.utils.getColor(elm.textColor)+';">';
-			cR += '<span data-editableproperty="text" data-dynamic-property-index="'+i+'">' + elm.text + '</span>';
+			cR += '<div id="'+_id+'-buttons-'+i+'" class="ios7-actionsheet-button '+((prx.componentsHelper.getProp(item.showtitle,'boolean') && i == 0) ? 'ios7-actionsheet-button-title ' : '')+'dynamic-property liveUpdate-borderColor liveUpdate-textColor-'+i+' changeProperty-borderColor" data-dynamic-property-index="'+i+'" style="'+_props+' color: '+prx.componentsHelper.getProp(elm.textColor,'color-text')+';">';
+			cR += '<span data-editableproperty="text" data-dynamic-property-index="'+i+'">' + prx.componentsHelper.getProp(elm.text,'text') + '</span>';
 			cR += '</div>';
 		});
 		cR += '</div>';
-		if(item.detachlast) {
+		if(prx.componentsHelper.getProp(item.detachlast,'boolean')) {
 			cR += '<div class="ios7-actionsheet-buttons liveUpdate-backgroundColor liveUpdate-textColor liveUpdate-borderColor changeProperty-backgroundColor changeProperty-borderColor changeProperty-borderRadius changeProperty-borderWidth changeProperty-textColor changeProperty-textSize changeProperty-textFont">'
 			var i = item.buttons.length -1;
 			if(i>0) {
-				var _props = (jQuery.inArray("bold",item.buttons[i].textProperties)>-1) ? " font-weight: bold;" : "";
-				_props += (jQuery.inArray("italic",item.buttons[i].textProperties)>-1) ? " font-style: italic;" : "";
-				_props += (jQuery.inArray("underline",item.buttons[i].textProperties)>-1) ? " text-decoration: underline;" : "";
+				var _props = prx.componentsHelper.getProp(item.buttons[i].textProperties,'props-text');
 
-				cR += '<div id="'+_id+'-buttons-'+i+'" class="ios7-actionsheet-button dynamic-property liveUpdate-borderColor liveUpdate-textColor-'+i+' changeProperty-borderColor" data-dynamic-property-index="'+i+'" style="'+_props+' color: '+prx.utils.getColor(item.buttons[i].textColor)+';">';
-				cR += '<span data-editableproperty="text" data-dynamic-property-index="'+i+'">' + item.buttons[i].text + '</span>';
+				cR += '<div id="'+_id+'-buttons-'+i+'" class="ios7-actionsheet-button dynamic-property liveUpdate-borderColor liveUpdate-textColor-'+i+' changeProperty-borderColor" data-dynamic-property-index="'+i+'" style="'+_props+' color: '+prx.componentsHelper.getProp(item.buttons[i].textColor,'color-text')+';">';
+				cR += '<span data-editableproperty="text" data-dynamic-property-index="'+i+'">' + prx.componentsHelper.getProp(item.buttons[i].text,'text') + '</span>';
 				cR += '</div>';
 				cR += '</div>';
 			}
@@ -3955,25 +3940,23 @@ prx.types.ios7_control_popover = {
 	,onDisplay: function(item,containerid,pageid,symbol) {
 		var _id = (!containerid) ? item.id : containerid+'-'+item.id;
 
-		var _props = (jQuery.inArray("bold",item.textProperties)>-1) ? " font-weight: bold;" : "";
-		_props += (jQuery.inArray("italic",item.textProperties)>-1) ? " font-style: italic;" : "";
-		_props += (jQuery.inArray("underline",item.textProperties)>-1) ? " text-decoration: underline;" : "";
+		var _props = prx.componentsHelper.getProp(item.textProperties,'props-text');
 
 		// tooltipSize is the vertical height of the half rotated rectangle. (see .popover-inner { border-bottom: tooltipSize })
 		// 2y will be the width and height of the rectangle.
-		var y = Math.ceil(Math.sqrt((item.tooltipSize*item.tooltipSize)/3));
+		var y = Math.ceil(Math.sqrt((prx.componentsHelper.getProp(item.tooltipSize,'num-other')*prx.componentsHelper.getProp(item.tooltipSize,'num-other'))/3));
 		// when rotated the rectangle exceeds the bottom boundary. x is the margin in need to move it upwards.
-		var x = item.tooltipSize - y;
+		var x = prx.componentsHelper.getProp(item.tooltipSize,'num-other') - y;
 
 		var cR = '';
 		cR += '<div id="'+_id+'" class="box pos type-ios7-control-popover">';
 
 		cR += '<style>';
-		cR += '#'+_id+' .ios7-control-popover-inner { border-bottom-width: '+item.tooltipSize+'px; }';
-		cR += '#'+_id+' .ios7-control-popover-buttons { background-color: '+prx.utils.getColor(item.backgroundColor)+'; border-radius: '+item.borderRadius+'px; '+prx.componentsHelper.getFontCssFromFontFamily(item.textFont)+' color: '+prx.utils.getColor(item.textColor)+'; font-size: '+item.textSize+'px; '+_props+' }';
-		cR += '#'+_id+' .ios7-control-popover-button { border-left: '+item.borderWidth+'px solid '+prx.utils.getColor(item.borderColor)+'; }';
-		cR += '#'+_id+' .ios7-control-popover-tooltip { width: '+2*y+'px; height: '+y+'px; margin: 0 -'+(x+y)+'px; left: '+item.tooltipPosition+'%; padding: 0 '+x+'px '+x+'px; }';
-		cR += '#'+_id+' .ios7-control-popover-tooltip-inner { background-color: '+prx.utils.getColor(item.backgroundColor)+'; }';
+		cR += '#'+_id+' .ios7-control-popover-inner { border-bottom-width: '+prx.componentsHelper.getProp(item.tooltipSize,'num-other')+'px; }';
+		cR += '#'+_id+' .ios7-control-popover-buttons { background-color: '+prx.componentsHelper.getProp(item.backgroundColor,'color-background')+'; border-radius: '+prx.componentsHelper.getProp(item.borderRadius,'num-border-radius')+'px; '+prx.componentsHelper.getProp(item.textFont,'font-family')+' color: '+prx.componentsHelper.getProp(item.textColor,'color-text')+'; font-size: '+prx.componentsHelper.getProp(item.textSize,'num-text-size')+'px; '+_props+' }';
+		cR += '#'+_id+' .ios7-control-popover-button { border-left: '+prx.componentsHelper.getProp(item.borderWidth,'num-border-width')+'px solid '+prx.componentsHelper.getProp(item.borderColor,'color-border')+'; }';
+		cR += '#'+_id+' .ios7-control-popover-tooltip { width: '+2*y+'px; height: '+y+'px; margin: 0 -'+(x+y)+'px; left: '+prx.componentsHelper.getProp(item.tooltipPosition,'num-percentage')+'%; padding: 0 '+x+'px '+x+'px; }';
+		cR += '#'+_id+' .ios7-control-popover-tooltip-inner { background-color: '+prx.componentsHelper.getProp(item.backgroundColor,'color-background')+'; }';
 		cR += '</style>';
 
 		cR += '<div class="ios7-control-popover-inner">';
@@ -3983,7 +3966,7 @@ prx.types.ios7_control_popover = {
 		cR += '<div class="ios7-control-popover-buttons liveUpdate-backgroundColor liveUpdate-textColor changeProperty-backgroundColor changeProperty-borderRadius changeProperty-borderWidth changeProperty-textColor changeProperty-textSize changeProperty-textFont">';
 		$.each(item.buttons, function(i,elm) {
 			cR += '<div id="'+_id+'-buttons-'+i+'" class="ios7-control-popover-button dynamic-property liveUpdate-borderColor" data-dynamic-property-index="'+i+'">';
-			cR += '<span data-editableproperty="text" data-dynamic-property-index="'+i+'">' + elm.text + '</span>';
+			cR += '<span data-editableproperty="text" data-dynamic-property-index="'+i+'">' + prx.componentsHelper.getProp(elm.text,'text') + '</span>';
 			cR += '</div>';
 		});
 		cR += '</div>'
@@ -4105,21 +4088,21 @@ prx.types.ios7_popover = {
 
 		// tooltipSize is the vertical height of the half rotated rectangle. (see .popover-inner { border-bottom: tooltipSize })
 		// 2y will be the width and height of the rectangle.
-		var y = Math.ceil(Math.sqrt((item.tooltipSize*item.tooltipSize)/3));
+		var y = Math.ceil(Math.sqrt((prx.componentsHelper.getProp(item.tooltipSize,'num-other')*prx.componentsHelper.getProp(item.tooltipSize,'num-other'))/3));
 		// when rotated the rectangle exceeds the bottom boundary. x is the margin in need to move it upwards.
-		var x = item.tooltipSize - y;
+		var x = prx.componentsHelper.getProp(item.tooltipSize,'num-other') - y;
 
-		var topbottom = (item.tooltipSide == "top" || item.tooltipSide == "bottom");
+		var topbottom = (prx.componentsHelper.getProp(item.tooltipSide,'num-other') == "top" || prx.componentsHelper.getProp(item.tooltipSide,'num-other') == "bottom");
 		var leftright = !topbottom;
 
 		var cR = '';
 		cR += '<div id="'+_id+'" class="box pos type-ios7-popover">';
 
 		cR += '<style>';
-		cR += '#'+_id+' .ios7-popover-inner { border-'+item.tooltipSide+'-width: '+item.tooltipSize+'px; }';
-		cR += '#'+_id+' .ios7-popover-body { background-color: '+prx.utils.getColor(item.backgroundColor)+'; border-radius: '+item.borderRadius+'px; }';
-		cR += '#'+_id+' .ios7-popover-tooltip { '+item.tooltipSide+': 0; width: '+((topbottom) ? 2*y : y) +'px; height: '+((leftright) ? 2*y : y)+'px; margin: '+((topbottom) ? '0 -'+(x+y)+'px' : '-'+(x+y)+'px 0' )+'; '+((topbottom) ? 'left' : 'top')+': '+item.tooltipPosition+'%; padding: '+x+'px; padding-'+((item.tooltipSide == 'bottom') ? 'top' : ((item.tooltipSide == "left") ? 'right' : ((item.tooltipSide == 'right') ? 'left' : 'bottom')))+': 0; }';
-		cR += '#'+_id+' .ios7-popover-tooltip-inner { '+((topbottom) ? 'height: 200%' : 'width: 200%')+';  margin-'+((item.tooltipSide == 'bottom') ? 'top: -50%' : ((item.tooltipSide == "left") ? 'right: -50%' : ((item.tooltipSide == 'right') ? 'left: -100%' : 'bottom: -50%')))+'; background-color: '+prx.utils.getColor(item.backgroundColor)+'; }';
+		cR += '#'+_id+' .ios7-popover-inner { border-'+prx.componentsHelper.getProp(item.tooltipSide,'other')+'-width: '+prx.componentsHelper.getProp(item.tooltipSize,'num-other')+'px; }';
+		cR += '#'+_id+' .ios7-popover-body { background-color: '+prx.componentsHelper.getProp(item.backgroundColor,'color-background')+'; border-radius: '+prx.componentsHelper.getProp(item.borderRadius,'num-border-radius')+'px; }';
+		cR += '#'+_id+' .ios7-popover-tooltip { '+prx.componentsHelper.getProp(item.tooltipSide,'other')+': 0; width: '+((topbottom) ? 2*y : y) +'px; height: '+((leftright) ? 2*y : y)+'px; margin: '+((topbottom) ? '0 -'+(x+y)+'px' : '-'+(x+y)+'px 0' )+'; '+((topbottom) ? 'left' : 'top')+': '+prx.componentsHelper.getProp(item.tooltipPosition,'num-percentage')+'%; padding: '+x+'px; padding-'+((prx.componentsHelper.getProp(item.tooltipSide,'other') == 'bottom') ? 'top' : ((prx.componentsHelper.getProp(item.tooltipSide,'other') == "left") ? 'right' : ((prx.componentsHelper.getProp(item.tooltipSide,'other') == 'right') ? 'left' : 'bottom')))+': 0; }';
+		cR += '#'+_id+' .ios7-popover-tooltip-inner { '+((topbottom) ? 'height: 200%' : 'width: 200%')+';  margin-'+((prx.componentsHelper.getProp(item.tooltipSide,'other') == 'bottom') ? 'top: -50%' : ((prx.componentsHelper.getProp(item.tooltipSide,'other') == "left") ? 'right: -50%' : ((prx.componentsHelper.getProp(item.tooltipSide,'other') == 'right') ? 'left: -100%' : 'bottom: -50%')))+'; background-color: '+prx.componentsHelper.getProp(item.backgroundColor,'color-background')+'; }';
 		cR += '</style>';
 
 		cR += '<div class="ios7-popover-inner">';
@@ -4218,8 +4201,8 @@ prx.types.ios7_progressbar = {
 		var cR = '';
 		cR += '<div id="' + _id + '" class="box pos type-ios7-progressbar">';
 		cR += '<style>'
-		cR += '#'+_id+' .progressbar-bar { background-color: '+prx.utils.getColor(item.barColor)+'; }'
-		cR += '#'+_id+' .progressbar-bar-filled { width: '+item.progress+'%; background-color: '+prx.utils.getColor(item.fillBarColor)+' }'
+		cR += '#'+_id+' .progressbar-bar { background-color: '+prx.componentsHelper.getProp(item.barColor,'color-background')+'; }'
+		cR += '#'+_id+' .progressbar-bar-filled { width: '+prx.componentsHelper.getProp(item.progress,'num-percetage')+'%; background-color: '+prx.componentsHelper.getProp(item.fillBarColor,'color-fill')+' }'
 		cR += '</style>'
 		cR += '<div class="progressbar-bar liveUpdate-barColor">';
 		cR += '<div class="progressbar-bar-filled liveUpdate-fillBarColor"></div>'
@@ -4300,19 +4283,17 @@ prx.types.ios7_badge = {
 	,onDisplay: function(item,containerid,pageid,symbol) {
 		var _id = (!containerid) ? item.id : containerid+'-'+item.id;
 
-		var _props = (jQuery.inArray("bold",item.textProperties)>-1) ? " font-weight: bold;" : "";
-		_props += (jQuery.inArray("italic",item.textProperties)>-1) ? " font-style: italic;" : "";
-		_props += (jQuery.inArray("underline",item.textProperties)>-1) ? " text-decoration: underline;" : "";
+		var _props = prx.componentsHelper.getProp(item.textProperties,'props-text');
 
 		var cR = '';
 		cR += '<div id="'+_id+'" class="box pos type-ios7-badge">';
 
 		cR += '<style>';
-		cR += '#'+_id+' .ios7-badge-inner { background-color: '+prx.utils.getColor(item.backgroundColor)+'; border-radius: '+item.borderRadius+'px; '+prx.componentsHelper.getFontCssFromFontFamily(item.textFont)+' color: '+prx.utils.getColor(item.textColor)+'; font-size: '+item.textSize+'px; '+_props+' }';
+		cR += '#'+_id+' .ios7-badge-inner { background-color: '+prx.componentsHelper.getProp(item.backgroundColor,'color-background')+'; border-radius: '+prx.componentsHelper.getProp(item.borderRadius,'num-border-radius')+'px; '+prx.componentsHelper.getProp(item.textFont,'font-family')+' color: '+prx.componentsHelper.getProp(item.textColor,'color-text')+'; font-size: '+prx.componentsHelper.getProp(item.textSize,'num-text-size')+'px; '+_props+' }';
 		cR += '</style>';
 
 		cR += '<div class="ios7-badge-inner changeProperty-text liveUpdate-backgroundColor liveUpdate-textColor changeProperty-backgroundColor changeProperty-textColor changeProperty-textFont changeProperty-textSize changeProperty-borderRadius">';
-		cR += '<span data-editableproperty="text">'+item.text+'</span> '
+		cR += '<span data-editableproperty="text">'+prx.componentsHelper.getProp(item.text,'text')+'</span> '
 		cR += '</div>'
 		cR += '</div>';
 		return cR;
@@ -4364,13 +4345,9 @@ prx.types.ios8_map_tag = {
 		var _id = (!containerid) ? item.id : containerid+'-'+item.id;
 		var dims = prx.componentsHelper.getRealDims(item, symbol);
 
-		var _props = (jQuery.inArray("bold",item.textProperties)>-1) ? " font-weight: bold;" : "";
-		_props += (jQuery.inArray("italic",item.textProperties)>-1) ? " font-style: italic;" : "";
-		_props += (jQuery.inArray("underline",item.textProperties)>-1) ? " text-decoration: underline;" : "";
+		var _props = prx.componentsHelper.getProp(item.textProperties,'props-text');
 
-		var _duration_props = (jQuery.inArray("bold",item.durationProperties)>-1) ? " font-weight: bold;" : "";
-		_duration_props += (jQuery.inArray("italic",item.durationProperties)>-1) ? " font-style: italic;" : "";
-		_duration_props += (jQuery.inArray("underline",item.durationProperties)>-1) ? " text-decoration: underline;" : "";
+		var _duration_props = prx.componentsHelper.getProp(item.durationProperties,'props-text');
 
 		var borderRadius = 10;
 
@@ -4378,33 +4355,33 @@ prx.types.ios8_map_tag = {
 		cR += '<div id="'+_id+'" class="box pos type-ios8-map-tag">';
 
 		cR += '<style>';
-		cR += '#' + _id + ' .ios8-map-tag-wrapper { background-color: '+prx.utils.getColor(item.backgroundColor)+'; border-radius: '+borderRadius+'px; }';
-		cR += '#' + _id + ' .ios8-map-tag-point { border-top-color: '+prx.utils.getColor(item.backgroundColor)+';}';
+		cR += '#' + _id + ' .ios8-map-tag-wrapper { background-color: '+prx.componentsHelper.getProp(item.backgroundColor,'color-background')+'; border-radius: '+prx.componentsHelper.getProp(borderRadius,'num-border-radius')+'px; }';
+		cR += '#' + _id + ' .ios8-map-tag-point { border-top-color: '+prx.componentsHelper.getProp(item.backgroundColor,'border-color')+';}';
 		cR += '#' + _id + ' .ios8-map-tag-point { bottom: -'+Math.ceil((dims.height*0.5)-1)+'px; margin-left: -'+(Math.ceil(dims.height*0.25))+'px; border-width: '+Math.ceil(dims.height*0.25)+'px;}';
-		cR += '#' + _id + ' .ios8-map-tag-text { color: '+prx.utils.getColor(item.textColor)+'; '+prx.componentsHelper.getFontCssFromFontFamily(item.textFont)+' font-size: '+item.textSize+'px; '+_props+'}';
-		cR += '#' + _id + ' .ios8-map-tag-duration { color: '+prx.utils.getColor(item.durationColor)+'; '+prx.componentsHelper.getFontCssFromFontFamily(item.durationFont)+' font-size: '+item.durationSize+'px; '+_duration_props+'}';
+		cR += '#' + _id + ' .ios8-map-tag-text { color: '+prx.componentsHelper.getProp(item.textColor,'color-text')+'; '+prx.componentsHelper.getProp(item.textFont,'font-family')+' font-size: '+prx.componentsHelper.getProp(item.textSize,'num-text-size')+'px; '+_props+'}';
+		cR += '#' + _id + ' .ios8-map-tag-duration { color: '+prx.componentsHelper.getProp(item.durationColor,'color-text')+'; '+prx.componentsHelper.getProp(item.durationFont,'font-family')+' font-size: '+prx.componentsHelper.getProp(item.durationSize,'num-text-size')+'px; '+_duration_props+'}';
 
-		cR += '#' + _id + ' .ios8-map-tag-left-info { width: '+dims.height+'px; background-color: '+prx.utils.getColor(item.durationBgColor)+'; border-radius: '+borderRadius+'px 0 0 '+borderRadius+'px;}';
-		if(item.imgSrc.fileId != '') {
-			cR += '#' + _id + ' .ios8-map-tag-icon-left {  background-image: url('+prx.componentsHelper.getAssetUrl(item.imgSrc)+'); }';
+		cR += '#' + _id + ' .ios8-map-tag-left-info { width: '+dims.height+'px; background-color: '+prx.componentsHelper.getProp(item.durationBgColor,'color-background')+'; border-radius: '+prx.componentsHelper.getProp(borderRadius,'num-border-radius')+'px 0 0 '+prx.componentsHelper.getProp(borderRadius,'num-border-radius')+'px;}';
+		if(prx.componentsHelper.getProp(item.imgSrc.fileId,'other') != '') {
+			cR += '#' + _id + ' .ios8-map-tag-icon-left {  background-image: url('+prx.componentsHelper.getProp(item.imgSrc,'asset')+'); }';
 		}
-		if(item.imgSrc2.fileId != '') {
-			cR += '#' + _id + ' .ios8-map-tag-icon-right { background-image: url('+prx.componentsHelper.getAssetUrl(item.imgSrc2)+'); }';
+		if(prx.componentsHelper.getProp(item.imgSrc2.fileId,'other') != '') {
+			cR += '#' + _id + ' .ios8-map-tag-icon-right { background-image: url('+prx.componentsHelper.getProp(item.imgSrc2,'asset')+'); }';
 		}
 		cR += '</style>';
 
 		cR += '<span class="ios8-map-tag-point liveUpdate-backgroundColor-border-top-color changeProperty-backgroundColor-border-top-color"></span>';
 		cR += '<div class="ios8-map-tag-wrapper liveUpdate-backgroundColor-background-color changeProperty-backgroundColor-background-color">';
-		if(item.showThumb == true) {
+		if(prx.componentsHelper.getProp(item.showThumb,'boolean') == true) {
 			cR += '<div class="ios8-map-tag-left-info liveUpdate-durationBgColor changeProperty-durationBgColor">';
-			if(item.imgSrc.fileId != '') {
+			if(prx.componentsHelper.getProp(item.imgSrc.fileId,'other') != '') {
 				cR += '<div class="ios8-map-tag-icon-left"></div>';
 			}
-			cR += '<div class="ios8-map-tag-duration liveUpdate-durationColor changeProperty-durationColor changeProperty-durationSize changeProperty-durationFont" data-editableproperty="duration">'+item.duration+'</div>';
+			cR += '<div class="ios8-map-tag-duration liveUpdate-durationColor changeProperty-durationColor changeProperty-durationSize changeProperty-durationFont" data-editableproperty="duration">'+prx.componentsHelper.getProp(item.duration,'text')+'</div>';
 			cR += '</div>';
 		}
-		cR += '<div class="ios8-map-tag-text liveUpdate-textColor changeProperty-textColor changeProperty-textSize changeProperty-textFont"><span data-editableproperty="text">'+item.text+'</span></div>';
-		if(item.imgSrc2.fileId != '') {
+		cR += '<div class="ios8-map-tag-text liveUpdate-textColor changeProperty-textColor changeProperty-textSize changeProperty-textFont"><span data-editableproperty="text">'+prx.componentsHelper.getProp(item.text,'text')+'</span></div>';
+		if(prx.componentsHelper.getProp(item.imgSrc2.fileId,'other') != '') {
 			cR += '<div class="ios8-map-tag-icon-right actions-actions1"></div>';
 		}
 		cR += '</div>';
@@ -4418,9 +4395,9 @@ prx.types.ios8_map_tag = {
 		$('#'+_id).find('.ios8-map-tag-left-info').width(_height);
 
 		$('#' + _id).find('.ios8-map-tag-point').css({
-			'border-width': Math.ceil(item.height*0.25)+'px',
-			'margin-left': '-'+(Math.ceil(item.height*0.25))+'px',
-			'bottom': '-'+Math.ceil((item.height*0.5)-1)+'px'
+			'border-width': Math.ceil(prx.componentsHelper.getProp(item.height,'num-other')*0.25)+'px',
+			'margin-left': '-'+(Math.ceil(prx.componentsHelper.getProp(item.height,'num-other')*0.25))+'px',
+			'bottom': '-'+Math.ceil((prx.componentsHelper.getProp(item.height,'num-other')*0.5)-1)+'px'
 		});
 
 	}
@@ -4685,30 +4662,28 @@ prx.types.ios8_message_bubble = {
 		var _id = (!containerid) ? item.id : containerid+'-'+item.id;
 		var _dims = prx.componentsHelper.getRealDims(item,symbol);
 
-		var _props = (jQuery.inArray("bold",item.textProperties)>-1) ? " font-weight: bold;" : "";
-		_props += (jQuery.inArray("italic",item.textProperties)>-1) ? " font-style: italic;" : "";
-		_props += (jQuery.inArray("underline",item.textProperties)>-1) ? " text-decoration: underline;" : "";
+		var _props = prx.componentsHelper.getProp(item.textProperties,'props-text');
 
 		var cR = '<div id="'+_id+'" class="box pos type-ios8-message-bubble">'
 
 		cR += '<style>'
-		cR += '#' + _id + ' .ios8-message-bubble-wrapper { background-color: '+prx.utils.getColor(item.backgroundColor)+'; text-align: '+item.textAlign+'; }';
-		cR += '#' + _id + ' .ios8-message-bubble-text { color: '+prx.utils.getColor(item.textColor)+'; '+prx.componentsHelper.getFontCssFromFontFamily(item.textFont)+' font-size: '+item.textSize+'px; '+_props+'}';
-		if(item.thumbnail.fileId != '') {
-			cR += '#' + _id + ' .ios8-message-bubble-thumb { background-image: url('+prx.componentsHelper.getAssetUrl(item.thumbnail)+');}';
+		cR += '#' + _id + ' .ios8-message-bubble-wrapper { background-color: '+prx.componentsHelper.getProp(item.backgroundColor,'color-background')+'; text-align: '+prx.componentsHelper.getProp(item.textAlign,'align')+'; }';
+		cR += '#' + _id + ' .ios8-message-bubble-text { color: '+prx.componentsHelper.getProp(item.textColor,'color-text')+'; '+prx.componentsHelper.getProp(item.textFont,'font-family')+' font-size: '+prx.componentsHelper.getProp(item.textSize,'num-text-size')+'px; '+_props+'}';
+		if(prx.componentsHelper.getProp(item.thumbnail.fileId,'other') != '') {
+			cR += '#' + _id + ' .ios8-message-bubble-thumb { background-image: url('+prx.componentsHelper.getProp(item.thumbnail,'asset')+');}';
 		}
-		cR += '#' + _id + ' .ios8-message-bubble-tip { border-color: '+prx.utils.getColor(item.backgroundColor)+';}';
+		cR += '#' + _id + ' .ios8-message-bubble-tip { border-color: '+prx.componentsHelper.getProp(item.backgroundColor,'color-border')+';}';
 		cR += '</style>'
 
 		cR += '<div class="ios8-message-bubble-wrapper '+(item.isSender ? 'right ' : '')+'liveUpdate-backgroundColor-background-color changeProperty-backgroundColor-background-color changeProperty-borderRadius changeProperty-textAlign">';
-		cR += '<div class="ios8-message-bubble-text liveUpdate-textColor changeProperty-textColor changeProperty-textFont"><span data-editableproperty="text">'+item.text+'</span></div>';
+		cR += '<div class="ios8-message-bubble-text liveUpdate-textColor changeProperty-textColor changeProperty-textFont"><span data-editableproperty="text">'+prx.componentsHelper.getProp(item.text,'text-textarea')+'</span></div>';
 		cR += '<div class="ios8-message-bubble-thumb-wrapper">';
-		if(item.thumbnail.fileId != '') {
+		if(prx.componentsHelper.getProp(item.thumbnail.fileId,'other') != '') {
 		cR += '<div class="ios8-message-bubble-thumb"></div>';
 		}
 		cR += '</div>';
 		cR += '</div>';
-		cR += '<div class="ios8-message-bubble-tip '+(item.isSender ? 'right ' : '')+'liveUpdate-backgroundColor-border-color changeProperty-backgroundColor-border-color"></div>';
+		cR += '<div class="ios8-message-bubble-tip '+(prx.componentsHelper.getProp(item.isSender,'boolean') ? 'right ' : '')+'liveUpdate-backgroundColor-border-color changeProperty-backgroundColor-border-color"></div>';
 		cR += '</div>';
 		return cR;
 	}
