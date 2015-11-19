@@ -1,0 +1,96 @@
+
+ 
+
+ 
+I. Préambules 
+1. Objets du document 
+Voici le cahier de recette du projet PLAYDATE réalisé dans le cadre du projet STARTUP DAY d’ Ingesup Paris. Le cahier de recette est la liste exhaustive de tous les tests pratiqués par la maitrise d’ouvrage avant la livraison du produit. Ainsi il permet de déterminer si l’aboutissement du projet est conforme aux spécifications logicielles et au cahier des charges. L’ensemble des tests doit considérer le détail des procédures à suivre et les résultats en conséquence. 
+2. Rappel du sujet 
+L'objectif de ce projet est la création d’un réseau social grâce a Xamarin cross plate forme. Une plate forme stable qui permet de crée des applications mobile stable sur tout les 3 plate forme Windows, Ios et Android. 
+3. Objectifs et méthodes 
+Le choix de Playmates comme réseaux social sportif offre de nouvelle possibilité. L’outil que nous développons se présente sous la forme d’une application mobile. Ce dernier permettra de de créer  des évènement sportif ou encore de trouver des partenaire sportif  et des terrain intérieur ou extérieur par géolocalisation.
+ En premier lieu il convient la connexion de l’utilisateur 
+4. Document de référence 
+Le cahier de recette doit impérativement être en adéquation avec le cahier des charges, il s’agit donc de la référence principale.
+
+II. Guide de lecture
+
+Ce document constitue le fil directeur de l’évolution du projet. Il est destiné à la maîtrise d'ouvrage, à la maîtrise d'œuvre ainsi qu’à tout autre intervenant qui est jugé nécessaire pour la réalisation du projet. 
+Une bonne connaissance du cahier des charges est nécessaire au préalable. Il délimite le projet au travers de la présentation de son contexte, ses acteurs, ses objectifs, ses contraintes et de la présentation des fonctionnalités à implémenter. 
+1. Maîtrise d’œuvre 
+La maîtrise d’œuvre est composée de 3 étudiants d Ingesup PARIS: M. RODRIGO Boksic, M. BLIVI Elom et M. NKEZE Kristen . 
+Le cahier de recette est consulté par la maîtrise d’œuvre en amont de la livraison afin d’effectuer l’ensemble des tests de validation, garantissant la conformité avec le cahier des charges. 
+2. Maîtrise d’ouvrage 
+M. NKEZE Kristen, éleve chez Ingesup Paris Est  responsable de la maîtrise d'ouvrage, et encadrant du projet, il définit les objectifs, les limites et les contraintes du projet et s'assure que le produit réalisé est conforme au besoin exprimé. 
+ 
+III. Concepts de base 
+Notre mission consiste à créer une application mobile réseau social en utilisant le langage de programmation C# et Xamarin. 
+L’application créé sera ainsi principalement déterminé par l’utilisateur qui pourra poster des new sur son fils d’actualité organiser des evenements sportif ou encore trouver des terrain intérieur /extérieur dans le quel des partie sont déjà en gager et qu on peut rejoindre.
+
+IV. Description de la fourniture 
+
+
+1. Remise de la documentation 
+Tous les documents nécessaires seront déposés dans le GITHUB au cours de l’évolution du projet. Ainsi nos directeurs de labo pourront y avoir accès afin d’en examiner le contenu et procéder à leur validation ou non. Dans ce dernier cas, une correction conforme aux indications de l’encadrant sera apportée au document en question. 
+La partie 8 de ce document nous renseigne plus en détail sur ces critères de validation. 
+
+2. Livraison du produit 
+Tous les documents nécessaires à l’utilisation du produit final ainsi que le code source sera accessible depuis le GITHUB et pourra être consulté par les éventuels repreneurs de ce projet. 
+À noter aussi que les fichiers nécessaires à l’utilisation du produit final seront développés et 
+V. Moyen d’essai et outils 
+Pour tester notre produit, c’est à dire l application qui nous offre la possibilité de poster des informations sur un fils d’actualité et de trouver des partenaire sportif via la géolocalisation  sur des terrain intérieur/extérieur  ou crée c est propre rencontre sportif
+Pour tester l application, on aura besoin de simulateur Ios, Windows phone et Android (assez performant) et un server de base de donnée.
+
+VI.Conformitéauxspécificationsgénérales 
+Notre programme final doit contenir obligatoirement un fils d’actualité, une map de géolocalisation, un calendrier permettant d’organisée des rencontre, et des notification et un chat 
+
+VII. Conformité aux spécifications fonctionnelles 
+Décrire les étapes permettant de vérifier que l’application fournie recouvre bien le périmètre fonctionnel qui a été défini lors de la phase de spécification. Le périmètre fonctionnel est défini dans le cahier des charges (expression fonctionnelle du besoin) 
+
+
+
+1.	Connexion
+Utilisation du formulaire de connexion :
+ Description :
+Vérification des adresse mail valide existante ou pas et les liens de connexion Facebook et Google
+Procédure de test :
+Au lancement de l application vous prouver vous connecter avec les bouton Google ou Facebook qui va vérifier vos compte, respectif ou crée un compte ou vous devrait remplir un formulaire avec mot de passe adresse mail qui devra être valide et réutilisable pour la connexion.
+ Faire les vérifications des boutons
+
+
+2. fils d actualité 
+ Utilisation du fils d actualité :
+ Description :
+Vérification des du postage d article et le filtrage de catégorie de sport
+Procédure de test :
+Apres la connexion nous arrivant directement face a notre interface vérifier tout les bouton , test l’ajout du poste avec  et ses caractéristique comme  150 caractère maximum , le postage de vidéo et test le bouton de filtrage en sélection les sport voulue tout ensachant que les sport non voulue ne s’afficherons pas
+3. Calendrier
+ Utilisation du calendrier :
+ Description :
+Vérifier le calandrier de l année et la création d évènement 
+Procédure de test :
+Au dessue du fils d’actualité ce trouver une sidebar sélectionné le calendrier choisisses une date et inscrivez votre rencontre sportif ou tournoi voulue puis enregistré et voir si les information on bien était pris en charge c est à dire que la date sélection et sur lignée et comporte les info de évènement
+
+
+4. MAP
+ Utilisation de la géolocalisation :
+ Description :
+Vérifier la géolocalisation de l application
+Procédure de test :
+Au dessue du fils d’actualité se trouver une sidebar sélectionné la Map il devrait afficher une carte avec les les sale de sport intérieur/extérieur de chez vous avec les partie de sport en cour si vous voulait rejoindre d autre parite
+
+ 
+  
+5. Chat
+ Utilisation du chat:
+ Description :
+Vérifier le système de chat
+Procédure de test :
+Au dessue du fils d’actualité ce trouver une sidebar sélectionné la bulle commencer un discutions en  écrivant des message privée ou grouper afin de voir si les autre personne réceptionne message
+6. alerte
+ Utilisation d une alerte :
+ Description :
+Vérifier qu’une notification soit bien envoie a 1h avant notre l évènement au quelle on participe
+Procédure de test :
+Après avoir crée son événement dans le calendrier vérifier si nous obtenant une notification nous rappelant notre engagement 
+
