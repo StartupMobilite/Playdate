@@ -1,0 +1,12 @@
+﻿<Properties StartupItem="iOS/PlaysDate.iOS.csproj" RefactoringSettings.EnableRefactorings="True">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PlaysDate/PlaysDate.cs">
+    <Files>
+      <File FileName="PlaysDate/PlaysDate.cs" Line="14" Column="32" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

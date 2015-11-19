@@ -1,0 +1,7 @@
+/Users/BOKSIC/Projects/PlaysDate/PlaysDate/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs
+/Users/BOKSIC/Projects/PlaysDate/PlaysDate/bin/Debug/PlaysDate.dll.mdb
+/Users/BOKSIC/Projects/PlaysDate/PlaysDate/bin/Debug/PlaysDate.dll
+/Users/BOKSIC/Projects/PlaysDate/PlaysDate/obj/Debug/PlaysDate.dll
+/Users/BOKSIC/Projects/PlaysDate/PlaysDate/obj/Debug/PlaysDate.dll.mdb
+/Users/BOKSIC/Projects/PlaysDate/PlaysDate/bin/Debug/Xamarin.Forms.Core.dll
+/Users/BOKSIC/Projects/PlaysDate/PlaysDate/bin/Debug/Xamarin.Forms.Xaml.dll
