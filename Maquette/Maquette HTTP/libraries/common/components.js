@@ -28,8 +28,8 @@ prx.types.shape = {
 		_props += (jQuery.inArray("underline",item.textProperties)>-1) ? " text-decoration: underline;" : "";
 
 		var cR = '<div id="' + _id + '" class="box pos type-shapes '+item.typeName+'" data-shape-type="'+item.typeName+'" ';
-		cR += 'data-border-width-shape="'+item.borderWidthShape+'" data-num-nodes="'+item.numOfNodes+'" data-spike-depth="'+item.spikeDepth+'" ';
-		cR += 'data-skew="'+item.skew+'" data-base-width="'+item.baseWidth+'">';
+		cR += 'data-border-width-shape="'+prx.componentsHelper.getProp(item.borderWidthShape,'border-width')+'" data-num-nodes="'+prx.componentsHelper.getProp(item.numOfNodes,'numOfNodes')+'" data-spike-depth="'+prx.componentsHelper.getProp(item.spikeDepth,'spikeDepth')+'" ';
+		cR += 'data-skew="'+prx.componentsHelper.getProp(item.skew,'skew')+'" data-base-width="'+prx.componentsHelper.getProp(item.baseWidth,'baseWidth')+'">';
 		
 		cR += '<style>';
 		cR += '#'+_id+' .shapes-text-container { width: 100%; height: 100%; '+_props+' '+prx.componentsHelper.getFontCssFromFontFamily(item.textFont)+'; font-size: '+item.textSize+'px; text-align: '+item.textAlign+'; color: '+prx.utils.getColor(item.textColor)+'; }';
@@ -52,12 +52,12 @@ prx.types.shape = {
 		cR += '<path d="'+path+'" id="path-'+ _id +'" class="liveUpdate-backgroundColor-fill liveUpdate-borderColor-stroke changeProperty-backgroundColor-fill changeProperty-borderColor-stroke"';
 		cR += 'style="width:100%; height:100%; ';
 		cR += 'fill:'+prx.utils.getColor(item.backgroundColor)+'; ';
-		cR += 'stroke:'+prx.utils.getColor(item.borderColor)+'; stroke-width:'+item.borderWidthShape+'px; stroke-linejoin:'+item.joinType+'; stroke-miterlimit:'+item.borderWidthShape+';" />';
+		cR += 'stroke:'+prx.utils.getColor(item.borderColor)+'; stroke-width:'+item.borderWidthShape+'px; stroke-lÏnejoin:'+item.joinType+'; stroke-miterlimit:'+item.borderWidthShape+';" />';
 
 		cR += '</svg>';
 		
 		cR += '<div class="shapes-text-container liveUpdate-textColor">';
-		cR += '<span data-editableproperty="text">' + item.text + '</span>';
+		cR += '<span data-editableproperty="text">' + prx.componentsHelper.getProp(item.text,'text-textarea') + '</span>';
 		cR += '</div>';
 		cR += '</div>';
 		cR += '</div>';
@@ -438,7 +438,7 @@ prx.types.shape = {
 						proptype: 'number-of-nodes',
 						type: 'slider-input', 
 		                values: { min: 4, max: 50, step: 1 },
-						value: function(item,name) { 
+						value: function(item,name) {
 							return item.numOfNodes; 
 						},
 						hiddenByDefault: function (item, name) {
@@ -455,7 +455,7 @@ prx.types.shape = {
 						proptype: 'star-spike-depth',
 						type: 'slider-input', 
 		                values: { min: 2, max: 10, step: 1 },
-						value: function(item,name) { 
+						value: function(item,name) {
 							if(item.spikeDepth < 2) { item.spikeDepth = 2;}
 							else if(item.spikeDepth > 10) { item.spikeDepth = 10;}
 							return item.spikeDepth; 
@@ -964,7 +964,7 @@ prx.types.text = {
 		if(typeof(item.propagateEvents) == "undefined") { item.propagateEvents = false; }
 		if(typeof(item.lineHeight) == "undefined") { item.lineHeight = parseInt(item.textSize*1.231); }
 
-		var cReturn = '<div id="' + _id + '" class="box pos type-text '+(item.propagateEvents ? 'pointer-events-none ' : '')+'liveUpdate-textColor changeProperty-textColor liveUpdate-backgroundColor changeProperty-backgroundColor changeProperty-textAlign changeProperty-lineHeight" style="line-height: '+item.lineHeight+'px; color: '+prx.utils.getColor(item.textColor)+'; '+prx.componentsHelper.getFontCssFromFontFamily(item.textFont)+' font-size: '+item.textSize+'px; background-color: '+prx.utils.getColor(item.backgroundColor)+'; '+_bold+_italic+_underline+_shadow+' text-align: '+item.textAlign+';"><div class="text-contents"> <span data-editableproperty="text" '+((item.autoResize) ? 'class="autoresize"' : '')+'>'+item.text+'</span></div></div>';
+		var cReturn = '<div id="' + _id + '" class="box pos type-text '+(item.propagateEvents ? 'pointer-events-none ' : '')+'liveUpdate-textColor changeProperty-textColor liveUpdate-backgroundColor changeProperty-backgroundColor changeProperty-textAlign changeProperty-lineHeight" style="line-height: '+item.lineHeight+'px; color: '+prx.utils.getColor(item.textColor)+'; '+prx.componentsHelper.getFontCssFromFontFamily(item.textFont)+' font-size: '+item.textSize+'px; background-color: '+prx.utils.getColor(item.backgroundColor)+'; '+_bold+_italic+_underline+_shadow+' text-align: '+item.textAlign+';"><div class="text-contents"> <span data-editableproperty="text" '+((item.autoResize) ? 'class="autoresize"' : '')+'>'+prx.componentsHelper.getProp(item.text,'text-textarea')+'</span></div></div>';
 		return cReturn;
 	}
 	,editableProperties: [
@@ -1467,7 +1467,7 @@ prx.types.rectangle = {
 		cR += '</style>';
 		cR += '<div id="rec-' + _id + '" class="inner-rec liveUpdate-backgroundColor liveUpdate-backgroundColor-background-color changeProperty-backgroundColor changeProperty-backgroundColor-background-color changeProperty-borderColor changeProperty-borderColor-border-color liveUpdate-borderColor liveUpdate-borderColor-border-color">';
 		cR += '<div class="rectangle-text-container liveUpdate-textColor">';
-		cR += '<span data-editableproperty="text">' + item.text + '</span>';
+		cR += '<span data-editableproperty="text">' + prx.componentsHelper.getProp(item.text,'text-textarea') + '</span>';
 		cR += '</div>';
 		cR += '</div>';
 		cR += '</div>';
@@ -2204,11 +2204,15 @@ prx.types.image = {
             missingClass = ' missing';
             wrapperBackground = '';
         }
-        
-        if( typeof(item.borderColor) == 'undefined' ) item.borderColor = '#000000';
+		//gy check for gifs
+		var fileId = prx.componentsHelper.getProp(item.imgSrc.fileId,'other');
+		var fileType = fileId.substr(fileId.lastIndexOf('.') + 1);
+
+
+		if( typeof(item.borderColor) == 'undefined' ) item.borderColor = '#000000';
         if( typeof(item.borderWidth) == 'undefined' ) item.borderWidth = 0;
         if( typeof(item.borderRadius) == 'undefined' ) item.borderRadius = 0;
-        if( typeof(prx.componentsHelper.getProp(item.borderPos,'other')) == 'undefined' ) item.borderPos = 'inside';
+        if( typeof(item.borderPos) == 'undefined' ) item.borderPos = 'inside';
 
 		if(thumbUrl != '') {thumbUrl = ' style="background-image:  url(' + thumbUrl + ');" '}
 
@@ -2218,7 +2222,7 @@ prx.types.image = {
        
         cR += '<div class="image-inner borderPos-'+prx.componentsHelper.getProp(item.borderPos,'other')+'">';
         
-        cR += '<div id="' + _id + '-img-wrapper" class="type-image-wrapper liveUpdate-borderColor changeProperty-borderColor changeProperty-borderRadius changeProperty-borderWidth ' + ((item.imgSrc.fileId.slice(-4) == '.svg') ? ' type-image-svg' : '') + missingClass + ((item.repeat) ? ' type-image-repeater' : '') + '" ' +
+        cR += '<div id="' + _id + '-img-wrapper" class="type-image-wrapper liveUpdate-borderColor changeProperty-borderColor changeProperty-borderRadius changeProperty-borderWidth ' + ((item.imgSrc.fileId.slice(-4) == '.svg') ? ' type-image-svg' : '') + missingClass + ((item.repeat) ? ' type-image-repeater' : '')  + (fileType=='gif' ? ' gif' : '') + '" ' +
         'style="background-image: url(' + wrapperBackground + ');">';
 
         cR += '<div></div>'
@@ -2444,7 +2448,7 @@ prx.types.placeholder = {
 		cR += '<div class="diagonal diagonal1 liveUpdate-borderColor" style="border-color: '+prx.utils.getColor(item.borderColor)+'; width: '+_width+'px; -moz-transform: rotate('+_angle1+'deg); -webkit-transform: rotate('+_angle1+'deg); -o-transform: rotate('+_angle1+'deg); transform: rotate('+_angle1+'deg);  border-top-width: '+item.thickness+'px; left: '+item.thickness/2+'px;"></div>'
 		cR += '<div class="diagonal diagonal2 liveUpdate-borderColor" style="border-color: '+prx.utils.getColor(item.borderColor)+'; width: '+_width+'px; -moz-transform: rotate(-'+_angle1+'deg); -webkit-transform: rotate(-'+_angle1+'deg); -o-transform: rotate(-'+_angle1+'deg); transform: rotate(-'+_angle1+'deg); border-top-width: '+item.thickness+'px; right: '+item.thickness/2+'px;"></div>'
 		//if(item.text != "") {
-			cR += '<div class="contents"><span class="liveUpdate-backgroundColor changeProperty-backgroundColor liveUpdate-textColor" style="text-align: '+item.textAlign+'; font-size: '+item.textSize+'px; background-color: '+prx.utils.getColor(item.backgroundColor)+'; color: '+prx.utils.getColor(item.textColor)+';"><span data-editableproperty="text">' + item.text + '</span></span></div>';
+			cR += '<div class="contents"><span class="liveUpdate-backgroundColor changeProperty-backgroundColor liveUpdate-textColor" style="text-align: '+item.textAlign+'; font-size: '+item.textSize+'px; background-color: '+prx.utils.getColor(item.backgroundColor)+'; color: '+prx.utils.getColor(item.textColor)+';"><span data-editableproperty="text">' + prx.componentsHelper.getProp(item.text,'text-textarea') + '</span></span></div>';
 		//}
 		cR += '</div>';
 		return cR;
@@ -2836,6 +2840,7 @@ prx.types.video = {
 			cR += '</video>';
 			break;
 		case 'youtube':
+			item.youtubeid = prx.componentsHelper.getProp(item.youtubeid,'video-url');
 			if(prx.editor && $.browser.chrome) {
 				cR += '<object width="100%" height="100%"><param name="movie" value="//www.youtube.com/v/'+item.youtubeid+'?version=3&amp;hl=en_GB"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/'+item.youtubeid+'?version=3&amp;hl=en_GB" type="application/x-shockwave-flash" width="100%" height="100%" allowscriptaccess="always" allowfullscreen="true"></embed></object>'
 			} else {
@@ -2843,6 +2848,7 @@ prx.types.video = {
 			}
 			break;
 		case 'vimeo':
+			item.vimeoid = prx.componentsHelper.getProp(item.vimeoid,'video-url');
 			if(prx.editor && $.browser.chrome) {
 				cR += '<object width="100%" height="100%"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="https://vimeo.com/moogaloop.swf?clip_id='+item.vimeoid+'&amp;force_embed=1&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=1&amp;color=00adef&amp;fullscreen=1&amp;autoplay=0&amp;loop=0" /><embed src="https://vimeo.com/moogaloop.swf?clip_id='+item.vimeoid+'&amp;force_embed=1&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=1&amp;color=00adef&amp;fullscreen=1&amp;autoplay=0&amp;loop=0" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="100%" height="100%"></embed></object>'
 			} else {
@@ -3365,7 +3371,7 @@ prx.types.basic_tabbar = {
 				cR += '<div class="icon '+ ((item.maskEnabled && $.browser.webkit) ? ((item.activeTab == i) ? 'liveUpdate-maskActive' : 'liveUpdate-maskInactive') : '') +'"></div>';
 			}
 			if(item.iconpos != "notext") {
-				cR += '<span class="caption '+((item.activeTab == i) ? 'liveUpdate-activeTextColor' : 'liveUpdate-textColor') + '"><span data-editableproperty="text" data-dynamic-property-index="'+i+'">'+elm.text+'</span></span>'
+				cR += '<span class="caption '+((item.activeTab == i) ? 'liveUpdate-activeTextColor' : 'liveUpdate-textColor') + '"><span data-editableproperty="text" data-dynamic-property-index="'+i+'">'+prx.componentsHelper.getProp(elm.text,'text')+'</span></span>'
 			}
 			cR += '</li>'
 		});
@@ -3587,6 +3593,8 @@ prx.types.basic_tabbar = {
 				      			caption: 'Mask'
 				      			,name: 'maskEnabled'
 				      			,type: 'onoff'
+								,help: "Enabling this option will overwrite the icon's original color"
+								,helpPosition: "mask-custom"
 				      			,value: function(item,name) { return item.maskEnabled; }
 					      		,hiddenByDefault: function(item,name){
 				      				return (item.iconpos == '');
@@ -4061,7 +4069,7 @@ prx.components.richtext = {
 	,caption: 'Rich Text'
 	,icon: '-80px 0'
 	,helper: prx.url.devices+'/common/richtext/helper.png'
-	,text: 'Sample text'
+	,text: '<p>Sample text</p>'
 	,width: 200*prx.componentsHelper.getScale(_library)
 	,height: 150*prx.componentsHelper.getScale(_library)
 }
