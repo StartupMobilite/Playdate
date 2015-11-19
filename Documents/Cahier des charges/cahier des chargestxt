@@ -1,0 +1,119 @@
+
+PALYSDATE
+
+  
+TABLE DES MATIÈRES :
+
+ 
+ 
+
+I.	Préambules
+
+
+1.	Objets du document
+
+Dans le cadre du projet STARTUP DAY « Xamarin » réalisé en équipe au sein de l’école INGESUP PARIS en cycle ingénieur  il s’avère nécessaire de réaliser un cahier des charges reflétant les enjeux du projet. La suite de ce document porte donc sur ce cahier des charges. 
+Le cahier des charges permet de formuler le besoin de la maîtrise d'ouvrage, et contient l’ensemble des procédures mises en œuvre par la maîtrise d'œuvre afin de répondre au mieux à ce besoin sur un accord mutuel. Cela implique de définir un contexte, des acteurs, des objectifs ainsi que des contraintes. 
+2.	Introduction du projet
+
+L'objectif de ce projet est le développement et la réalisation d'un réseau social sportif   permettant au utilisateur de trouvant des rencontres a proximité de chez eux ou encore d’organiser des rencontres amicales ou crée des évènements ce projet sera crée sur la plate forme Xamarin “ cross plate forme“.
+II GUIDE DE LECTURE
+Ce document constitue le fil directeur de l’évolution du projet. Il est destiné à la maîtrise d'ouvrage, à la maîtrise d'œuvre ainsi qu’à tout autre intervenant qui est jugé nécessaire pour la réalisation du projet. 
+1.	Maîtrise d’œuvre
+A.	Équipe de projet
+     Chargé de la réalisation du projet, la maîtrise d'œuvre    est une équipe composée de 3 étudiants d’un INGESUP PARIS : M. RODRIGO Boksic, M. BLIVI Elom , M. NKEZE Kristen. La cohésion de l’équipe est essentielle pour assurer le respect du cahier des charges. Tous les membres sont assurés de veiller au respect des différents critères du projet et à la prise en compte des contraintes. 
+
+B.	Chef de projet
+Le chef de projet M. NKEZE Kristen encadrera son équipe en donnant les directives. Le chef de projet est à cheval sur le temps imparti et s’engage à ce que les délais soient respectés, que les objectifs soient atteints ainsi que les fonctionnalités développées soient conformes au besoin exprimé. 
+
+2.	Maîtrise d’ouvrage
+
+A.	Responsable
+Nkeze Kristen éleve chez Ingesup Paris est responsable de ce projet sous Xamarin cross plate frome.
+En tant que responsable de la maîtrise d'ouvrage, et encadrant du projet, il définit les objectifs, les limites et les contraintes du projet et s'assure que le produit réalisé est conforme au besoin exprimé. 
+Pour cela des bilans hebdomadaires sont nécessaires afin de vérifier que l’avancée du travail de l’équipe reste en adéquation avec les consignes demandées. 
+
+B.	 Personnel administratif et technique
+ Tout autre intervenant du personnel encadrant peut s’intéresser à la définition du projet. De plus ils seront spécialement concernés par les contraintes matérielles et de coûts, ainsi qu’à la planification du projet. 
+
+III.	Concepts de base
+L application qui doit être crée permettra de mettre en œuvre des rencontres sportives et de localisé des rencontres rencontre déjà en cour ou de trouver des terrains libres.
+
+Le principe des réseau social public Un réseau social est un ensemble d'individus ou d'organisations reliés par des interactions sociales régulières. Un domaine académique, l'analyse des réseaux sociaux, les étudie en se basant sur la théorie des réseaux, l'usage des graphes et l'analyse sociologique. Des structures destinées à constituer des réseaux sociaux peuvent être créés volontairement, offrant aux participants des possibilités d'agrandir ou rendre plus efficient son propre réseau social (professionnel, amical).
+
+L’utilisateur pourra partager sa passion via des articles ou encore des évènements qu‘ il organisera dans la « Datevent », et en parallèles  
+Pour connaitre les salles de sport intérieur/extérieur a proximité pour crée des groupes de chat a fin de concerté sont équipe et de suivre 
+l‘ actualité de ses sport préféré  par un filtre il permettant de trié les information
+
+IV.	Contexte
+ L’application, dont le cahier des charges est élaboré dans ce document, est une continuité d'un projet de développement de jeu vidéo 3D proposé par un groupe d'étudiants il y a un an. 
+L'objectif sera donc de mettre ne place de réseau social d 'améliorer ce système en vue de mettre en place une architecture performante et clairement structurée afin de faciliter pour la gestion des données. 
+L'aboutissement de ce projet permettrait ainsi aux membres de ce groupe d'acquérir de nouvelles compétences et d'en consolider d'autres. En outre ce projet nous permettrait aussi de mieux nous familiariser avec les concepts du travail en équipe  et par la même occasion crée une strat up 
+
+V.	DESCRIPTION DE LA DEMANDE
+1 Objectifs
+Notre mission sera le développement et la réalisation d'un un réseau social sportif avec la plateforme Xamarin. 
+L'objectif premier sera la connexion du user avec le fils d’actualité avec ces différente catégorie. Les utilisateurs auront 2 chois de connexion une connexion via Google/Facebook ou la création d’un compte ensuite l utilisateur aura un fils d’actualité personnalisable. 
+Deuxièmement les module de géolocalisation et d emploi du temps ou l’user pourra utiliser  l’emploi du tan afin de planifier des rencontre ou la géolocalisation afin de trouver une salle de sport  et pour finir on peut  .
+
+
+
+
+
+2. Produit du projet
+Le produit final livré sera un ensemble d'outils développés en C# avec le moteur Xamarin qui permet de créer des application mobile sur les 3 plate forme(Windows phone ,iso, Android  ). Ces outils seront rassemblés sur le SVN au fil de l’évolution du projet. Après cette phase de collecte et d'assemblage, il sera possible d'effectuer des tests sur les différentes fonctionnalités de l’application. 
+À noter que l application sera implémenté sur un mobile  
+De plus, grâce aux nombreuses fonctionnalités proposées par Xamarin , l’ application pourra être exporté sur d’autres plateformes telles Windows phone ,iso, Android  .
+3.	Fonctions du produit
+A.	Fonctionnalité du produit
+
+Le fonctionnement du système reposera principalement sur l emploi du temps qui permet la création déventement et la géolocalisation qui permet de trouver d autre partenaire.
+1)	 Formulaire d’inscription
+Cette fonction permettra au utilisateur de se connecter en remplissant un formulaire ou en ce connectant via Google ou Facebook
+2)	 le fils d actualité et filtre
+le fils d’actualisé va permettre a l utilisateur de pouvoir poster   des article  text ou vidéo avec une limite de 150 caractère qui pas être filtre   a fin de customiser le fils d actualité en choisie de  réservoir que les info voulue
+3)	 le tableau  de planning
+ Permet au utilisateur de choisir une date dans le calendrier de l  année  a fait de  crée un évènement sportif ou de faire une partie entre amie
+4)	 la géolocalisation
+Permet a l utilisateur de crée de trouver des salle ou des partie engager pas loin de chez eux
+5)	les rencontres
+L’utilisateur pour organiser un tournoie ou des simples rencontres répertoriées via le tableau des rencontre
+
+B.	 Fonctionnalités optionnelles
+Le chat :
+Permet au utilisateur de crée un groupe d’amis afin de garder contact avec eu pour d’éventuel future rencontre  
+
+Alerte :
+Envoie des alertes à l’utilisateur afin de de ce souvenir de ça rencontre 
+
+
+
+
+VI.	Contraintes
+Coût :
+Le budget était nul le projet n’utilisera pas d outils gratuits
+Délais
+Le produit final devra être livré le 10 juin 2016 
+Matériels 
+Il est nécessaire d’installer Xamarin, d avoir une base de donnée et d avoir un server test
+
+
+
+
+
+
+
+VII.	Planification
+
+Début	FIN	PHASE	DESCRIPTION
+14/10/2015	18/11/2015	Documentation	Phase de prise en main de Xamarin
+18/11/2015	19/11/2015	Analyse du besoin	Rédaction du Cahier des charges
+19/11/2015	19/11/2015		Réalisation d’une maquette
+20/11/2015	20/11/2015	Spécification	Elaboration du plan de développement. Répartition des tâches. Rédaction du cahier des recette
+24/11/2015	01/12/2015	Conception	Modélisation du logiciel :
+Découpage du logiciel en modules description de ces derniers et des lien entre eux
+02/12/2015	01/04/2016	développement	Codage du logiciel. Rédaction de la documentation
+01/04/2016	01/05/2016	Intégration	Réalisation des tests unitaires et test d’intégration
+01/05/2016	13/05/2016	Recette	Préparation de la version de livraison
+13/052016	26/05/2016	Débogage	Correction des derniers bugs et livraison du produit
+
