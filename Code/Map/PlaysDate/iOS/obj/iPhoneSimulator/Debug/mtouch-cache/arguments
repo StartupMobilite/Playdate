@@ -1,6 +1,6 @@
-# Version: 9.2.1.51 (cycle6-xi: 3c0ec35)
+# Version: 9.2.1.54 (cycle6-xi: eb4c1ef)
 # [first argument, ignore] # /Users/BOKSIC/Playdate/Code/Map/PlaysDate/iOS/mtouch.exe
-/Library/Frameworks/Xamarin.iOS.framework/Versions/9.2.1.51/bin/mtouch \
+/Library/Frameworks/Xamarin.iOS.framework/Versions/9.2.1.54/bin/mtouch \
 	--cache \
 	/Users/BOKSIC/Playdate/Code/Map/PlaysDate/iOS/obj/iPhoneSimulator/Debug/mtouch-cache \
 	--sim \

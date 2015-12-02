@@ -21,8 +21,7 @@ namespace PlaysDate.Droid
 
 			Xamarin.FormsMaps.Init(this, bundle);
 
-			LoadApplication (new App ());
+			LoadApplication (new App());
 		}
 	}
 }
-

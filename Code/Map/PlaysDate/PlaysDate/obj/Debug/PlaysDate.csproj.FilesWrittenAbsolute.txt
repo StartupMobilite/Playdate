@@ -20,3 +20,10 @@
 /Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/bin/Debug/Xamarin.Forms.Maps.dll
 /Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/bin/Debug/Plugin.Geolocator.dll
 /Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/bin/Debug/Plugin.Geolocator.Abstractions.dll
+/Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/bin/Debug/Newtonsoft.Json.dll
+/Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/obj/Debug/PlaysDate.Json.EquipementIleDeFrance.json
+/Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/obj/Debug/PlaysDate.Json.InstallationIleDeFrance.json
+/Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/bin/Debug/PCLStorage.dll
+/Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/bin/Debug/PCLStorage.Abstractions.dll
+/Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/obj/Debug/PlaysDate.JsonPPPP.EquipementIleDeFrance.json
+/Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/obj/Debug/PlaysDate.JsonPPPP.InstallationIleDeFrance.json

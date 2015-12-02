@@ -9,7 +9,8 @@ namespace PlaysDate
 		public App ()
 		{
 			// The root page of your application
-			MainPage = new MapPage();
+			MainPage = new NavigationPage();
+			MainPage.Navigation.PushAsync (new LoadResourceJson());
 		}
 
 		protected override void OnStart ()

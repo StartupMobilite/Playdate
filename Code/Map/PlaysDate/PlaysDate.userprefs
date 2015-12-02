@@ -1,11 +1,11 @@
 ﻿<Properties StartupItem="iOS/PlaysDate.iOS.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.1" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="PlaysDate/MapPage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PlaysDate/LoadResourceJson.cs">
     <Files>
-      <File FileName="iOS/AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="PlaysDate/MapPage.cs" Line="43" Column="6" />
-      <File FileName="PlaysDate/PlaysDate.cs" Line="1" Column="1" />
+      <File FileName="PlaysDate/MapPage.cs" Line="38" Column="19" />
+      <File FileName="PlaysDate/PlaysDate.cs" Line="12" Column="29" />
       <File FileName="PlaysDate/CustomMap.cs" Line="1" Column="1" />
+      <File FileName="PlaysDate/LoadResourceJson.cs" Line="24" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
