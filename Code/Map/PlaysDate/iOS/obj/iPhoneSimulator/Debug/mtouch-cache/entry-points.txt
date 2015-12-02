@@ -3,13 +3,8 @@ xamarin_timezone_get_names
 xamarin_timezone_get_data
 xamarin_get_locale_country_code
 xamarin_log
-CreateZStream
-CloseZStream
-Flush
-ReadZStream
-WriteZStream
-xamarin_start_wwan
 xamarin_init_nsthread
+xamarin_start_wwan
 xamarin_release_managed_ref
 xamarin_create_managed_ref
 xamarin_get_block_descriptor
@@ -203,5 +198,10 @@ xamarin_vector_float3__Vector4_objc_msgSend_stret
 xamarin_vector_float3__Vector4_objc_msgSendSuper_stret
 xamarin_vector_float3__void_objc_msgSend_Vector4
 xamarin_vector_float3__void_objc_msgSendSuper_Vector4
+CreateZStream
+CloseZStream
+Flush
+ReadZStream
+WriteZStream
 PLCrashReporterErrorDomain
 PLCrashReporterException
