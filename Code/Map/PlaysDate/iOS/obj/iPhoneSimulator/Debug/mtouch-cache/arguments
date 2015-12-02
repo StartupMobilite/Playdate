@@ -160,6 +160,8 @@
 	/Users/BOKSIC/Playdate/Code/Map/PlaysDate/packages/Xamarin.Insights.1.11.2/lib/Xamarin.iOS10/PLCrashReporterUnifiedBinding.dll \
 	-r \
 	/Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/bin/Debug/PlaysDate.dll \
+	-r \
+	/Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/bin/Debug/Newtonsoft.Json.dll \
 	--target-framework \
 	"Xamarin.iOS,v1.0" \
 	/Users/BOKSIC/Playdate/Code/Map/PlaysDate/iOS/bin/iPhoneSimulator/Debug//PlaysDate.iOS.exe \

@@ -5,11 +5,14 @@
       <File FileName="PlaysDate/MapPage.cs" Line="38" Column="19" />
       <File FileName="PlaysDate/PlaysDate.cs" Line="12" Column="29" />
       <File FileName="PlaysDate/CustomMap.cs" Line="1" Column="1" />
-      <File FileName="PlaysDate/LoadResourceJson.cs" Line="24" Column="4" />
+      <File FileName="PlaysDate/LoadResourceJson.cs" Line="26" Column="46" />
+      <File FileName="PlaysDate/Json/EquipementIleDeFrance.json" Line="809" Column="43" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/LoadResourceJson.cs" line="26" column="6" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

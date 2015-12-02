@@ -1,15 +1,6 @@
-/Users/BOKSIC/Projects/PlaysDate/PlaysDate/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs
-/Users/BOKSIC/Projects/PlaysDate/PlaysDate/bin/Debug/Xamarin.Forms.Core.dll
-/Users/BOKSIC/Projects/PlaysDate/PlaysDate/bin/Debug/Xamarin.Forms.Xaml.dll
-/Users/BOKSIC/Projects/PlaysDate/PlaysDate/bin/Debug/Xamarin.Forms.Platform.dll
-/Users/BOKSIC/Projects/PlaysDate/PlaysDate/bin/Debug/Xamarin.Forms.Maps.dll
-/Users/BOKSIC/Projects/PlaysDate/PlaysDate/bin/Debug/PlaysDate.dll.mdb
-/Users/BOKSIC/Projects/PlaysDate/PlaysDate/bin/Debug/PlaysDate.dll
-/Users/BOKSIC/Projects/PlaysDate/PlaysDate/obj/Debug/PlaysDate.dll
-/Users/BOKSIC/Projects/PlaysDate/PlaysDate/obj/Debug/PlaysDate.dll.mdb
-/Users/BOKSIC/Projects/PlaysDate/PlaysDate/bin/Debug/Plugin.Geolocator.dll
-/Users/BOKSIC/Projects/PlaysDate/PlaysDate/bin/Debug/Plugin.Geolocator.Abstractions.dll
 /Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs
+/Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/obj/Debug/PlaysDate.Json.EquipementIleDeFrance.json
+/Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/obj/Debug/PlaysDate.Json.InstallationIleDeFrance.json
 /Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/bin/Debug/PlaysDate.dll.mdb
 /Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/bin/Debug/PlaysDate.dll
 /Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/obj/Debug/PlaysDate.dll
@@ -21,9 +12,5 @@
 /Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/bin/Debug/Plugin.Geolocator.dll
 /Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/bin/Debug/Plugin.Geolocator.Abstractions.dll
 /Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/bin/Debug/Newtonsoft.Json.dll
-/Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/obj/Debug/PlaysDate.Json.EquipementIleDeFrance.json
-/Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/obj/Debug/PlaysDate.Json.InstallationIleDeFrance.json
 /Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/bin/Debug/PCLStorage.dll
 /Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/bin/Debug/PCLStorage.Abstractions.dll
-/Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/obj/Debug/PlaysDate.JsonPPPP.EquipementIleDeFrance.json
-/Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/obj/Debug/PlaysDate.JsonPPPP.InstallationIleDeFrance.json
