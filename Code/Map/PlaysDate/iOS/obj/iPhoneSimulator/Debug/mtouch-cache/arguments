@@ -1,6 +1,6 @@
-# Version: 9.2.1.54 (cycle6-xi: eb4c1ef)
+# Version: 9.4.0.0 (xcode7.2: 7322991)
 # [first argument, ignore] # /Users/BOKSIC/Playdate/Code/Map/PlaysDate/iOS/mtouch.exe
-/Library/Frameworks/Xamarin.iOS.framework/Versions/9.2.1.54/bin/mtouch \
+/Library/Frameworks/Xamarin.iOS.framework/Versions/9.4.0.0/bin/mtouch \
 	--cache \
 	/Users/BOKSIC/Playdate/Code/Map/PlaysDate/iOS/obj/iPhoneSimulator/Debug/mtouch-cache \
 	--sim \
@@ -14,7 +14,7 @@
 	--sdkroot \
 	/Applications/Xcode.app/Contents/Developer \
 	--sdk \
-	9.1 \
+	9.2 \
 	--targetver \
 	7.0 \
 	--new-refcount \
@@ -160,8 +160,6 @@
 	/Users/BOKSIC/Playdate/Code/Map/PlaysDate/packages/Xamarin.Insights.1.11.2/lib/Xamarin.iOS10/PLCrashReporterUnifiedBinding.dll \
 	-r \
 	/Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/bin/Debug/PlaysDate.dll \
-	-r \
-	/Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/bin/Debug/Newtonsoft.Json.dll \
 	--target-framework \
 	"Xamarin.iOS,v1.0" \
 	/Users/BOKSIC/Playdate/Code/Map/PlaysDate/iOS/bin/iPhoneSimulator/Debug//PlaysDate.iOS.exe \

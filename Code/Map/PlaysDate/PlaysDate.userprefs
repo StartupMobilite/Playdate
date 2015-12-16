@@ -1,18 +1,17 @@
 ﻿<Properties StartupItem="iOS/PlaysDate.iOS.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.1" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="PlaysDate/LoadResourceJson.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.2" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PlaysDate/MapPage.cs">
     <Files>
-      <File FileName="PlaysDate/MapPage.cs" Line="38" Column="19" />
-      <File FileName="PlaysDate/PlaysDate.cs" Line="12" Column="29" />
-      <File FileName="PlaysDate/CustomMap.cs" Line="1" Column="1" />
-      <File FileName="PlaysDate/LoadResourceJson.cs" Line="26" Column="46" />
-      <File FileName="PlaysDate/Json/EquipementIleDeFrance.json" Line="809" Column="43" />
+      <File FileName="PlaysDate/MapPage.cs" Line="1" Column="1" />
+      <File FileName="PlaysDate/PlaysDate.cs" Line="1" Column="1" />
+      <File FileName="PlaysDate/CustomMap.cs" Line="15" Column="4" />
+      <File FileName="PlaysDate/LoadResourceJson.cs" Line="1" Column="1" />
+      <File FileName="Droid/Properties/AndroidManifest.xml" Line="11" Column="2" />
+      <File FileName="Droid/MainActivity.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/BOKSIC/Playdate/Code/Map/PlaysDate/PlaysDate/LoadResourceJson.cs" line="26" column="6" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
