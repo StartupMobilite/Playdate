@@ -1,10 +1,10 @@
 # Version: 9.4.0.0 (xcode7.2: 7322991)
-# [first argument, ignore] # /Users/BOKSIC/Projects/Calendrier/iOS/mtouch.exe
+# [first argument, ignore] # /Users/BOKSIC/Playdate/Code/Calendrier/iOS/mtouch.exe
 /Library/Frameworks/Xamarin.iOS.framework/Versions/9.4.0.0/bin/mtouch \
 	--cache \
-	/Users/BOKSIC/Projects/Calendrier/iOS/obj/iPhoneSimulator/Debug/mtouch-cache \
+	/Users/BOKSIC/Playdate/Code/Calendrier/iOS/obj/iPhoneSimulator/Debug/mtouch-cache \
 	--sim \
-	/Users/BOKSIC/Projects/Calendrier/iOS/bin/iPhoneSimulator/Debug/Calendrier.iOS.app \
+	/Users/BOKSIC/Playdate/Code/Calendrier/iOS/bin/iPhoneSimulator/Debug/Calendrier.iOS.app \
 	--executable \
 	Calendrier.iOS \
 	--fastdev \
@@ -20,7 +20,7 @@
 	--new-refcount \
 	--abi=i386 \
 	--symbollist \
-	/Users/BOKSIC/Projects/Calendrier/iOS/obj/iPhoneSimulator/Debug/mtouch-symbols.list \
+	/Users/BOKSIC/Playdate/Code/Calendrier/iOS/obj/iPhoneSimulator/Debug/mtouch-symbols.list \
 	--dsym=no \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
@@ -29,37 +29,37 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/packages/Xamarin.Insights.1.11.3/lib/Xamarin.iOS10/Xamarin.Insights.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/packages/Xamarin.Insights.1.11.3/lib/Xamarin.iOS10/Xamarin.Insights.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/packages/Xamarin.Insights.1.11.3/lib/Xamarin.iOS10/PLCrashReporterUnifiedBinding.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/packages/Xamarin.Insights.1.11.3/lib/Xamarin.iOS10/PLCrashReporterUnifiedBinding.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/packages/Xamarin.Forms.2.0.0.6490/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/packages/Xamarin.Forms.2.0.0.6490/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/packages/Xamarin.Forms.2.0.0.6490/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/packages/Xamarin.Forms.2.0.0.6490/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/packages/Xamarin.Forms.2.0.0.6490/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/packages/Xamarin.Forms.2.0.0.6490/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/packages/Xamarin.Forms.2.0.0.6490/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/packages/Xamarin.Forms.2.0.0.6490/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/packages/XLabs.IoC.2.0.5782/lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/XLabs.Ioc.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/packages/XLabs.IoC.2.0.5782/lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/XLabs.Ioc.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/packages/ExifLib.PCL.1.0.1/lib/portable-net45+sl50+win+WindowsPhoneApp81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/ExifLib.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/packages/ExifLib.PCL.1.0.1/lib/portable-net45+sl50+win+WindowsPhoneApp81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/ExifLib.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/packages/XLabs.Core.2.0.5782/lib/Xamarin.iOS10/XLabs.Core.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/packages/XLabs.Core.2.0.5782/lib/Xamarin.iOS10/XLabs.Core.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/packages/XLabs.Platform.2.0.5782/lib/Xamarin.iOS10/XLabs.Platform.iOS.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/packages/XLabs.Platform.2.0.5782/lib/Xamarin.iOS10/XLabs.Platform.iOS.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/packages/XLabs.Platform.2.0.5782/lib/Xamarin.iOS10/XLabs.Platform.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/packages/XLabs.Platform.2.0.5782/lib/Xamarin.iOS10/XLabs.Platform.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/packages/XLabs.Serialization.2.0.5782/lib/Xamarin.iOS10/XLabs.Serialization.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/packages/XLabs.Serialization.2.0.5782/lib/Xamarin.iOS10/XLabs.Serialization.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/packages/XLabs.Forms.2.0.5782/lib/Xamarin.iOS10/XLabs.Forms.iOS.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/packages/XLabs.Forms.2.0.5782/lib/Xamarin.iOS10/XLabs.Forms.iOS.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/packages/XLabs.Forms.2.0.5782/lib/Xamarin.iOS10/XLabs.Forms.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/packages/XLabs.Forms.2.0.5782/lib/Xamarin.iOS10/XLabs.Forms.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/Calendrier/bin/Debug/Calendrier.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/Calendrier/bin/Debug/Calendrier.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
 	-r \
@@ -155,35 +155,35 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.XmlSerializer.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/packages/Xamarin.Insights.1.11.3/lib/Xamarin.iOS10/Xamarin.Insights.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/packages/Xamarin.Insights.1.11.3/lib/Xamarin.iOS10/Xamarin.Insights.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/packages/Xamarin.Insights.1.11.3/lib/Xamarin.iOS10/PLCrashReporterUnifiedBinding.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/packages/Xamarin.Insights.1.11.3/lib/Xamarin.iOS10/PLCrashReporterUnifiedBinding.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/packages/Xamarin.Forms.2.0.0.6490/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/packages/Xamarin.Forms.2.0.0.6490/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/packages/Xamarin.Forms.2.0.0.6490/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/packages/Xamarin.Forms.2.0.0.6490/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/packages/Xamarin.Forms.2.0.0.6490/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/packages/Xamarin.Forms.2.0.0.6490/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/packages/Xamarin.Forms.2.0.0.6490/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/packages/Xamarin.Forms.2.0.0.6490/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/packages/XLabs.IoC.2.0.5782/lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/XLabs.Ioc.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/packages/XLabs.IoC.2.0.5782/lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/XLabs.Ioc.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/packages/ExifLib.PCL.1.0.1/lib/portable-net45+sl50+win+WindowsPhoneApp81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/ExifLib.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/packages/ExifLib.PCL.1.0.1/lib/portable-net45+sl50+win+WindowsPhoneApp81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/ExifLib.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/packages/XLabs.Core.2.0.5782/lib/Xamarin.iOS10/XLabs.Core.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/packages/XLabs.Core.2.0.5782/lib/Xamarin.iOS10/XLabs.Core.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/packages/XLabs.Platform.2.0.5782/lib/Xamarin.iOS10/XLabs.Platform.iOS.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/packages/XLabs.Platform.2.0.5782/lib/Xamarin.iOS10/XLabs.Platform.iOS.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/packages/XLabs.Platform.2.0.5782/lib/Xamarin.iOS10/XLabs.Platform.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/packages/XLabs.Platform.2.0.5782/lib/Xamarin.iOS10/XLabs.Platform.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/packages/XLabs.Serialization.2.0.5782/lib/Xamarin.iOS10/XLabs.Serialization.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/packages/XLabs.Serialization.2.0.5782/lib/Xamarin.iOS10/XLabs.Serialization.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/packages/XLabs.Forms.2.0.5782/lib/Xamarin.iOS10/XLabs.Forms.iOS.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/packages/XLabs.Forms.2.0.5782/lib/Xamarin.iOS10/XLabs.Forms.iOS.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/packages/XLabs.Forms.2.0.5782/lib/Xamarin.iOS10/XLabs.Forms.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/packages/XLabs.Forms.2.0.5782/lib/Xamarin.iOS10/XLabs.Forms.dll \
 	-r \
-	/Users/BOKSIC/Projects/Calendrier/Calendrier/bin/Debug/Calendrier.dll \
+	/Users/BOKSIC/Playdate/Code/Calendrier/Calendrier/bin/Debug/Calendrier.dll \
 	--target-framework \
 	"Xamarin.iOS,v1.0" \
-	/Users/BOKSIC/Projects/Calendrier/iOS/bin/iPhoneSimulator/Debug//Calendrier.iOS.exe \
+	/Users/BOKSIC/Playdate/Code/Calendrier/iOS/bin/iPhoneSimulator/Debug//Calendrier.iOS.exe \
