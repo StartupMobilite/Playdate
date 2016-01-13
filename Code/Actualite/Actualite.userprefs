@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="iOS/Actualite.iOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.2" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Actualite/ActualitePage.cs">
+    <Files>
+      <File FileName="Actualite/MyPage.cs" Line="11" Column="53" />
+      <File FileName="Actualite/ActualitePage.cs" Line="74" Column="120" />
+      <File FileName="Actualite/ActualiteViewModel.cs" Line="11" Column="5" />
+      <File FileName="Actualite/DetailActuPage.cs" Line="18" Column="2" />
+      <File FileName="Droid/MainActivity.cs" Line="20" Column="31" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
