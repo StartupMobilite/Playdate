@@ -32,7 +32,7 @@ namespace Actualite
 					listView.SelectedItem= null;
 
 					//Ouvre la page de detail
-					await Navigation.PushModalAsync (new DetailActuPage());
+					await Navigation.PushAsync (new DetailActuPage());
 				}
 				return;
 			};

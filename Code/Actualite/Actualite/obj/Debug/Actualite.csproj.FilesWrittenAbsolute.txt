@@ -6,3 +6,13 @@
 /Users/BOKSIC/Projects/Actualite/Actualite/obj/Debug/Actualite.dll
 /Users/BOKSIC/Projects/Actualite/Actualite/obj/Debug/Actualite.dll.mdb
 /Users/BOKSIC/Projects/Actualite/Actualite/bin/Debug/Xamarin.Forms.Platform.dll
+/Users/BOKSIC/Playdate/Code/Actualite/Actualite/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs
+/Users/BOKSIC/Playdate/Code/Actualite/Actualite/bin/Debug/Actualite.dll.mdb
+/Users/BOKSIC/Playdate/Code/Actualite/Actualite/bin/Debug/Actualite.dll
+/Users/BOKSIC/Playdate/Code/Actualite/Actualite/obj/Debug/Actualite.dll
+/Users/BOKSIC/Playdate/Code/Actualite/Actualite/obj/Debug/Actualite.dll.mdb
+/Users/BOKSIC/Playdate/Code/Actualite/Actualite/bin/Debug/Xamarin.Forms.Core.dll
+/Users/BOKSIC/Playdate/Code/Actualite/Actualite/bin/Debug/Xamarin.Forms.Xaml.dll
+/Users/BOKSIC/Playdate/Code/Actualite/Actualite/bin/Debug/Xamarin.Forms.Platform.dll
+/Users/BOKSIC/Playdate/Code/Actualite/Actualite/obj/Debug/Actualite.DetailActuPage.xaml.g.cs
+/Users/BOKSIC/Playdate/Code/Actualite/Actualite/obj/Debug/Actualite.DetailActuPage.xaml
