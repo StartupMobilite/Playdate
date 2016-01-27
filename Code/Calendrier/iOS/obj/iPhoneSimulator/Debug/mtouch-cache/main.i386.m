@@ -10,7 +10,9 @@ void xamarin_register_assemblies ()
 {
 	xamarin_open_and_register ("Xamarin.iOS.dll");
 	xamarin_open_and_register ("PLCrashReporterUnifiedBinding.dll");
+	xamarin_open_and_register ("XLabs.Forms.iOS.dll");
 	xamarin_open_and_register ("Xamarin.Forms.Platform.iOS.dll");
+	xamarin_open_and_register ("XLabs.Platform.iOS.dll");
 
 }
 

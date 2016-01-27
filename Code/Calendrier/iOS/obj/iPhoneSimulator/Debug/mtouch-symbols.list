@@ -1,8 +1,3 @@
-_monotouch_GetFolderPath
-_xamarin_timezone_get_names
-_xamarin_timezone_get_data
-_xamarin_get_locale_country_code
-_xamarin_log
 _xamarin_init_nsthread
 _xamarin_start_wwan
 _xamarin_release_managed_ref
@@ -198,6 +193,11 @@ _xamarin_vector_float3__Vector4_objc_msgSend_stret
 _xamarin_vector_float3__Vector4_objc_msgSendSuper_stret
 _xamarin_vector_float3__void_objc_msgSend_Vector4
 _xamarin_vector_float3__void_objc_msgSendSuper_Vector4
+_monotouch_GetFolderPath
+_xamarin_timezone_get_names
+_xamarin_timezone_get_data
+_xamarin_get_locale_country_code
+_xamarin_log
 _CreateZStream
 _CloseZStream
 _Flush

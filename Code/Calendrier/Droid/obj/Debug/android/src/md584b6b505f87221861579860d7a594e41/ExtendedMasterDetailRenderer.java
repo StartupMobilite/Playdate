@@ -2,7 +2,7 @@ package md584b6b505f87221861579860d7a594e41;
 
 
 public class ExtendedMasterDetailRenderer
-	extends md5b60ffeb829f638581ab2bb9b1a7f4f3f.MasterDetailRenderer
+	extends md5282f1122c1313907b9bf274dd2c2f344.MasterDetailRenderer
 	implements
 		mono.android.IGCUserPeer
 {

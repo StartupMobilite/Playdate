@@ -8,9 +8,6 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
-using Xamarin.Forms;
-using XLabs.Forms.Controls;
-
 namespace Calendrier.Droid
 {
 	[Activity (Label = "Calendrier.Droid", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]

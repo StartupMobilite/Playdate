@@ -4,22 +4,29 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
-
 using Xamarin.Forms;
 using XLabs.Forms.Controls;
 
 namespace Calendrier.iOS
 {
 	[Register ("AppDelegate")]
-	public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
+	public partial class AppDelegate : UIApplicationDelegate
 	{
+		UIWindow window;
+
 		public override bool FinishedLaunching (UIApplication app, NSDictionary options)
 		{
-			global::Xamarin.Forms.Forms.Init ();
+			new CalendarViewRenderer ();
 
-			LoadApplication (new App());
+			Forms.Init ();
 
-			return base.FinishedLaunching (app, options);	
+			window = new UIWindow(UIScreen.MainScreen.Bounds);
+
+			window.RootViewController = App.GetMainPage().CreateViewController();
+			window.MakeKeyAndVisible();
+
+			return true;
 		}
 	}
 }
+

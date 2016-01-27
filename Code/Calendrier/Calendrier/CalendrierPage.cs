@@ -13,7 +13,7 @@ namespace Calendrier
 		public CalendrierPage ()
 		{
 			//Definition du titre de la page
-			Title = "Planning";
+			Title = "Calendrier";
 
 			stackLayout = new StackLayout ();
 			Content = stackLayout;
@@ -36,11 +36,11 @@ namespace Calendrier
 			//Evenement lorsque l'on clique sur une date
 			calendarView.DateSelected += async (object sender, DateTime e) =>
 			{
-				await Navigation.PushModalAsync(new AjoutEvenement(e.ToString()));
+				await Navigation.PushAsync(new AjoutEvenement(e.ToString()));
 			};
 
 			//Ajoute des points si il y a des evenements a une date donnée
-			
+
 		}
 	}
 }
