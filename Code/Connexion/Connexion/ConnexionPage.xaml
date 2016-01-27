@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Connexion.ConnexionPage">
+	<TabbedPage.Children>
+        <ContentPage Title="Connexion" Icon="Connexion.png">
+            <StackLayout Spacing="20" Padding="20"
+                         VerticalOptions="Center">
+                <Entry Placeholder="Username"
+                       Text="{Binding Username}"/>
+                <Entry Placeholder="Password"
+                       Text="{Binding Password}"
+                       IsPassword="true"/>
+                <Button Text="Connexion" TextColor="Black"
+                        BackgroundColor="Gray"
+                        Command="{Binding LoginCommand}"/>
+            </StackLayout>
+        </ContentPage>
+        <ContentPage Title="Inscription" Icon="NewProfil.png">
+	        <StackLayout Spacing="20" Padding="20"
+	                         VerticalOptions="Center">
+	            <Image x:Name="Poster"
+	                   HeightRequest="100"
+           			   WidthRequest="100"/>
+	            <Entry Placeholder="FirstName"
+	                   Text="{Binding Username}"/>
+	            <Entry Placeholder="LastName"
+	                   Text="{Binding Username}"/>
+	           	<Entry Placeholder="Username"
+	                   Text="{Binding Username}"/>
+	            <Entry Placeholder="Email"
+	                   Text="{Binding Email}"/>
+	            <Entry Placeholder="Password"
+	                   Text="{Binding Password}"
+	                   IsPassword="true"/>
+	            <Entry Placeholder="VerifPassword"
+	                   Text="{Binding VerifPassword}"
+	                   IsPassword="true"/>
+	            <Button Text="Inscription" TextColor="Black"
+	                    BackgroundColor="Gray"
+	                    Command="{Binding LoginCommand}"/>
+	        </StackLayout>
+        </ContentPage>
+    </TabbedPage.Children>
+</TabbedPage>
