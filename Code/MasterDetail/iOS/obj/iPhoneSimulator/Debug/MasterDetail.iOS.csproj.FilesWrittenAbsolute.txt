@@ -1,0 +1,16 @@
+/Users/BOKSIC/Projects/MasterDetail/iOS/obj/iPhoneSimulator/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Users/BOKSIC/Projects/MasterDetail/iOS/obj/iPhoneSimulator/Debug/ibtool/LaunchScreen.nib
+/Users/BOKSIC/Projects/MasterDetail/iOS/obj/iPhoneSimulator/Debug/actool/partial-info.plist
+/Users/BOKSIC/Projects/MasterDetail/iOS/obj/iPhoneSimulator/Debug/actool/asset-manifest.plist
+/Users/BOKSIC/Projects/MasterDetail/iOS/obj/iPhoneSimulator/Debug/optimized/
+/Users/BOKSIC/Projects/MasterDetail/iOS/bin/iPhoneSimulator/Debug/MasterDetail.iOS.exe.mdb
+/Users/BOKSIC/Projects/MasterDetail/iOS/bin/iPhoneSimulator/Debug/MasterDetail.iOS.exe
+/Users/BOKSIC/Projects/MasterDetail/iOS/obj/iPhoneSimulator/Debug/MasterDetail.iOS.exe
+/Users/BOKSIC/Projects/MasterDetail/iOS/obj/iPhoneSimulator/Debug/MasterDetail.iOS.exe.mdb
+/Users/BOKSIC/Projects/MasterDetail/iOS/bin/iPhoneSimulator/Debug/Xamarin.Insights.dll
+/Users/BOKSIC/Projects/MasterDetail/iOS/bin/iPhoneSimulator/Debug/PLCrashReporterUnifiedBinding.dll
+/Users/BOKSIC/Projects/MasterDetail/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Platform.iOS.dll
+/Users/BOKSIC/Projects/MasterDetail/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Core.dll
+/Users/BOKSIC/Projects/MasterDetail/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Xaml.dll
+/Users/BOKSIC/Projects/MasterDetail/iOS/bin/iPhoneSimulator/Debug/MasterDetail.dll
+/Users/BOKSIC/Projects/MasterDetail/iOS/bin/iPhoneSimulator/Debug/MasterDetail.dll.mdb

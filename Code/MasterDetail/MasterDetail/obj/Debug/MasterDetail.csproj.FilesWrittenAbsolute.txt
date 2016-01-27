@@ -1,0 +1,7 @@
+/Users/BOKSIC/Projects/MasterDetail/MasterDetail/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs
+/Users/BOKSIC/Projects/MasterDetail/MasterDetail/bin/Debug/Xamarin.Forms.Core.dll
+/Users/BOKSIC/Projects/MasterDetail/MasterDetail/bin/Debug/Xamarin.Forms.Xaml.dll
+/Users/BOKSIC/Projects/MasterDetail/MasterDetail/bin/Debug/MasterDetail.dll.mdb
+/Users/BOKSIC/Projects/MasterDetail/MasterDetail/bin/Debug/MasterDetail.dll
+/Users/BOKSIC/Projects/MasterDetail/MasterDetail/obj/Debug/MasterDetail.dll
+/Users/BOKSIC/Projects/MasterDetail/MasterDetail/obj/Debug/MasterDetail.dll.mdb

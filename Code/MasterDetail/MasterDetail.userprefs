@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="iOS/MasterDetail.iOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.2" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MasterDetail/MasterPage.cs">
+    <Files>
+      <File FileName="MasterDetail/MainPage.cs" Line="22" Column="4" />
+      <File FileName="MasterDetail/MasterPage.cs" Line="38" Column="27" />
+      <File FileName="MasterDetail/MasterPageItem.cs" Line="11" Column="5" />
+      <File FileName="MasterDetail/ContactPage.cs" Line="20" Column="6" />
+      <File FileName="MasterDetail/MasterDetail.cs" Line="11" Column="19" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
