@@ -57,7 +57,7 @@ namespace Connexion
 			try
 			{
 				var mediaFile = await mediaPicker.SelectPhotoAsync (new CameraMediaStorageOptions {
-					DefaultCamera = CameraDevice.Rear,
+					DefaultCamera = CameraDevice.Front,
 					MaxPixelDimension = 400
 				});
 				Poster.Source = ImageSource.FromStream (() => mediaFile.Source);
@@ -79,10 +79,12 @@ namespace Connexion
 				{
 					if (t.IsFaulted)
 					{
+							Poster.Source = ImageSource.FromFile ("NoOne.jpg");
 						//Status = t.Exception.InnerException.ToString();
 					}
 					else if (t.IsCanceled)
 					{
+							Poster.Source = ImageSource.FromFile ("NoOne.jpg");
 						//Status = "Canceled";
 					}
 					else

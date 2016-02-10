@@ -26,6 +26,41 @@ namespace Connexion.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Xamarin.Forms.Labs.Droid.Resource.Color.calendar_active_month_bg = global::Connexion.Droid.Resource.Color.calendar_active_month_bg;
+			global::Xamarin.Forms.Labs.Droid.Resource.Color.calendar_bg = global::Connexion.Droid.Resource.Color.calendar_bg;
+			global::Xamarin.Forms.Labs.Droid.Resource.Color.calendar_divider = global::Connexion.Droid.Resource.Color.calendar_divider;
+			global::Xamarin.Forms.Labs.Droid.Resource.Color.calendar_highlighted_day_bg = global::Connexion.Droid.Resource.Color.calendar_highlighted_day_bg;
+			global::Xamarin.Forms.Labs.Droid.Resource.Color.calendar_inactive_month_bg = global::Connexion.Droid.Resource.Color.calendar_inactive_month_bg;
+			global::Xamarin.Forms.Labs.Droid.Resource.Color.calendar_selected_day_bg = global::Connexion.Droid.Resource.Color.calendar_selected_day_bg;
+			global::Xamarin.Forms.Labs.Droid.Resource.Color.calendar_selected_range_bg = global::Connexion.Droid.Resource.Color.calendar_selected_range_bg;
+			global::Xamarin.Forms.Labs.Droid.Resource.Color.calendar_text_active = global::Connexion.Droid.Resource.Color.calendar_text_active;
+			global::Xamarin.Forms.Labs.Droid.Resource.Color.calendar_text_inactive = global::Connexion.Droid.Resource.Color.calendar_text_inactive;
+			global::Xamarin.Forms.Labs.Droid.Resource.Color.calendar_text_selected = global::Connexion.Droid.Resource.Color.calendar_text_selected;
+			global::Xamarin.Forms.Labs.Droid.Resource.Color.calendar_text_selector = global::Connexion.Droid.Resource.Color.calendar_text_selector;
+			global::Xamarin.Forms.Labs.Droid.Resource.Color.calendar_text_unselectable = global::Connexion.Droid.Resource.Color.calendar_text_unselectable;
+			global::Xamarin.Forms.Labs.Droid.Resource.Dimension.calendar_day_headers_paddingbottom = global::Connexion.Droid.Resource.Dimension.calendar_day_headers_paddingbottom;
+			global::Xamarin.Forms.Labs.Droid.Resource.Dimension.calendar_month_title_bottommargin = global::Connexion.Droid.Resource.Dimension.calendar_month_title_bottommargin;
+			global::Xamarin.Forms.Labs.Droid.Resource.Dimension.calendar_month_topmargin = global::Connexion.Droid.Resource.Dimension.calendar_month_topmargin;
+			global::Xamarin.Forms.Labs.Droid.Resource.Dimension.calendar_text_medium = global::Connexion.Droid.Resource.Dimension.calendar_text_medium;
+			global::Xamarin.Forms.Labs.Droid.Resource.Dimension.calendar_text_small = global::Connexion.Droid.Resource.Dimension.calendar_text_small;
+			global::Xamarin.Forms.Labs.Droid.Resource.Drawable.ad16 = global::Connexion.Droid.Resource.Drawable.ad16;
+			global::Xamarin.Forms.Labs.Droid.Resource.Drawable.calendar_bg_selector = global::Connexion.Droid.Resource.Drawable.calendar_bg_selector;
+			global::Xamarin.Forms.Labs.Droid.Resource.Id.calendar_grid = global::Connexion.Droid.Resource.Id.calendar_grid;
+			global::Xamarin.Forms.Labs.Droid.Resource.Id.calendar_view = global::Connexion.Droid.Resource.Id.calendar_view;
+			global::Xamarin.Forms.Labs.Droid.Resource.Id.title = global::Connexion.Droid.Resource.Id.title;
+			global::Xamarin.Forms.Labs.Droid.Resource.Layout.calendar_picker = global::Connexion.Droid.Resource.Layout.calendar_picker;
+			global::Xamarin.Forms.Labs.Droid.Resource.Layout.dialog = global::Connexion.Droid.Resource.Layout.dialog;
+			global::Xamarin.Forms.Labs.Droid.Resource.Layout.month = global::Connexion.Droid.Resource.Layout.month;
+			global::Xamarin.Forms.Labs.Droid.Resource.Layout.week = global::Connexion.Droid.Resource.Layout.week;
+			global::Xamarin.Forms.Labs.Droid.Resource.String.day_name_format = global::Connexion.Droid.Resource.String.day_name_format;
+			global::Xamarin.Forms.Labs.Droid.Resource.String.full_date_format = global::Connexion.Droid.Resource.String.full_date_format;
+			global::Xamarin.Forms.Labs.Droid.Resource.String.invalid_date = global::Connexion.Droid.Resource.String.invalid_date;
+			global::Xamarin.Forms.Labs.Droid.Resource.String.library_name = global::Connexion.Droid.Resource.String.library_name;
+			global::Xamarin.Forms.Labs.Droid.Resource.String.month_name_format = global::Connexion.Droid.Resource.String.month_name_format;
+			global::Xamarin.Forms.Labs.Droid.Resource.Style.CalendarCell = global::Connexion.Droid.Resource.Style.CalendarCell;
+			global::Xamarin.Forms.Labs.Droid.Resource.Style.CalendarCell_CalendarDate = global::Connexion.Droid.Resource.Style.CalendarCell_CalendarDate;
+			global::Xamarin.Forms.Labs.Droid.Resource.Style.CalendarCell_DayHeader = global::Connexion.Droid.Resource.Style.CalendarCell_DayHeader;
+			global::Xamarin.Forms.Labs.Droid.Resource.Style.CalendarTitle = global::Connexion.Droid.Resource.Style.CalendarTitle;
 			global::Xamarin.Forms.Platform.Resource.Animation.abc_fade_in = global::Connexion.Droid.Resource.Animation.abc_fade_in;
 			global::Xamarin.Forms.Platform.Resource.Animation.abc_fade_out = global::Connexion.Droid.Resource.Animation.abc_fade_out;
 			global::Xamarin.Forms.Platform.Resource.Animation.abc_grow_fade_in_from_bottom = global::Connexion.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -1484,41 +1519,6 @@ namespace Connexion.Droid
 			global::Xamarin.Forms.Platform.Resource.Styleable.ViewStubCompat_android_id = global::Connexion.Droid.Resource.Styleable.ViewStubCompat_android_id;
 			global::Xamarin.Forms.Platform.Resource.Styleable.ViewStubCompat_android_inflatedId = global::Connexion.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
 			global::Xamarin.Forms.Platform.Resource.Styleable.ViewStubCompat_android_layout = global::Connexion.Droid.Resource.Styleable.ViewStubCompat_android_layout;
-			global::Xamarin.Forms.Labs.Droid.Resource.Color.calendar_active_month_bg = global::Connexion.Droid.Resource.Color.calendar_active_month_bg;
-			global::Xamarin.Forms.Labs.Droid.Resource.Color.calendar_bg = global::Connexion.Droid.Resource.Color.calendar_bg;
-			global::Xamarin.Forms.Labs.Droid.Resource.Color.calendar_divider = global::Connexion.Droid.Resource.Color.calendar_divider;
-			global::Xamarin.Forms.Labs.Droid.Resource.Color.calendar_highlighted_day_bg = global::Connexion.Droid.Resource.Color.calendar_highlighted_day_bg;
-			global::Xamarin.Forms.Labs.Droid.Resource.Color.calendar_inactive_month_bg = global::Connexion.Droid.Resource.Color.calendar_inactive_month_bg;
-			global::Xamarin.Forms.Labs.Droid.Resource.Color.calendar_selected_day_bg = global::Connexion.Droid.Resource.Color.calendar_selected_day_bg;
-			global::Xamarin.Forms.Labs.Droid.Resource.Color.calendar_selected_range_bg = global::Connexion.Droid.Resource.Color.calendar_selected_range_bg;
-			global::Xamarin.Forms.Labs.Droid.Resource.Color.calendar_text_active = global::Connexion.Droid.Resource.Color.calendar_text_active;
-			global::Xamarin.Forms.Labs.Droid.Resource.Color.calendar_text_inactive = global::Connexion.Droid.Resource.Color.calendar_text_inactive;
-			global::Xamarin.Forms.Labs.Droid.Resource.Color.calendar_text_selected = global::Connexion.Droid.Resource.Color.calendar_text_selected;
-			global::Xamarin.Forms.Labs.Droid.Resource.Color.calendar_text_selector = global::Connexion.Droid.Resource.Color.calendar_text_selector;
-			global::Xamarin.Forms.Labs.Droid.Resource.Color.calendar_text_unselectable = global::Connexion.Droid.Resource.Color.calendar_text_unselectable;
-			global::Xamarin.Forms.Labs.Droid.Resource.Dimension.calendar_day_headers_paddingbottom = global::Connexion.Droid.Resource.Dimension.calendar_day_headers_paddingbottom;
-			global::Xamarin.Forms.Labs.Droid.Resource.Dimension.calendar_month_title_bottommargin = global::Connexion.Droid.Resource.Dimension.calendar_month_title_bottommargin;
-			global::Xamarin.Forms.Labs.Droid.Resource.Dimension.calendar_month_topmargin = global::Connexion.Droid.Resource.Dimension.calendar_month_topmargin;
-			global::Xamarin.Forms.Labs.Droid.Resource.Dimension.calendar_text_medium = global::Connexion.Droid.Resource.Dimension.calendar_text_medium;
-			global::Xamarin.Forms.Labs.Droid.Resource.Dimension.calendar_text_small = global::Connexion.Droid.Resource.Dimension.calendar_text_small;
-			global::Xamarin.Forms.Labs.Droid.Resource.Drawable.ad16 = global::Connexion.Droid.Resource.Drawable.ad16;
-			global::Xamarin.Forms.Labs.Droid.Resource.Drawable.calendar_bg_selector = global::Connexion.Droid.Resource.Drawable.calendar_bg_selector;
-			global::Xamarin.Forms.Labs.Droid.Resource.Id.calendar_grid = global::Connexion.Droid.Resource.Id.calendar_grid;
-			global::Xamarin.Forms.Labs.Droid.Resource.Id.calendar_view = global::Connexion.Droid.Resource.Id.calendar_view;
-			global::Xamarin.Forms.Labs.Droid.Resource.Id.title = global::Connexion.Droid.Resource.Id.title;
-			global::Xamarin.Forms.Labs.Droid.Resource.Layout.calendar_picker = global::Connexion.Droid.Resource.Layout.calendar_picker;
-			global::Xamarin.Forms.Labs.Droid.Resource.Layout.dialog = global::Connexion.Droid.Resource.Layout.dialog;
-			global::Xamarin.Forms.Labs.Droid.Resource.Layout.month = global::Connexion.Droid.Resource.Layout.month;
-			global::Xamarin.Forms.Labs.Droid.Resource.Layout.week = global::Connexion.Droid.Resource.Layout.week;
-			global::Xamarin.Forms.Labs.Droid.Resource.String.day_name_format = global::Connexion.Droid.Resource.String.day_name_format;
-			global::Xamarin.Forms.Labs.Droid.Resource.String.full_date_format = global::Connexion.Droid.Resource.String.full_date_format;
-			global::Xamarin.Forms.Labs.Droid.Resource.String.invalid_date = global::Connexion.Droid.Resource.String.invalid_date;
-			global::Xamarin.Forms.Labs.Droid.Resource.String.library_name = global::Connexion.Droid.Resource.String.library_name;
-			global::Xamarin.Forms.Labs.Droid.Resource.String.month_name_format = global::Connexion.Droid.Resource.String.month_name_format;
-			global::Xamarin.Forms.Labs.Droid.Resource.Style.CalendarCell = global::Connexion.Droid.Resource.Style.CalendarCell;
-			global::Xamarin.Forms.Labs.Droid.Resource.Style.CalendarCell_CalendarDate = global::Connexion.Droid.Resource.Style.CalendarCell_CalendarDate;
-			global::Xamarin.Forms.Labs.Droid.Resource.Style.CalendarCell_DayHeader = global::Connexion.Droid.Resource.Style.CalendarCell_DayHeader;
-			global::Xamarin.Forms.Labs.Droid.Resource.Style.CalendarTitle = global::Connexion.Droid.Resource.Style.CalendarTitle;
 		}
 		
 		public partial class Animation
@@ -4032,11 +4032,11 @@ namespace Connexion.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f050024
-			public const int ApplicationName = 2131034148;
+			// aapt resource value: 0x7f05001f
+			public const int ApplicationName = 2131034143;
 			
-			// aapt resource value: 0x7f050023
-			public const int Hello = 2131034147;
+			// aapt resource value: 0x7f05001e
+			public const int Hello = 2131034142;
 			
 			// aapt resource value: 0x7f05000c
 			public const int abc_action_bar_home_description = 2131034124;
@@ -4092,20 +4092,20 @@ namespace Connexion.Droid
 			// aapt resource value: 0x7f05000b
 			public const int appbar_scrolling_view_behavior = 2131034123;
 			
-			// aapt resource value: 0x7f05001f
-			public const int day_name_format = 2131034143;
+			// aapt resource value: 0x7f050021
+			public const int day_name_format = 2131034145;
+			
+			// aapt resource value: 0x7f050024
+			public const int full_date_format = 2131034148;
 			
 			// aapt resource value: 0x7f050022
-			public const int full_date_format = 2131034146;
+			public const int invalid_date = 2131034146;
 			
 			// aapt resource value: 0x7f050020
-			public const int invalid_date = 2131034144;
+			public const int library_name = 2131034144;
 			
-			// aapt resource value: 0x7f05001e
-			public const int library_name = 2131034142;
-			
-			// aapt resource value: 0x7f050021
-			public const int month_name_format = 2131034145;
+			// aapt resource value: 0x7f050023
+			public const int month_name_format = 2131034147;
 			
 			// aapt resource value: 0x7f050000
 			public const int mr_media_route_button_content_description = 2131034112;

@@ -3,9 +3,9 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="iOS/AppDelegate.cs">
     <Files>
       <File FileName="Calendrier/packages.config" Line="1" Column="1" />
-      <File FileName="Calendrier/Calendrier.cs" Line="11" Column="29" />
-      <File FileName="Calendrier/CalendrierPage.cs" Line="39" Column="26" />
-      <File FileName="Calendrier/AjoutEvenement.cs" Line="12" Column="4" />
+      <File FileName="Calendrier/Calendrier.cs" Line="1" Column="1" />
+      <File FileName="Calendrier/CalendrierPage.cs" Line="1" Column="1" />
+      <File FileName="Calendrier/AjoutEvenement.cs" Line="1" Column="1" />
       <File FileName="iOS/AppDelegate.cs" Line="19" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>

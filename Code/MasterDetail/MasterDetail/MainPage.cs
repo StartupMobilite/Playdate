@@ -11,7 +11,7 @@ namespace MasterDetail
 		{
 			masterPage = new MasterPage ();
 			Master = masterPage;
-			Detail = new NavigationPage (new ContactPage());
+			Detail = new NavigationPage (new ActualitePage());
 
 			masterPage.ListView.ItemSelected += OnItemSelected;
 		}

@@ -1,0 +1,28 @@
+﻿<Properties StartupItem="iOS/PlaysDate.iOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.2" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PlaysDate/PlaysDate.cs">
+    <Files>
+      <File FileName="PlaysDate/Calendrier/CalendrierPage.cs" Line="1" Column="1" />
+      <File FileName="PlaysDate/Calendrier/AjoutEvenement.cs" Line="1" Column="1" />
+      <File FileName="PlaysDate/Menu/MasterPage.cs" Line="51" Column="20" />
+      <File FileName="PlaysDate/PlaysDate.cs" Line="3" Column="15" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PlaysDate" expanded="True">
+            <Node name="PlaysDate" expanded="True" selected="True">
+              <Node name="Packages" expanded="True" />
+            </Node>
+            <Node name="PlaysDate.Droid" expanded="True" />
+            <Node name="PlaysDate.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

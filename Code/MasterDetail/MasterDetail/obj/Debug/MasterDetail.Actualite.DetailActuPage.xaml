@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MasterDetail.DetailActuPage">
+	<ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness"
+                iOS="0, 20, 0, 0" />
+  </ContentPage.Padding>
+
+  <ScrollView>
+<Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="20" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="Auto" />
+    </Grid.ColumnDefinitions>
+
+    <Image x:Name="NewsImage"
+           Grid.Row="0" Grid.Column="0"
+           HeightRequest="180"
+           WidthRequest="150"
+           />
+
+    <Label x:Name="NewsTitle" Text="Tennis"
+           Grid.Row="1" Grid.Column="0"
+           XAlign="Center"
+           FontSize="20"
+           FontAttributes="Bold"
+           />
+
+    <Label x:Name="NewsNews" Text="pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp"
+           Grid.Row="2" Grid.Column="0"
+           FontAttributes="Italic"
+           />
+  </Grid>
+  </ScrollView>
+</ContentPage>

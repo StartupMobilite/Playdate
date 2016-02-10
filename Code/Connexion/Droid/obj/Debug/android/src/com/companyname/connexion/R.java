@@ -2499,8 +2499,8 @@ containing a value of this type.
         public static final int week=0x7f030033;
     }
     public static final class string {
-        public static final int ApplicationName=0x7f050024;
-        public static final int Hello=0x7f050023;
+        public static final int ApplicationName=0x7f05001f;
+        public static final int Hello=0x7f05001e;
         public static final int abc_action_bar_home_description=0x7f05000c;
         public static final int abc_action_bar_home_description_format=0x7f05000d;
         public static final int abc_action_bar_home_subtitle_description_format=0x7f05000e;
@@ -2519,11 +2519,11 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with_application=0x7f05001b;
         public static final int abc_toolbar_collapse_description=0x7f05001c;
         public static final int appbar_scrolling_view_behavior=0x7f05000b;
-        public static final int day_name_format=0x7f05001f;
-        public static final int full_date_format=0x7f050022;
-        public static final int invalid_date=0x7f050020;
-        public static final int library_name=0x7f05001e;
-        public static final int month_name_format=0x7f050021;
+        public static final int day_name_format=0x7f050021;
+        public static final int full_date_format=0x7f050024;
+        public static final int invalid_date=0x7f050022;
+        public static final int library_name=0x7f050020;
+        public static final int month_name_format=0x7f050023;
         public static final int mr_media_route_button_content_description=0x7f050000;
         public static final int mr_media_route_chooser_searching=0x7f050001;
         public static final int mr_media_route_chooser_title=0x7f050002;

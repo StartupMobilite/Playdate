@@ -2,18 +2,6 @@ Connexion.Droid.MainActivity, Connexion.Droid;md58b6f2d87e30ad36aee9488f48de8906
 Connexion.Droid.MainActivity, Connexion.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md58b6f2d87e30ad36aee9488f48de8906a.MainActivity
 Connexion.Droid.MainActivity;md58b6f2d87e30ad36aee9488f48de8906a.MainActivity
 connexion.droid.MainActivity;md58b6f2d87e30ad36aee9488f48de8906a.MainActivity
-Xamarin.InsightsCore.BackgroundManager, Xamarin.Insights;md55caa6fe88082d2d5789caeda3e8fc56c.BackgroundManager
-Xamarin.InsightsCore.BackgroundManager, Xamarin.Insights, Version=1.11.0.0, Culture=neutral, PublicKeyToken=null;md55caa6fe88082d2d5789caeda3e8fc56c.BackgroundManager
-Xamarin.InsightsCore.BackgroundManager;md55caa6fe88082d2d5789caeda3e8fc56c.BackgroundManager
-xamarin.insightscore.BackgroundManager;md55caa6fe88082d2d5789caeda3e8fc56c.BackgroundManager
-Xamarin.InsightsCore.NetworkChangeReceiver, Xamarin.Insights;md55caa6fe88082d2d5789caeda3e8fc56c.NetworkChangeReceiver
-Xamarin.InsightsCore.NetworkChangeReceiver, Xamarin.Insights, Version=1.11.0.0, Culture=neutral, PublicKeyToken=null;md55caa6fe88082d2d5789caeda3e8fc56c.NetworkChangeReceiver
-Xamarin.InsightsCore.NetworkChangeReceiver;md55caa6fe88082d2d5789caeda3e8fc56c.NetworkChangeReceiver
-xamarin.insightscore.NetworkChangeReceiver;md55caa6fe88082d2d5789caeda3e8fc56c.NetworkChangeReceiver
-Xamarin.InsightsCore.NativeUnhandledExceptionHandler, Xamarin.Insights;md55caa6fe88082d2d5789caeda3e8fc56c.NativeUnhandledExceptionHandler
-Xamarin.InsightsCore.NativeUnhandledExceptionHandler, Xamarin.Insights, Version=1.11.0.0, Culture=neutral, PublicKeyToken=null;md55caa6fe88082d2d5789caeda3e8fc56c.NativeUnhandledExceptionHandler
-Xamarin.InsightsCore.NativeUnhandledExceptionHandler;md55caa6fe88082d2d5789caeda3e8fc56c.NativeUnhandledExceptionHandler
-xamarin.insightscore.NativeUnhandledExceptionHandler;md55caa6fe88082d2d5789caeda3e8fc56c.NativeUnhandledExceptionHandler
 Android.Support.V4.View.ViewPager/IOnPageChangeListenerImplementor, Xamarin.Android.Support.v4;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
 Android.Support.V4.View.ViewPager+IOnPageChangeListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
 Android.Support.V4.View.ViewPager.IOnPageChangeListenerImplementor;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
@@ -166,6 +154,198 @@ Android.Support.Design.Widget.TabLayout/IOnTabSelectedListenerImplementor, Xamar
 Android.Support.Design.Widget.TabLayout+IOnTabSelectedListenerImplementor, Xamarin.Android.Support.Design, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.design.widget.TabLayout_OnTabSelectedListenerImplementor
 Android.Support.Design.Widget.TabLayout.IOnTabSelectedListenerImplementor;mono.android.support.design.widget.TabLayout_OnTabSelectedListenerImplementor
 mono.android.support.design.widget.TabLayout_OnTabSelectedListenerImplementor;mono.android.support.design.widget.TabLayout_OnTabSelectedListenerImplementor
+Xamarin.Forms.Labs.Accelerometer, Xamarin.Forms.Labs.Droid;md5bcacc69a4bbdfd5fc1d206073181ee9f.Accelerometer
+Xamarin.Forms.Labs.Accelerometer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5bcacc69a4bbdfd5fc1d206073181ee9f.Accelerometer
+Xamarin.Forms.Labs.Accelerometer;md5bcacc69a4bbdfd5fc1d206073181ee9f.Accelerometer
+xamarin.forms.labs.Accelerometer;md5bcacc69a4bbdfd5fc1d206073181ee9f.Accelerometer
+Xamarin.Forms.Labs.Battery/LevelMonitor, Xamarin.Forms.Labs.Droid;md5bcacc69a4bbdfd5fc1d206073181ee9f.Battery_LevelMonitor
+Xamarin.Forms.Labs.Battery+LevelMonitor, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5bcacc69a4bbdfd5fc1d206073181ee9f.Battery_LevelMonitor
+Xamarin.Forms.Labs.Battery.LevelMonitor;md5bcacc69a4bbdfd5fc1d206073181ee9f.Battery_LevelMonitor
+xamarin.forms.labs.Battery_LevelMonitor;md5bcacc69a4bbdfd5fc1d206073181ee9f.Battery_LevelMonitor
+Xamarin.Forms.Labs.Battery/ChargerMonitor, Xamarin.Forms.Labs.Droid;md5bcacc69a4bbdfd5fc1d206073181ee9f.Battery_ChargerMonitor
+Xamarin.Forms.Labs.Battery+ChargerMonitor, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5bcacc69a4bbdfd5fc1d206073181ee9f.Battery_ChargerMonitor
+Xamarin.Forms.Labs.Battery.ChargerMonitor;md5bcacc69a4bbdfd5fc1d206073181ee9f.Battery_ChargerMonitor
+xamarin.forms.labs.Battery_ChargerMonitor;md5bcacc69a4bbdfd5fc1d206073181ee9f.Battery_ChargerMonitor
+Xamarin.Forms.Labs.BroadcastMonitor, Xamarin.Forms.Labs.Droid;md5bcacc69a4bbdfd5fc1d206073181ee9f.BroadcastMonitor
+Xamarin.Forms.Labs.BroadcastMonitor, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5bcacc69a4bbdfd5fc1d206073181ee9f.BroadcastMonitor
+Xamarin.Forms.Labs.BroadcastMonitor;md5bcacc69a4bbdfd5fc1d206073181ee9f.BroadcastMonitor
+xamarin.forms.labs.BroadcastMonitor;md5bcacc69a4bbdfd5fc1d206073181ee9f.BroadcastMonitor
+Xamarin.Forms.Labs.Gyroscope, Xamarin.Forms.Labs.Droid;md5bcacc69a4bbdfd5fc1d206073181ee9f.Gyroscope
+Xamarin.Forms.Labs.Gyroscope, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5bcacc69a4bbdfd5fc1d206073181ee9f.Gyroscope
+Xamarin.Forms.Labs.Gyroscope;md5bcacc69a4bbdfd5fc1d206073181ee9f.Gyroscope
+xamarin.forms.labs.Gyroscope;md5bcacc69a4bbdfd5fc1d206073181ee9f.Gyroscope
+Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarCellView, Xamarin.Forms.Labs.Droid;md5033a946b4f9a757048c44212e31dd095.CalendarCellView
+Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarCellView, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5033a946b4f9a757048c44212e31dd095.CalendarCellView
+Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarCellView;md5033a946b4f9a757048c44212e31dd095.CalendarCellView
+xamarin.forms.labs.droid.controls.calendar.CalendarCellView;md5033a946b4f9a757048c44212e31dd095.CalendarCellView
+Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarGridView, Xamarin.Forms.Labs.Droid;md5033a946b4f9a757048c44212e31dd095.CalendarGridView
+Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarGridView, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5033a946b4f9a757048c44212e31dd095.CalendarGridView
+Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarGridView;md5033a946b4f9a757048c44212e31dd095.CalendarGridView
+xamarin.forms.labs.droid.controls.calendar.CalendarGridView;md5033a946b4f9a757048c44212e31dd095.CalendarGridView
+Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarPickerView, Xamarin.Forms.Labs.Droid;md5033a946b4f9a757048c44212e31dd095.CalendarPickerView
+Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarPickerView, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5033a946b4f9a757048c44212e31dd095.CalendarPickerView
+Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarPickerView;md5033a946b4f9a757048c44212e31dd095.CalendarPickerView
+xamarin.forms.labs.droid.controls.calendar.CalendarPickerView;md5033a946b4f9a757048c44212e31dd095.CalendarPickerView
+Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarRowView, Xamarin.Forms.Labs.Droid;md5033a946b4f9a757048c44212e31dd095.CalendarRowView
+Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarRowView, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5033a946b4f9a757048c44212e31dd095.CalendarRowView
+Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarRowView;md5033a946b4f9a757048c44212e31dd095.CalendarRowView
+xamarin.forms.labs.droid.controls.calendar.CalendarRowView;md5033a946b4f9a757048c44212e31dd095.CalendarRowView
+Xamarin.Forms.Labs.Droid.Controls.Calendar.MonthAdapter, Xamarin.Forms.Labs.Droid;md5033a946b4f9a757048c44212e31dd095.MonthAdapter
+Xamarin.Forms.Labs.Droid.Controls.Calendar.MonthAdapter, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5033a946b4f9a757048c44212e31dd095.MonthAdapter
+Xamarin.Forms.Labs.Droid.Controls.Calendar.MonthAdapter;md5033a946b4f9a757048c44212e31dd095.MonthAdapter
+xamarin.forms.labs.droid.controls.calendar.MonthAdapter;md5033a946b4f9a757048c44212e31dd095.MonthAdapter
+Xamarin.Forms.Labs.Droid.Controls.Calendar.MonthCellDescriptor, Xamarin.Forms.Labs.Droid;md5033a946b4f9a757048c44212e31dd095.MonthCellDescriptor
+Xamarin.Forms.Labs.Droid.Controls.Calendar.MonthCellDescriptor, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5033a946b4f9a757048c44212e31dd095.MonthCellDescriptor
+Xamarin.Forms.Labs.Droid.Controls.Calendar.MonthCellDescriptor;md5033a946b4f9a757048c44212e31dd095.MonthCellDescriptor
+xamarin.forms.labs.droid.controls.calendar.MonthCellDescriptor;md5033a946b4f9a757048c44212e31dd095.MonthCellDescriptor
+Xamarin.Forms.Labs.Droid.Controls.Calendar.MonthView, Xamarin.Forms.Labs.Droid;md5033a946b4f9a757048c44212e31dd095.MonthView
+Xamarin.Forms.Labs.Droid.Controls.Calendar.MonthView, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5033a946b4f9a757048c44212e31dd095.MonthView
+Xamarin.Forms.Labs.Droid.Controls.Calendar.MonthView;md5033a946b4f9a757048c44212e31dd095.MonthView
+xamarin.forms.labs.droid.controls.calendar.MonthView;md5033a946b4f9a757048c44212e31dd095.MonthView
+Xamarin.Forms.Labs.Droid.Controls.ExtendedSwitchRenderer, Xamarin.Forms.Labs.Droid;md5b19d9ecc0d90e1a6202bfe17060e4520.ExtendedSwitchRenderer
+Xamarin.Forms.Labs.Droid.Controls.ExtendedSwitchRenderer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5b19d9ecc0d90e1a6202bfe17060e4520.ExtendedSwitchRenderer
+Xamarin.Forms.Labs.Droid.Controls.ExtendedSwitchRenderer;md5b19d9ecc0d90e1a6202bfe17060e4520.ExtendedSwitchRenderer
+xamarin.forms.labs.droid.controls.ExtendedSwitchRenderer;md5b19d9ecc0d90e1a6202bfe17060e4520.ExtendedSwitchRenderer
+Xamarin.Forms.Labs.Droid.Controls.ImageButton.ImageButtonRenderer, Xamarin.Forms.Labs.Droid;md5609b14a9532974eae977cd4eabd06123.ImageButtonRenderer
+Xamarin.Forms.Labs.Droid.Controls.ImageButton.ImageButtonRenderer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5609b14a9532974eae977cd4eabd06123.ImageButtonRenderer
+Xamarin.Forms.Labs.Droid.Controls.ImageButton.ImageButtonRenderer;md5609b14a9532974eae977cd4eabd06123.ImageButtonRenderer
+xamarin.forms.labs.droid.controls.imagebutton.ImageButtonRenderer;md5609b14a9532974eae977cd4eabd06123.ImageButtonRenderer
+Xamarin.Forms.Labs.Droid.Controls.WebImage.WebImageRenderer, Xamarin.Forms.Labs.Droid;md5f4e7295acf4035baa639e1eda4158618.WebImageRenderer
+Xamarin.Forms.Labs.Droid.Controls.WebImage.WebImageRenderer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5f4e7295acf4035baa639e1eda4158618.WebImageRenderer
+Xamarin.Forms.Labs.Droid.Controls.WebImage.WebImageRenderer;md5f4e7295acf4035baa639e1eda4158618.WebImageRenderer
+xamarin.forms.labs.droid.controls.webimage.WebImageRenderer;md5f4e7295acf4035baa639e1eda4158618.WebImageRenderer
+Xamarin.Forms.Labs.Droid.Services.Geolocation.GeolocationContinuousListener, Xamarin.Forms.Labs.Droid;md5abeb05fcbad21a0ee1a1e192dfc342a6.GeolocationContinuousListener
+Xamarin.Forms.Labs.Droid.Services.Geolocation.GeolocationContinuousListener, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5abeb05fcbad21a0ee1a1e192dfc342a6.GeolocationContinuousListener
+Xamarin.Forms.Labs.Droid.Services.Geolocation.GeolocationContinuousListener;md5abeb05fcbad21a0ee1a1e192dfc342a6.GeolocationContinuousListener
+xamarin.forms.labs.droid.services.geolocation.GeolocationContinuousListener;md5abeb05fcbad21a0ee1a1e192dfc342a6.GeolocationContinuousListener
+Xamarin.Forms.Labs.Droid.Services.Geolocation.GeolocationSingleListener, Xamarin.Forms.Labs.Droid;md5abeb05fcbad21a0ee1a1e192dfc342a6.GeolocationSingleListener
+Xamarin.Forms.Labs.Droid.Services.Geolocation.GeolocationSingleListener, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5abeb05fcbad21a0ee1a1e192dfc342a6.GeolocationSingleListener
+Xamarin.Forms.Labs.Droid.Services.Geolocation.GeolocationSingleListener;md5abeb05fcbad21a0ee1a1e192dfc342a6.GeolocationSingleListener
+xamarin.forms.labs.droid.services.geolocation.GeolocationSingleListener;md5abeb05fcbad21a0ee1a1e192dfc342a6.GeolocationSingleListener
+Xamarin.Forms.Labs.Droid.Services.Media.MediaPickerActivity, Xamarin.Forms.Labs.Droid;md580ff97617b4b4478d96ad13ee9e03bea.MediaPickerActivity
+Xamarin.Forms.Labs.Droid.Services.Media.MediaPickerActivity, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md580ff97617b4b4478d96ad13ee9e03bea.MediaPickerActivity
+Xamarin.Forms.Labs.Droid.Services.Media.MediaPickerActivity;md580ff97617b4b4478d96ad13ee9e03bea.MediaPickerActivity
+xamarin.forms.labs.droid.services.media.MediaPickerActivity;md580ff97617b4b4478d96ad13ee9e03bea.MediaPickerActivity
+Xamarin.Forms.Labs.Droid.Services.NfcDevice, Xamarin.Forms.Labs.Droid;md5810d6e76f14ccbdae32cb58b3f830198.NfcDevice
+Xamarin.Forms.Labs.Droid.Services.NfcDevice, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5810d6e76f14ccbdae32cb58b3f830198.NfcDevice
+Xamarin.Forms.Labs.Droid.Services.NfcDevice;md5810d6e76f14ccbdae32cb58b3f830198.NfcDevice
+xamarin.forms.labs.droid.services.NfcDevice;md5810d6e76f14ccbdae32cb58b3f830198.NfcDevice
+Xamarin.Forms.Labs.Droid.Services.NfcDevice/NfcMonitor, Xamarin.Forms.Labs.Droid;md5810d6e76f14ccbdae32cb58b3f830198.NfcDevice_NfcMonitor
+Xamarin.Forms.Labs.Droid.Services.NfcDevice+NfcMonitor, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5810d6e76f14ccbdae32cb58b3f830198.NfcDevice_NfcMonitor
+Xamarin.Forms.Labs.Droid.Services.NfcDevice.NfcMonitor;md5810d6e76f14ccbdae32cb58b3f830198.NfcDevice_NfcMonitor
+xamarin.forms.labs.droid.services.NfcDevice_NfcMonitor;md5810d6e76f14ccbdae32cb58b3f830198.NfcDevice_NfcMonitor
+Xamarin.Forms.Labs.Droid.Services.TextToSpeechService, Xamarin.Forms.Labs.Droid;md5810d6e76f14ccbdae32cb58b3f830198.TextToSpeechService
+Xamarin.Forms.Labs.Droid.Services.TextToSpeechService, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5810d6e76f14ccbdae32cb58b3f830198.TextToSpeechService
+Xamarin.Forms.Labs.Droid.Services.TextToSpeechService;md5810d6e76f14ccbdae32cb58b3f830198.TextToSpeechService
+xamarin.forms.labs.droid.services.TextToSpeechService;md5810d6e76f14ccbdae32cb58b3f830198.TextToSpeechService
+Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarViewRenderer, Xamarin.Forms.Labs.Droid;md5033a946b4f9a757048c44212e31dd095.CalendarViewRenderer
+Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarViewRenderer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5033a946b4f9a757048c44212e31dd095.CalendarViewRenderer
+Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarViewRenderer;md5033a946b4f9a757048c44212e31dd095.CalendarViewRenderer
+xamarin.forms.labs.droid.controls.calendar.CalendarViewRenderer;md5033a946b4f9a757048c44212e31dd095.CalendarViewRenderer
+Xamarin.Forms.Labs.Droid.ExtendedLabelRender, Xamarin.Forms.Labs.Droid;md5400e8a84346a3a0441b7c796511a739b.ExtendedLabelRender
+Xamarin.Forms.Labs.Droid.ExtendedLabelRender, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5400e8a84346a3a0441b7c796511a739b.ExtendedLabelRender
+Xamarin.Forms.Labs.Droid.ExtendedLabelRender;md5400e8a84346a3a0441b7c796511a739b.ExtendedLabelRender
+xamarin.forms.labs.droid.ExtendedLabelRender;md5400e8a84346a3a0441b7c796511a739b.ExtendedLabelRender
+Xamarin.Forms.Labs.Controls.HybridWebViewRenderer, Xamarin.Forms.Labs.Droid;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer
+Xamarin.Forms.Labs.Controls.HybridWebViewRenderer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer
+Xamarin.Forms.Labs.Controls.HybridWebViewRenderer;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer
+xamarin.forms.labs.controls.HybridWebViewRenderer;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer
+Xamarin.Forms.Labs.Controls.HybridWebViewRenderer/Client, Xamarin.Forms.Labs.Droid;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer_Client
+Xamarin.Forms.Labs.Controls.HybridWebViewRenderer+Client, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer_Client
+Xamarin.Forms.Labs.Controls.HybridWebViewRenderer.Client;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer_Client
+xamarin.forms.labs.controls.HybridWebViewRenderer_Client;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer_Client
+Xamarin.Forms.Labs.Controls.HybridWebViewRenderer/Xamarin, Xamarin.Forms.Labs.Droid;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer_Xamarin
+Xamarin.Forms.Labs.Controls.HybridWebViewRenderer+Xamarin, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer_Xamarin
+Xamarin.Forms.Labs.Controls.HybridWebViewRenderer.Xamarin;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer_Xamarin
+xamarin.forms.labs.controls.HybridWebViewRenderer_Xamarin;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer_Xamarin
+Xamarin.Forms.Labs.Controls.HybridWebViewRenderer/ChromeClient, Xamarin.Forms.Labs.Droid;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer_ChromeClient
+Xamarin.Forms.Labs.Controls.HybridWebViewRenderer+ChromeClient, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer_ChromeClient
+Xamarin.Forms.Labs.Controls.HybridWebViewRenderer.ChromeClient;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer_ChromeClient
+xamarin.forms.labs.controls.HybridWebViewRenderer_ChromeClient;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer_ChromeClient
+Xamarin.Forms.Labs.SensorBarDroidView, Xamarin.Forms.Labs.Droid;md5bcacc69a4bbdfd5fc1d206073181ee9f.SensorBarDroidView
+Xamarin.Forms.Labs.SensorBarDroidView, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5bcacc69a4bbdfd5fc1d206073181ee9f.SensorBarDroidView
+Xamarin.Forms.Labs.SensorBarDroidView;md5bcacc69a4bbdfd5fc1d206073181ee9f.SensorBarDroidView
+xamarin.forms.labs.SensorBarDroidView;md5bcacc69a4bbdfd5fc1d206073181ee9f.SensorBarDroidView
+Xamarin.Forms.Labs.Droid.SensorBarViewRenderer, Xamarin.Forms.Labs.Droid;md5400e8a84346a3a0441b7c796511a739b.SensorBarViewRenderer
+Xamarin.Forms.Labs.Droid.SensorBarViewRenderer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5400e8a84346a3a0441b7c796511a739b.SensorBarViewRenderer
+Xamarin.Forms.Labs.Droid.SensorBarViewRenderer;md5400e8a84346a3a0441b7c796511a739b.SensorBarViewRenderer
+xamarin.forms.labs.droid.SensorBarViewRenderer;md5400e8a84346a3a0441b7c796511a739b.SensorBarViewRenderer
+Xamarin.Forms.Labs.Droid.XFormsApplicationDroid, Xamarin.Forms.Labs.Droid;md5400e8a84346a3a0441b7c796511a739b.XFormsApplicationDroid
+Xamarin.Forms.Labs.Droid.XFormsApplicationDroid, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5400e8a84346a3a0441b7c796511a739b.XFormsApplicationDroid
+Xamarin.Forms.Labs.Droid.XFormsApplicationDroid;md5400e8a84346a3a0441b7c796511a739b.XFormsApplicationDroid
+xamarin.forms.labs.droid.XFormsApplicationDroid;md5400e8a84346a3a0441b7c796511a739b.XFormsApplicationDroid
+Xamarin.Forms.Labs.Droid.DynamicListViewRenderer`1, Xamarin.Forms.Labs.Droid;md5400e8a84346a3a0441b7c796511a739b.DynamicListViewRenderer_1
+Xamarin.Forms.Labs.Droid.DynamicListViewRenderer`1, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5400e8a84346a3a0441b7c796511a739b.DynamicListViewRenderer_1
+Xamarin.Forms.Labs.Droid.DynamicListViewRenderer`1;md5400e8a84346a3a0441b7c796511a739b.DynamicListViewRenderer_1
+xamarin.forms.labs.droid.DynamicListViewRenderer_1;md5400e8a84346a3a0441b7c796511a739b.DynamicListViewRenderer_1
+Xamarin.Forms.Labs.Droid.DynamicListViewRenderer`1/DataSource, Xamarin.Forms.Labs.Droid;md5400e8a84346a3a0441b7c796511a739b.DynamicListViewRenderer_1_DataSource
+Xamarin.Forms.Labs.Droid.DynamicListViewRenderer`1+DataSource, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5400e8a84346a3a0441b7c796511a739b.DynamicListViewRenderer_1_DataSource
+Xamarin.Forms.Labs.Droid.DynamicListViewRenderer`1.DataSource;md5400e8a84346a3a0441b7c796511a739b.DynamicListViewRenderer_1_DataSource
+xamarin.forms.labs.droid.DynamicListViewRenderer_1_DataSource;md5400e8a84346a3a0441b7c796511a739b.DynamicListViewRenderer_1_DataSource
+Xamarin.Forms.Labs.Droid.Controls.GridView.GridViewRenderer, Xamarin.Forms.Labs.Droid;md540f4d414a23ad91272a87789c735f4df.GridViewRenderer
+Xamarin.Forms.Labs.Droid.Controls.GridView.GridViewRenderer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md540f4d414a23ad91272a87789c735f4df.GridViewRenderer
+Xamarin.Forms.Labs.Droid.Controls.GridView.GridViewRenderer;md540f4d414a23ad91272a87789c735f4df.GridViewRenderer
+xamarin.forms.labs.droid.controls.gridview.GridViewRenderer;md540f4d414a23ad91272a87789c735f4df.GridViewRenderer
+Xamarin.Forms.Labs.Droid.Controls.GridView.GridDataSource, Xamarin.Forms.Labs.Droid;md540f4d414a23ad91272a87789c735f4df.GridDataSource
+Xamarin.Forms.Labs.Droid.Controls.GridView.GridDataSource, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md540f4d414a23ad91272a87789c735f4df.GridDataSource
+Xamarin.Forms.Labs.Droid.Controls.GridView.GridDataSource;md540f4d414a23ad91272a87789c735f4df.GridDataSource
+xamarin.forms.labs.droid.controls.gridview.GridDataSource;md540f4d414a23ad91272a87789c735f4df.GridDataSource
+Xamarin.Forms.Labs.Droid.Controls.GridView.GridViewCellRenderer/ViewCellContainer, Xamarin.Forms.Labs.Droid;md540f4d414a23ad91272a87789c735f4df.GridViewCellRenderer_ViewCellContainer
+Xamarin.Forms.Labs.Droid.Controls.GridView.GridViewCellRenderer+ViewCellContainer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md540f4d414a23ad91272a87789c735f4df.GridViewCellRenderer_ViewCellContainer
+Xamarin.Forms.Labs.Droid.Controls.GridView.GridViewCellRenderer.ViewCellContainer;md540f4d414a23ad91272a87789c735f4df.GridViewCellRenderer_ViewCellContainer
+xamarin.forms.labs.droid.controls.gridview.GridViewCellRenderer_ViewCellContainer;md540f4d414a23ad91272a87789c735f4df.GridViewCellRenderer_ViewCellContainer
+Xamarin.Forms.Labs.Droid.Controls.CheckBoxRenderer, Xamarin.Forms.Labs.Droid;md5b19d9ecc0d90e1a6202bfe17060e4520.CheckBoxRenderer
+Xamarin.Forms.Labs.Droid.Controls.CheckBoxRenderer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5b19d9ecc0d90e1a6202bfe17060e4520.CheckBoxRenderer
+Xamarin.Forms.Labs.Droid.Controls.CheckBoxRenderer;md5b19d9ecc0d90e1a6202bfe17060e4520.CheckBoxRenderer
+xamarin.forms.labs.droid.controls.CheckBoxRenderer;md5b19d9ecc0d90e1a6202bfe17060e4520.CheckBoxRenderer
+Xamarin.Forms.Labs.Droid.CameraViewRenderer, Xamarin.Forms.Labs.Droid;md5400e8a84346a3a0441b7c796511a739b.CameraViewRenderer
+Xamarin.Forms.Labs.Droid.CameraViewRenderer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5400e8a84346a3a0441b7c796511a739b.CameraViewRenderer
+Xamarin.Forms.Labs.Droid.CameraViewRenderer;md5400e8a84346a3a0441b7c796511a739b.CameraViewRenderer
+xamarin.forms.labs.droid.CameraViewRenderer;md5400e8a84346a3a0441b7c796511a739b.CameraViewRenderer
+Xamarin.Forms.Labs.Droid.CameraPreview, Xamarin.Forms.Labs.Droid;md5400e8a84346a3a0441b7c796511a739b.CameraPreview
+Xamarin.Forms.Labs.Droid.CameraPreview, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5400e8a84346a3a0441b7c796511a739b.CameraPreview
+Xamarin.Forms.Labs.Droid.CameraPreview;md5400e8a84346a3a0441b7c796511a739b.CameraPreview
+xamarin.forms.labs.droid.CameraPreview;md5400e8a84346a3a0441b7c796511a739b.CameraPreview
+Xamarin.Forms.Labs.Droid.ExtendedScrollViewRenderer, Xamarin.Forms.Labs.Droid;md5400e8a84346a3a0441b7c796511a739b.ExtendedScrollViewRenderer
+Xamarin.Forms.Labs.Droid.ExtendedScrollViewRenderer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5400e8a84346a3a0441b7c796511a739b.ExtendedScrollViewRenderer
+Xamarin.Forms.Labs.Droid.ExtendedScrollViewRenderer;md5400e8a84346a3a0441b7c796511a739b.ExtendedScrollViewRenderer
+xamarin.forms.labs.droid.ExtendedScrollViewRenderer;md5400e8a84346a3a0441b7c796511a739b.ExtendedScrollViewRenderer
+Xamarin.Forms.Labs.Droid.ImageGalleryRenderer, Xamarin.Forms.Labs.Droid;md5400e8a84346a3a0441b7c796511a739b.ImageGalleryRenderer
+Xamarin.Forms.Labs.Droid.ImageGalleryRenderer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5400e8a84346a3a0441b7c796511a739b.ImageGalleryRenderer
+Xamarin.Forms.Labs.Droid.ImageGalleryRenderer;md5400e8a84346a3a0441b7c796511a739b.ImageGalleryRenderer
+xamarin.forms.labs.droid.ImageGalleryRenderer;md5400e8a84346a3a0441b7c796511a739b.ImageGalleryRenderer
+Xamarin.Forms.Labs.Droid.ImageGalleryRenderer/DataSource, Xamarin.Forms.Labs.Droid;md5400e8a84346a3a0441b7c796511a739b.ImageGalleryRenderer_DataSource
+Xamarin.Forms.Labs.Droid.ImageGalleryRenderer+DataSource, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5400e8a84346a3a0441b7c796511a739b.ImageGalleryRenderer_DataSource
+Xamarin.Forms.Labs.Droid.ImageGalleryRenderer.DataSource;md5400e8a84346a3a0441b7c796511a739b.ImageGalleryRenderer_DataSource
+xamarin.forms.labs.droid.ImageGalleryRenderer_DataSource;md5400e8a84346a3a0441b7c796511a739b.ImageGalleryRenderer_DataSource
+Xamarin.Forms.Labs.Droid.ExtendedEntryRenderer, Xamarin.Forms.Labs.Droid;md5400e8a84346a3a0441b7c796511a739b.ExtendedEntryRenderer
+Xamarin.Forms.Labs.Droid.ExtendedEntryRenderer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5400e8a84346a3a0441b7c796511a739b.ExtendedEntryRenderer
+Xamarin.Forms.Labs.Droid.ExtendedEntryRenderer;md5400e8a84346a3a0441b7c796511a739b.ExtendedEntryRenderer
+xamarin.forms.labs.droid.ExtendedEntryRenderer;md5400e8a84346a3a0441b7c796511a739b.ExtendedEntryRenderer
+Xamarin.Forms.Labs.SeparatorDroidView, Xamarin.Forms.Labs.Droid;md5bcacc69a4bbdfd5fc1d206073181ee9f.SeparatorDroidView
+Xamarin.Forms.Labs.SeparatorDroidView, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5bcacc69a4bbdfd5fc1d206073181ee9f.SeparatorDroidView
+Xamarin.Forms.Labs.SeparatorDroidView;md5bcacc69a4bbdfd5fc1d206073181ee9f.SeparatorDroidView
+xamarin.forms.labs.SeparatorDroidView;md5bcacc69a4bbdfd5fc1d206073181ee9f.SeparatorDroidView
+Xamarin.Forms.Labs.Droid.SeparatorRenderer, Xamarin.Forms.Labs.Droid;md5400e8a84346a3a0441b7c796511a739b.SeparatorRenderer
+Xamarin.Forms.Labs.Droid.SeparatorRenderer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5400e8a84346a3a0441b7c796511a739b.SeparatorRenderer
+Xamarin.Forms.Labs.Droid.SeparatorRenderer;md5400e8a84346a3a0441b7c796511a739b.SeparatorRenderer
+xamarin.forms.labs.droid.SeparatorRenderer;md5400e8a84346a3a0441b7c796511a739b.SeparatorRenderer
+Xamarin.Forms.Labs.Droid.ExtendedTableViewRenderer, Xamarin.Forms.Labs.Droid;md5400e8a84346a3a0441b7c796511a739b.ExtendedTableViewRenderer
+Xamarin.Forms.Labs.Droid.ExtendedTableViewRenderer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5400e8a84346a3a0441b7c796511a739b.ExtendedTableViewRenderer
+Xamarin.Forms.Labs.Droid.ExtendedTableViewRenderer;md5400e8a84346a3a0441b7c796511a739b.ExtendedTableViewRenderer
+xamarin.forms.labs.droid.ExtendedTableViewRenderer;md5400e8a84346a3a0441b7c796511a739b.ExtendedTableViewRenderer
+Xamarin.InsightsCore.BackgroundManager, Xamarin.Insights;md55caa6fe88082d2d5789caeda3e8fc56c.BackgroundManager
+Xamarin.InsightsCore.BackgroundManager, Xamarin.Insights, Version=1.11.0.0, Culture=neutral, PublicKeyToken=null;md55caa6fe88082d2d5789caeda3e8fc56c.BackgroundManager
+Xamarin.InsightsCore.BackgroundManager;md55caa6fe88082d2d5789caeda3e8fc56c.BackgroundManager
+xamarin.insightscore.BackgroundManager;md55caa6fe88082d2d5789caeda3e8fc56c.BackgroundManager
+Xamarin.InsightsCore.NetworkChangeReceiver, Xamarin.Insights;md55caa6fe88082d2d5789caeda3e8fc56c.NetworkChangeReceiver
+Xamarin.InsightsCore.NetworkChangeReceiver, Xamarin.Insights, Version=1.11.0.0, Culture=neutral, PublicKeyToken=null;md55caa6fe88082d2d5789caeda3e8fc56c.NetworkChangeReceiver
+Xamarin.InsightsCore.NetworkChangeReceiver;md55caa6fe88082d2d5789caeda3e8fc56c.NetworkChangeReceiver
+xamarin.insightscore.NetworkChangeReceiver;md55caa6fe88082d2d5789caeda3e8fc56c.NetworkChangeReceiver
+Xamarin.InsightsCore.NativeUnhandledExceptionHandler, Xamarin.Insights;md55caa6fe88082d2d5789caeda3e8fc56c.NativeUnhandledExceptionHandler
+Xamarin.InsightsCore.NativeUnhandledExceptionHandler, Xamarin.Insights, Version=1.11.0.0, Culture=neutral, PublicKeyToken=null;md55caa6fe88082d2d5789caeda3e8fc56c.NativeUnhandledExceptionHandler
+Xamarin.InsightsCore.NativeUnhandledExceptionHandler;md55caa6fe88082d2d5789caeda3e8fc56c.NativeUnhandledExceptionHandler
+xamarin.insightscore.NativeUnhandledExceptionHandler;md55caa6fe88082d2d5789caeda3e8fc56c.NativeUnhandledExceptionHandler
 Xamarin.Forms.Platform.Android.CellAdapter, Xamarin.Forms.Platform.Android;md5b60ffeb829f638581ab2bb9b1a7f4f3f.CellAdapter
 Xamarin.Forms.Platform.Android.CellAdapter, Xamarin.Forms.Platform.Android, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null;md5b60ffeb829f638581ab2bb9b1a7f4f3f.CellAdapter
 Xamarin.Forms.Platform.Android.CellAdapter;md5b60ffeb829f638581ab2bb9b1a7f4f3f.CellAdapter
@@ -550,183 +730,3 @@ Xamarin.Forms.Platform.Android.AppCompat.FormsViewPager, Xamarin.Forms.Platform.
 Xamarin.Forms.Platform.Android.AppCompat.FormsViewPager, Xamarin.Forms.Platform.Android, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null;md5270abb39e60627f0f200893b490a1ade.FormsViewPager
 Xamarin.Forms.Platform.Android.AppCompat.FormsViewPager;md5270abb39e60627f0f200893b490a1ade.FormsViewPager
 xamarin.forms.platform.android.appcompat.FormsViewPager;md5270abb39e60627f0f200893b490a1ade.FormsViewPager
-Xamarin.Forms.Labs.Accelerometer, Xamarin.Forms.Labs.Droid;md5bcacc69a4bbdfd5fc1d206073181ee9f.Accelerometer
-Xamarin.Forms.Labs.Accelerometer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5bcacc69a4bbdfd5fc1d206073181ee9f.Accelerometer
-Xamarin.Forms.Labs.Accelerometer;md5bcacc69a4bbdfd5fc1d206073181ee9f.Accelerometer
-xamarin.forms.labs.Accelerometer;md5bcacc69a4bbdfd5fc1d206073181ee9f.Accelerometer
-Xamarin.Forms.Labs.Battery/LevelMonitor, Xamarin.Forms.Labs.Droid;md5bcacc69a4bbdfd5fc1d206073181ee9f.Battery_LevelMonitor
-Xamarin.Forms.Labs.Battery+LevelMonitor, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5bcacc69a4bbdfd5fc1d206073181ee9f.Battery_LevelMonitor
-Xamarin.Forms.Labs.Battery.LevelMonitor;md5bcacc69a4bbdfd5fc1d206073181ee9f.Battery_LevelMonitor
-xamarin.forms.labs.Battery_LevelMonitor;md5bcacc69a4bbdfd5fc1d206073181ee9f.Battery_LevelMonitor
-Xamarin.Forms.Labs.Battery/ChargerMonitor, Xamarin.Forms.Labs.Droid;md5bcacc69a4bbdfd5fc1d206073181ee9f.Battery_ChargerMonitor
-Xamarin.Forms.Labs.Battery+ChargerMonitor, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5bcacc69a4bbdfd5fc1d206073181ee9f.Battery_ChargerMonitor
-Xamarin.Forms.Labs.Battery.ChargerMonitor;md5bcacc69a4bbdfd5fc1d206073181ee9f.Battery_ChargerMonitor
-xamarin.forms.labs.Battery_ChargerMonitor;md5bcacc69a4bbdfd5fc1d206073181ee9f.Battery_ChargerMonitor
-Xamarin.Forms.Labs.BroadcastMonitor, Xamarin.Forms.Labs.Droid;md5bcacc69a4bbdfd5fc1d206073181ee9f.BroadcastMonitor
-Xamarin.Forms.Labs.BroadcastMonitor, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5bcacc69a4bbdfd5fc1d206073181ee9f.BroadcastMonitor
-Xamarin.Forms.Labs.BroadcastMonitor;md5bcacc69a4bbdfd5fc1d206073181ee9f.BroadcastMonitor
-xamarin.forms.labs.BroadcastMonitor;md5bcacc69a4bbdfd5fc1d206073181ee9f.BroadcastMonitor
-Xamarin.Forms.Labs.Gyroscope, Xamarin.Forms.Labs.Droid;md5bcacc69a4bbdfd5fc1d206073181ee9f.Gyroscope
-Xamarin.Forms.Labs.Gyroscope, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5bcacc69a4bbdfd5fc1d206073181ee9f.Gyroscope
-Xamarin.Forms.Labs.Gyroscope;md5bcacc69a4bbdfd5fc1d206073181ee9f.Gyroscope
-xamarin.forms.labs.Gyroscope;md5bcacc69a4bbdfd5fc1d206073181ee9f.Gyroscope
-Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarCellView, Xamarin.Forms.Labs.Droid;md5033a946b4f9a757048c44212e31dd095.CalendarCellView
-Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarCellView, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5033a946b4f9a757048c44212e31dd095.CalendarCellView
-Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarCellView;md5033a946b4f9a757048c44212e31dd095.CalendarCellView
-xamarin.forms.labs.droid.controls.calendar.CalendarCellView;md5033a946b4f9a757048c44212e31dd095.CalendarCellView
-Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarGridView, Xamarin.Forms.Labs.Droid;md5033a946b4f9a757048c44212e31dd095.CalendarGridView
-Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarGridView, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5033a946b4f9a757048c44212e31dd095.CalendarGridView
-Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarGridView;md5033a946b4f9a757048c44212e31dd095.CalendarGridView
-xamarin.forms.labs.droid.controls.calendar.CalendarGridView;md5033a946b4f9a757048c44212e31dd095.CalendarGridView
-Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarPickerView, Xamarin.Forms.Labs.Droid;md5033a946b4f9a757048c44212e31dd095.CalendarPickerView
-Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarPickerView, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5033a946b4f9a757048c44212e31dd095.CalendarPickerView
-Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarPickerView;md5033a946b4f9a757048c44212e31dd095.CalendarPickerView
-xamarin.forms.labs.droid.controls.calendar.CalendarPickerView;md5033a946b4f9a757048c44212e31dd095.CalendarPickerView
-Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarRowView, Xamarin.Forms.Labs.Droid;md5033a946b4f9a757048c44212e31dd095.CalendarRowView
-Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarRowView, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5033a946b4f9a757048c44212e31dd095.CalendarRowView
-Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarRowView;md5033a946b4f9a757048c44212e31dd095.CalendarRowView
-xamarin.forms.labs.droid.controls.calendar.CalendarRowView;md5033a946b4f9a757048c44212e31dd095.CalendarRowView
-Xamarin.Forms.Labs.Droid.Controls.Calendar.MonthAdapter, Xamarin.Forms.Labs.Droid;md5033a946b4f9a757048c44212e31dd095.MonthAdapter
-Xamarin.Forms.Labs.Droid.Controls.Calendar.MonthAdapter, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5033a946b4f9a757048c44212e31dd095.MonthAdapter
-Xamarin.Forms.Labs.Droid.Controls.Calendar.MonthAdapter;md5033a946b4f9a757048c44212e31dd095.MonthAdapter
-xamarin.forms.labs.droid.controls.calendar.MonthAdapter;md5033a946b4f9a757048c44212e31dd095.MonthAdapter
-Xamarin.Forms.Labs.Droid.Controls.Calendar.MonthCellDescriptor, Xamarin.Forms.Labs.Droid;md5033a946b4f9a757048c44212e31dd095.MonthCellDescriptor
-Xamarin.Forms.Labs.Droid.Controls.Calendar.MonthCellDescriptor, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5033a946b4f9a757048c44212e31dd095.MonthCellDescriptor
-Xamarin.Forms.Labs.Droid.Controls.Calendar.MonthCellDescriptor;md5033a946b4f9a757048c44212e31dd095.MonthCellDescriptor
-xamarin.forms.labs.droid.controls.calendar.MonthCellDescriptor;md5033a946b4f9a757048c44212e31dd095.MonthCellDescriptor
-Xamarin.Forms.Labs.Droid.Controls.Calendar.MonthView, Xamarin.Forms.Labs.Droid;md5033a946b4f9a757048c44212e31dd095.MonthView
-Xamarin.Forms.Labs.Droid.Controls.Calendar.MonthView, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5033a946b4f9a757048c44212e31dd095.MonthView
-Xamarin.Forms.Labs.Droid.Controls.Calendar.MonthView;md5033a946b4f9a757048c44212e31dd095.MonthView
-xamarin.forms.labs.droid.controls.calendar.MonthView;md5033a946b4f9a757048c44212e31dd095.MonthView
-Xamarin.Forms.Labs.Droid.Controls.ExtendedSwitchRenderer, Xamarin.Forms.Labs.Droid;md5b19d9ecc0d90e1a6202bfe17060e4520.ExtendedSwitchRenderer
-Xamarin.Forms.Labs.Droid.Controls.ExtendedSwitchRenderer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5b19d9ecc0d90e1a6202bfe17060e4520.ExtendedSwitchRenderer
-Xamarin.Forms.Labs.Droid.Controls.ExtendedSwitchRenderer;md5b19d9ecc0d90e1a6202bfe17060e4520.ExtendedSwitchRenderer
-xamarin.forms.labs.droid.controls.ExtendedSwitchRenderer;md5b19d9ecc0d90e1a6202bfe17060e4520.ExtendedSwitchRenderer
-Xamarin.Forms.Labs.Droid.Controls.ImageButton.ImageButtonRenderer, Xamarin.Forms.Labs.Droid;md5609b14a9532974eae977cd4eabd06123.ImageButtonRenderer
-Xamarin.Forms.Labs.Droid.Controls.ImageButton.ImageButtonRenderer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5609b14a9532974eae977cd4eabd06123.ImageButtonRenderer
-Xamarin.Forms.Labs.Droid.Controls.ImageButton.ImageButtonRenderer;md5609b14a9532974eae977cd4eabd06123.ImageButtonRenderer
-xamarin.forms.labs.droid.controls.imagebutton.ImageButtonRenderer;md5609b14a9532974eae977cd4eabd06123.ImageButtonRenderer
-Xamarin.Forms.Labs.Droid.Controls.WebImage.WebImageRenderer, Xamarin.Forms.Labs.Droid;md5f4e7295acf4035baa639e1eda4158618.WebImageRenderer
-Xamarin.Forms.Labs.Droid.Controls.WebImage.WebImageRenderer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5f4e7295acf4035baa639e1eda4158618.WebImageRenderer
-Xamarin.Forms.Labs.Droid.Controls.WebImage.WebImageRenderer;md5f4e7295acf4035baa639e1eda4158618.WebImageRenderer
-xamarin.forms.labs.droid.controls.webimage.WebImageRenderer;md5f4e7295acf4035baa639e1eda4158618.WebImageRenderer
-Xamarin.Forms.Labs.Droid.Services.Geolocation.GeolocationContinuousListener, Xamarin.Forms.Labs.Droid;md5abeb05fcbad21a0ee1a1e192dfc342a6.GeolocationContinuousListener
-Xamarin.Forms.Labs.Droid.Services.Geolocation.GeolocationContinuousListener, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5abeb05fcbad21a0ee1a1e192dfc342a6.GeolocationContinuousListener
-Xamarin.Forms.Labs.Droid.Services.Geolocation.GeolocationContinuousListener;md5abeb05fcbad21a0ee1a1e192dfc342a6.GeolocationContinuousListener
-xamarin.forms.labs.droid.services.geolocation.GeolocationContinuousListener;md5abeb05fcbad21a0ee1a1e192dfc342a6.GeolocationContinuousListener
-Xamarin.Forms.Labs.Droid.Services.Geolocation.GeolocationSingleListener, Xamarin.Forms.Labs.Droid;md5abeb05fcbad21a0ee1a1e192dfc342a6.GeolocationSingleListener
-Xamarin.Forms.Labs.Droid.Services.Geolocation.GeolocationSingleListener, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5abeb05fcbad21a0ee1a1e192dfc342a6.GeolocationSingleListener
-Xamarin.Forms.Labs.Droid.Services.Geolocation.GeolocationSingleListener;md5abeb05fcbad21a0ee1a1e192dfc342a6.GeolocationSingleListener
-xamarin.forms.labs.droid.services.geolocation.GeolocationSingleListener;md5abeb05fcbad21a0ee1a1e192dfc342a6.GeolocationSingleListener
-Xamarin.Forms.Labs.Droid.Services.Media.MediaPickerActivity, Xamarin.Forms.Labs.Droid;md580ff97617b4b4478d96ad13ee9e03bea.MediaPickerActivity
-Xamarin.Forms.Labs.Droid.Services.Media.MediaPickerActivity, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md580ff97617b4b4478d96ad13ee9e03bea.MediaPickerActivity
-Xamarin.Forms.Labs.Droid.Services.Media.MediaPickerActivity;md580ff97617b4b4478d96ad13ee9e03bea.MediaPickerActivity
-xamarin.forms.labs.droid.services.media.MediaPickerActivity;md580ff97617b4b4478d96ad13ee9e03bea.MediaPickerActivity
-Xamarin.Forms.Labs.Droid.Services.NfcDevice, Xamarin.Forms.Labs.Droid;md5810d6e76f14ccbdae32cb58b3f830198.NfcDevice
-Xamarin.Forms.Labs.Droid.Services.NfcDevice, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5810d6e76f14ccbdae32cb58b3f830198.NfcDevice
-Xamarin.Forms.Labs.Droid.Services.NfcDevice;md5810d6e76f14ccbdae32cb58b3f830198.NfcDevice
-xamarin.forms.labs.droid.services.NfcDevice;md5810d6e76f14ccbdae32cb58b3f830198.NfcDevice
-Xamarin.Forms.Labs.Droid.Services.NfcDevice/NfcMonitor, Xamarin.Forms.Labs.Droid;md5810d6e76f14ccbdae32cb58b3f830198.NfcDevice_NfcMonitor
-Xamarin.Forms.Labs.Droid.Services.NfcDevice+NfcMonitor, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5810d6e76f14ccbdae32cb58b3f830198.NfcDevice_NfcMonitor
-Xamarin.Forms.Labs.Droid.Services.NfcDevice.NfcMonitor;md5810d6e76f14ccbdae32cb58b3f830198.NfcDevice_NfcMonitor
-xamarin.forms.labs.droid.services.NfcDevice_NfcMonitor;md5810d6e76f14ccbdae32cb58b3f830198.NfcDevice_NfcMonitor
-Xamarin.Forms.Labs.Droid.Services.TextToSpeechService, Xamarin.Forms.Labs.Droid;md5810d6e76f14ccbdae32cb58b3f830198.TextToSpeechService
-Xamarin.Forms.Labs.Droid.Services.TextToSpeechService, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5810d6e76f14ccbdae32cb58b3f830198.TextToSpeechService
-Xamarin.Forms.Labs.Droid.Services.TextToSpeechService;md5810d6e76f14ccbdae32cb58b3f830198.TextToSpeechService
-xamarin.forms.labs.droid.services.TextToSpeechService;md5810d6e76f14ccbdae32cb58b3f830198.TextToSpeechService
-Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarViewRenderer, Xamarin.Forms.Labs.Droid;md5033a946b4f9a757048c44212e31dd095.CalendarViewRenderer
-Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarViewRenderer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5033a946b4f9a757048c44212e31dd095.CalendarViewRenderer
-Xamarin.Forms.Labs.Droid.Controls.Calendar.CalendarViewRenderer;md5033a946b4f9a757048c44212e31dd095.CalendarViewRenderer
-xamarin.forms.labs.droid.controls.calendar.CalendarViewRenderer;md5033a946b4f9a757048c44212e31dd095.CalendarViewRenderer
-Xamarin.Forms.Labs.Droid.ExtendedLabelRender, Xamarin.Forms.Labs.Droid;md5400e8a84346a3a0441b7c796511a739b.ExtendedLabelRender
-Xamarin.Forms.Labs.Droid.ExtendedLabelRender, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5400e8a84346a3a0441b7c796511a739b.ExtendedLabelRender
-Xamarin.Forms.Labs.Droid.ExtendedLabelRender;md5400e8a84346a3a0441b7c796511a739b.ExtendedLabelRender
-xamarin.forms.labs.droid.ExtendedLabelRender;md5400e8a84346a3a0441b7c796511a739b.ExtendedLabelRender
-Xamarin.Forms.Labs.Controls.HybridWebViewRenderer, Xamarin.Forms.Labs.Droid;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer
-Xamarin.Forms.Labs.Controls.HybridWebViewRenderer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer
-Xamarin.Forms.Labs.Controls.HybridWebViewRenderer;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer
-xamarin.forms.labs.controls.HybridWebViewRenderer;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer
-Xamarin.Forms.Labs.Controls.HybridWebViewRenderer/Client, Xamarin.Forms.Labs.Droid;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer_Client
-Xamarin.Forms.Labs.Controls.HybridWebViewRenderer+Client, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer_Client
-Xamarin.Forms.Labs.Controls.HybridWebViewRenderer.Client;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer_Client
-xamarin.forms.labs.controls.HybridWebViewRenderer_Client;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer_Client
-Xamarin.Forms.Labs.Controls.HybridWebViewRenderer/Xamarin, Xamarin.Forms.Labs.Droid;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer_Xamarin
-Xamarin.Forms.Labs.Controls.HybridWebViewRenderer+Xamarin, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer_Xamarin
-Xamarin.Forms.Labs.Controls.HybridWebViewRenderer.Xamarin;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer_Xamarin
-xamarin.forms.labs.controls.HybridWebViewRenderer_Xamarin;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer_Xamarin
-Xamarin.Forms.Labs.Controls.HybridWebViewRenderer/ChromeClient, Xamarin.Forms.Labs.Droid;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer_ChromeClient
-Xamarin.Forms.Labs.Controls.HybridWebViewRenderer+ChromeClient, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer_ChromeClient
-Xamarin.Forms.Labs.Controls.HybridWebViewRenderer.ChromeClient;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer_ChromeClient
-xamarin.forms.labs.controls.HybridWebViewRenderer_ChromeClient;md59a196c9829f31126054e19ab4feebca8.HybridWebViewRenderer_ChromeClient
-Xamarin.Forms.Labs.SensorBarDroidView, Xamarin.Forms.Labs.Droid;md5bcacc69a4bbdfd5fc1d206073181ee9f.SensorBarDroidView
-Xamarin.Forms.Labs.SensorBarDroidView, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5bcacc69a4bbdfd5fc1d206073181ee9f.SensorBarDroidView
-Xamarin.Forms.Labs.SensorBarDroidView;md5bcacc69a4bbdfd5fc1d206073181ee9f.SensorBarDroidView
-xamarin.forms.labs.SensorBarDroidView;md5bcacc69a4bbdfd5fc1d206073181ee9f.SensorBarDroidView
-Xamarin.Forms.Labs.Droid.SensorBarViewRenderer, Xamarin.Forms.Labs.Droid;md5400e8a84346a3a0441b7c796511a739b.SensorBarViewRenderer
-Xamarin.Forms.Labs.Droid.SensorBarViewRenderer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5400e8a84346a3a0441b7c796511a739b.SensorBarViewRenderer
-Xamarin.Forms.Labs.Droid.SensorBarViewRenderer;md5400e8a84346a3a0441b7c796511a739b.SensorBarViewRenderer
-xamarin.forms.labs.droid.SensorBarViewRenderer;md5400e8a84346a3a0441b7c796511a739b.SensorBarViewRenderer
-Xamarin.Forms.Labs.Droid.XFormsApplicationDroid, Xamarin.Forms.Labs.Droid;md5400e8a84346a3a0441b7c796511a739b.XFormsApplicationDroid
-Xamarin.Forms.Labs.Droid.XFormsApplicationDroid, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5400e8a84346a3a0441b7c796511a739b.XFormsApplicationDroid
-Xamarin.Forms.Labs.Droid.XFormsApplicationDroid;md5400e8a84346a3a0441b7c796511a739b.XFormsApplicationDroid
-xamarin.forms.labs.droid.XFormsApplicationDroid;md5400e8a84346a3a0441b7c796511a739b.XFormsApplicationDroid
-Xamarin.Forms.Labs.Droid.DynamicListViewRenderer`1, Xamarin.Forms.Labs.Droid;md5400e8a84346a3a0441b7c796511a739b.DynamicListViewRenderer_1
-Xamarin.Forms.Labs.Droid.DynamicListViewRenderer`1, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5400e8a84346a3a0441b7c796511a739b.DynamicListViewRenderer_1
-Xamarin.Forms.Labs.Droid.DynamicListViewRenderer`1;md5400e8a84346a3a0441b7c796511a739b.DynamicListViewRenderer_1
-xamarin.forms.labs.droid.DynamicListViewRenderer_1;md5400e8a84346a3a0441b7c796511a739b.DynamicListViewRenderer_1
-Xamarin.Forms.Labs.Droid.DynamicListViewRenderer`1/DataSource, Xamarin.Forms.Labs.Droid;md5400e8a84346a3a0441b7c796511a739b.DynamicListViewRenderer_1_DataSource
-Xamarin.Forms.Labs.Droid.DynamicListViewRenderer`1+DataSource, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5400e8a84346a3a0441b7c796511a739b.DynamicListViewRenderer_1_DataSource
-Xamarin.Forms.Labs.Droid.DynamicListViewRenderer`1.DataSource;md5400e8a84346a3a0441b7c796511a739b.DynamicListViewRenderer_1_DataSource
-xamarin.forms.labs.droid.DynamicListViewRenderer_1_DataSource;md5400e8a84346a3a0441b7c796511a739b.DynamicListViewRenderer_1_DataSource
-Xamarin.Forms.Labs.Droid.Controls.GridView.GridViewRenderer, Xamarin.Forms.Labs.Droid;md540f4d414a23ad91272a87789c735f4df.GridViewRenderer
-Xamarin.Forms.Labs.Droid.Controls.GridView.GridViewRenderer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md540f4d414a23ad91272a87789c735f4df.GridViewRenderer
-Xamarin.Forms.Labs.Droid.Controls.GridView.GridViewRenderer;md540f4d414a23ad91272a87789c735f4df.GridViewRenderer
-xamarin.forms.labs.droid.controls.gridview.GridViewRenderer;md540f4d414a23ad91272a87789c735f4df.GridViewRenderer
-Xamarin.Forms.Labs.Droid.Controls.GridView.GridDataSource, Xamarin.Forms.Labs.Droid;md540f4d414a23ad91272a87789c735f4df.GridDataSource
-Xamarin.Forms.Labs.Droid.Controls.GridView.GridDataSource, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md540f4d414a23ad91272a87789c735f4df.GridDataSource
-Xamarin.Forms.Labs.Droid.Controls.GridView.GridDataSource;md540f4d414a23ad91272a87789c735f4df.GridDataSource
-xamarin.forms.labs.droid.controls.gridview.GridDataSource;md540f4d414a23ad91272a87789c735f4df.GridDataSource
-Xamarin.Forms.Labs.Droid.Controls.GridView.GridViewCellRenderer/ViewCellContainer, Xamarin.Forms.Labs.Droid;md540f4d414a23ad91272a87789c735f4df.GridViewCellRenderer_ViewCellContainer
-Xamarin.Forms.Labs.Droid.Controls.GridView.GridViewCellRenderer+ViewCellContainer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md540f4d414a23ad91272a87789c735f4df.GridViewCellRenderer_ViewCellContainer
-Xamarin.Forms.Labs.Droid.Controls.GridView.GridViewCellRenderer.ViewCellContainer;md540f4d414a23ad91272a87789c735f4df.GridViewCellRenderer_ViewCellContainer
-xamarin.forms.labs.droid.controls.gridview.GridViewCellRenderer_ViewCellContainer;md540f4d414a23ad91272a87789c735f4df.GridViewCellRenderer_ViewCellContainer
-Xamarin.Forms.Labs.Droid.Controls.CheckBoxRenderer, Xamarin.Forms.Labs.Droid;md5b19d9ecc0d90e1a6202bfe17060e4520.CheckBoxRenderer
-Xamarin.Forms.Labs.Droid.Controls.CheckBoxRenderer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5b19d9ecc0d90e1a6202bfe17060e4520.CheckBoxRenderer
-Xamarin.Forms.Labs.Droid.Controls.CheckBoxRenderer;md5b19d9ecc0d90e1a6202bfe17060e4520.CheckBoxRenderer
-xamarin.forms.labs.droid.controls.CheckBoxRenderer;md5b19d9ecc0d90e1a6202bfe17060e4520.CheckBoxRenderer
-Xamarin.Forms.Labs.Droid.CameraViewRenderer, Xamarin.Forms.Labs.Droid;md5400e8a84346a3a0441b7c796511a739b.CameraViewRenderer
-Xamarin.Forms.Labs.Droid.CameraViewRenderer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5400e8a84346a3a0441b7c796511a739b.CameraViewRenderer
-Xamarin.Forms.Labs.Droid.CameraViewRenderer;md5400e8a84346a3a0441b7c796511a739b.CameraViewRenderer
-xamarin.forms.labs.droid.CameraViewRenderer;md5400e8a84346a3a0441b7c796511a739b.CameraViewRenderer
-Xamarin.Forms.Labs.Droid.CameraPreview, Xamarin.Forms.Labs.Droid;md5400e8a84346a3a0441b7c796511a739b.CameraPreview
-Xamarin.Forms.Labs.Droid.CameraPreview, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5400e8a84346a3a0441b7c796511a739b.CameraPreview
-Xamarin.Forms.Labs.Droid.CameraPreview;md5400e8a84346a3a0441b7c796511a739b.CameraPreview
-xamarin.forms.labs.droid.CameraPreview;md5400e8a84346a3a0441b7c796511a739b.CameraPreview
-Xamarin.Forms.Labs.Droid.ExtendedScrollViewRenderer, Xamarin.Forms.Labs.Droid;md5400e8a84346a3a0441b7c796511a739b.ExtendedScrollViewRenderer
-Xamarin.Forms.Labs.Droid.ExtendedScrollViewRenderer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5400e8a84346a3a0441b7c796511a739b.ExtendedScrollViewRenderer
-Xamarin.Forms.Labs.Droid.ExtendedScrollViewRenderer;md5400e8a84346a3a0441b7c796511a739b.ExtendedScrollViewRenderer
-xamarin.forms.labs.droid.ExtendedScrollViewRenderer;md5400e8a84346a3a0441b7c796511a739b.ExtendedScrollViewRenderer
-Xamarin.Forms.Labs.Droid.ImageGalleryRenderer, Xamarin.Forms.Labs.Droid;md5400e8a84346a3a0441b7c796511a739b.ImageGalleryRenderer
-Xamarin.Forms.Labs.Droid.ImageGalleryRenderer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5400e8a84346a3a0441b7c796511a739b.ImageGalleryRenderer
-Xamarin.Forms.Labs.Droid.ImageGalleryRenderer;md5400e8a84346a3a0441b7c796511a739b.ImageGalleryRenderer
-xamarin.forms.labs.droid.ImageGalleryRenderer;md5400e8a84346a3a0441b7c796511a739b.ImageGalleryRenderer
-Xamarin.Forms.Labs.Droid.ImageGalleryRenderer/DataSource, Xamarin.Forms.Labs.Droid;md5400e8a84346a3a0441b7c796511a739b.ImageGalleryRenderer_DataSource
-Xamarin.Forms.Labs.Droid.ImageGalleryRenderer+DataSource, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5400e8a84346a3a0441b7c796511a739b.ImageGalleryRenderer_DataSource
-Xamarin.Forms.Labs.Droid.ImageGalleryRenderer.DataSource;md5400e8a84346a3a0441b7c796511a739b.ImageGalleryRenderer_DataSource
-xamarin.forms.labs.droid.ImageGalleryRenderer_DataSource;md5400e8a84346a3a0441b7c796511a739b.ImageGalleryRenderer_DataSource
-Xamarin.Forms.Labs.Droid.ExtendedEntryRenderer, Xamarin.Forms.Labs.Droid;md5400e8a84346a3a0441b7c796511a739b.ExtendedEntryRenderer
-Xamarin.Forms.Labs.Droid.ExtendedEntryRenderer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5400e8a84346a3a0441b7c796511a739b.ExtendedEntryRenderer
-Xamarin.Forms.Labs.Droid.ExtendedEntryRenderer;md5400e8a84346a3a0441b7c796511a739b.ExtendedEntryRenderer
-xamarin.forms.labs.droid.ExtendedEntryRenderer;md5400e8a84346a3a0441b7c796511a739b.ExtendedEntryRenderer
-Xamarin.Forms.Labs.SeparatorDroidView, Xamarin.Forms.Labs.Droid;md5bcacc69a4bbdfd5fc1d206073181ee9f.SeparatorDroidView
-Xamarin.Forms.Labs.SeparatorDroidView, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5bcacc69a4bbdfd5fc1d206073181ee9f.SeparatorDroidView
-Xamarin.Forms.Labs.SeparatorDroidView;md5bcacc69a4bbdfd5fc1d206073181ee9f.SeparatorDroidView
-xamarin.forms.labs.SeparatorDroidView;md5bcacc69a4bbdfd5fc1d206073181ee9f.SeparatorDroidView
-Xamarin.Forms.Labs.Droid.SeparatorRenderer, Xamarin.Forms.Labs.Droid;md5400e8a84346a3a0441b7c796511a739b.SeparatorRenderer
-Xamarin.Forms.Labs.Droid.SeparatorRenderer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5400e8a84346a3a0441b7c796511a739b.SeparatorRenderer
-Xamarin.Forms.Labs.Droid.SeparatorRenderer;md5400e8a84346a3a0441b7c796511a739b.SeparatorRenderer
-xamarin.forms.labs.droid.SeparatorRenderer;md5400e8a84346a3a0441b7c796511a739b.SeparatorRenderer
-Xamarin.Forms.Labs.Droid.ExtendedTableViewRenderer, Xamarin.Forms.Labs.Droid;md5400e8a84346a3a0441b7c796511a739b.ExtendedTableViewRenderer
-Xamarin.Forms.Labs.Droid.ExtendedTableViewRenderer, Xamarin.Forms.Labs.Droid, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null;md5400e8a84346a3a0441b7c796511a739b.ExtendedTableViewRenderer
-Xamarin.Forms.Labs.Droid.ExtendedTableViewRenderer;md5400e8a84346a3a0441b7c796511a739b.ExtendedTableViewRenderer
-xamarin.forms.labs.droid.ExtendedTableViewRenderer;md5400e8a84346a3a0441b7c796511a739b.ExtendedTableViewRenderer
