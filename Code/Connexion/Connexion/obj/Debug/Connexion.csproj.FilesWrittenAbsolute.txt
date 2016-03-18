@@ -23,3 +23,5 @@
 /Users/BOKSIC/Playdate/Code/Connexion/Connexion/bin/Debug/Xamarin.Forms.Platform.dll
 /Users/BOKSIC/Playdate/Code/Connexion/Connexion/bin/Debug/ExifLib.dll
 /Users/BOKSIC/Playdate/Code/Connexion/Connexion/bin/Debug/Xamarin.Forms.Labs.dll
+/Users/BOKSIC/Playdate/Code/Connexion/Connexion/bin/Debug/Newtonsoft.Json.dll
+/Users/BOKSIC/Playdate/Code/Connexion/Connexion/bin/Debug/SQLite.Net.dll

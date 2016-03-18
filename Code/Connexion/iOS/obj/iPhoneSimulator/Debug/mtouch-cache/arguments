@@ -1,6 +1,6 @@
-# Version: 9.4.1.25 (cycle6-xi: 962a050)
+# Version: 9.4.2.27 (cycle6-xi-c6sr2: 58ba2bc)
 # [first argument, ignore] # /Users/BOKSIC/Playdate/Code/Connexion/iOS/mtouch.exe
-/Library/Frameworks/Xamarin.iOS.framework/Versions/9.4.1.25/bin/mtouch \
+/Library/Frameworks/Xamarin.iOS.framework/Versions/9.4.2.27/bin/mtouch \
 	--cache \
 	/Users/BOKSIC/Playdate/Code/Connexion/iOS/obj/iPhoneSimulator/Debug/mtouch-cache \
 	--sim \
@@ -160,6 +160,8 @@
 	/Users/BOKSIC/Playdate/Code/Connexion/packages/ExifLib.PCL.1.0.1/lib/portable-net45+sl50+win+WindowsPhoneApp81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/ExifLib.dll \
 	-r \
 	/Users/BOKSIC/Playdate/Code/Connexion/Connexion/bin/Debug/Connexion.dll \
+	-r \
+	/Users/BOKSIC/Playdate/Code/Connexion/Connexion/bin/Debug/SQLite.Net.dll \
 	--target-framework \
 	"Xamarin.iOS,v1.0" \
 	/Users/BOKSIC/Playdate/Code/Connexion/iOS/bin/iPhoneSimulator/Debug//Connexion.iOS.exe \

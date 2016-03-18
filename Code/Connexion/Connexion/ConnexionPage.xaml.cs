@@ -7,6 +7,8 @@ using Xamarin.Forms.Labs;
 using Xamarin.Forms.Labs.Services;
 using Xamarin.Forms.Labs.Services.Media;
 using System.Threading.Tasks;
+using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace Connexion
 {
@@ -15,8 +17,6 @@ namespace Connexion
 		private readonly TaskScheduler _scheduler = TaskScheduler.FromCurrentSynchronizationContext();
 
 		private IMediaPicker mediaPicker;
-
-		private string _status;
 
 		public ConnexionPage()
 		{
@@ -43,6 +43,8 @@ namespace Connexion
 					//Poster.Source = ImageSource.FromFile ("NoOne.jpg");
 				}
 			};
+
+			emailEntry.Text = "";
 
 			Poster.GestureRecognizers.Add(profilImage);
 		}
@@ -73,7 +75,8 @@ namespace Connexion
 		{
 			Poster.Source = null;
 
-			return await mediaPicker.TakePhotoAsync(new CameraMediaStorageOptions { 
+			return await mediaPicker.TakePhotoAsync(new CameraMediaStorageOptions 
+			{ 
 				DefaultCamera = CameraDevice.Front,
 				MaxPixelDimension = 400 }).ContinueWith(t =>
 				{
@@ -98,6 +101,50 @@ namespace Connexion
 
 					return null;
 				}, _scheduler);
+		}
+
+		public void OnInscriptionButtonClicked(object sender, EventArgs args)
+		{
+			//Gestion pour l'inscription
+			Regex mailRegex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
+
+			Match mailMatch	= mailRegex.Match (emailEntry.Text);
+
+			//Si tous les champs ne sont pas rempli, on revoie un message d'erreur à l'utilisateur
+			if (firstNameEntry.Text == null || lastNameEntry.Text == null || userNameEntry.Text == null || emailEntry.Text == null || passwordEntry.Text == null || VerifyPasswordEntry.Text == null || firstNameEntry.Text == "" || lastNameEntry.Text == "" || userNameEntry.Text == "" || emailEntry.Text == "" || passwordEntry.Text == "" || VerifyPasswordEntry.Text == "") 
+			{
+				erreurInscriptionMessageLabel.Text = "Vous devez remplir tous les champs !!!";
+			}
+			//Si l'addresse mail rentrer n'est pas valide, on revoie un message d'erreur à l'utilisateur
+			else if (!mailMatch.Success) 
+			{
+				erreurInscriptionMessageLabel.Text = "Adresse mail non valide !!!";
+			}
+			//Si le mot de passe et la verification de mot de passe ne corresponde pas, on revoie un message d'erreur à l'utilisateur
+			else if (passwordEntry.Text != VerifyPasswordEntry.Text)
+			{
+				erreurInscriptionMessageLabel.Text = "Les deux mot de passe ne sont pas les mêmes !!!";
+			}
+			//Sinon on effectue l'inscription dans la base de données
+			else 
+			{
+				erreurInscriptionMessageLabel.Text = "Done";
+			}
+		}
+
+		public void OnConnexionButtonClicked(object sender, EventArgs args)
+		{
+			//Gestion pour la connexion
+
+			//Si tous les champs ne sont pas rempli, on revoie un message d'erreur à l'utilisateur
+			if (userNameConnexionEntry.Text == null || passwordConnexionEntry.Text == null || userNameConnexionEntry.Text == "" || passwordConnexionEntry.Text == "") 
+			{
+				erreurConnexionMessageLabel.Text = "Vous devez remplir tous les champs !!!";
+			} 
+			else 
+			{
+				erreurConnexionMessageLabel.Text = "Done";
+			}
 		}
 	}
 }

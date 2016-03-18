@@ -1,9 +1,11 @@
 ﻿<Properties StartupItem="iOS/Connexion.iOS.csproj" RefactoringSettings.EnableRefactorings="True">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.2" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Connexion/ConnexionPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Main.cs">
     <Files>
-      <File FileName="Connexion/Connexion.cs" Line="8" Column="3" />
-      <File FileName="Connexion/ConnexionPage.xaml.cs" Line="59" Column="32" />
+      <File FileName="Connexion/Connexion.cs" Line="7" Column="3" />
+      <File FileName="Connexion/ConnexionPage.xaml" Line="64" Column="28" />
+      <File FileName="Connexion/ConnexionPage.xaml.cs" Line="101" Column="4" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

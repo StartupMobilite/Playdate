@@ -17,12 +17,52 @@ namespace Connexion {
     public partial class ConnexionPage : global::Xamarin.Forms.TabbedPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Entry userNameConnexionEntry;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Entry passwordConnexionEntry;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Label erreurConnexionMessageLabel;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Image Poster;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Entry firstNameEntry;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Entry lastNameEntry;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Entry userNameEntry;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Entry emailEntry;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Entry passwordEntry;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Entry VerifyPasswordEntry;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Label erreurInscriptionMessageLabel;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(ConnexionPage));
+            userNameConnexionEntry = this.FindByName <global::Xamarin.Forms.Entry>("userNameConnexionEntry");
+            passwordConnexionEntry = this.FindByName <global::Xamarin.Forms.Entry>("passwordConnexionEntry");
+            erreurConnexionMessageLabel = this.FindByName <global::Xamarin.Forms.Label>("erreurConnexionMessageLabel");
             Poster = this.FindByName <global::Xamarin.Forms.Image>("Poster");
+            firstNameEntry = this.FindByName <global::Xamarin.Forms.Entry>("firstNameEntry");
+            lastNameEntry = this.FindByName <global::Xamarin.Forms.Entry>("lastNameEntry");
+            userNameEntry = this.FindByName <global::Xamarin.Forms.Entry>("userNameEntry");
+            emailEntry = this.FindByName <global::Xamarin.Forms.Entry>("emailEntry");
+            passwordEntry = this.FindByName <global::Xamarin.Forms.Entry>("passwordEntry");
+            VerifyPasswordEntry = this.FindByName <global::Xamarin.Forms.Entry>("VerifyPasswordEntry");
+            erreurInscriptionMessageLabel = this.FindByName <global::Xamarin.Forms.Label>("erreurInscriptionMessageLabel");
         }
     }
 }
