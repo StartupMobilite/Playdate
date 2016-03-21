@@ -46,3 +46,4 @@
 /Users/BOKSIC/Playdate/Code/Connexion/iOS/obj/iPhoneSimulator/Debug/actool/_BundleResourceWithLogicalName.items
 /Users/BOKSIC/Playdate/Code/Connexion/iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
 /Users/BOKSIC/Playdate/Code/Connexion/iOS/bin/iPhoneSimulator/Debug/SQLite.Net.dll
+/Users/BOKSIC/Playdate/Code/Connexion/iOS/bin/iPhoneSimulator/Debug/SQLite.Net.Platform.XamarinIOS.Unified.dll
