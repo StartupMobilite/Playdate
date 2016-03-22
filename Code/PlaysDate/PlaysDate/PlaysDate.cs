@@ -8,7 +8,7 @@ namespace PlaysDate
 	{
 		public App ()
 		{
-			MainPage = new MainPage ();
+			MainPage = new ConnexionPage ();
 		}
 
 		protected override void OnStart ()
@@ -27,4 +27,3 @@ namespace PlaysDate
 		}
 	}
 }
-

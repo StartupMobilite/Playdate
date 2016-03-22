@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PlaysDate.ConnexionPage">
+	<TabbedPage.Children>
+
+        <ContentPage Title="Connexion" 
+        			 Icon="Connexion.png">
+            <StackLayout Spacing="20" Padding="20"
+                         VerticalOptions="Center">
+
+                <Entry x:Name="userNameConnexionEntry"
+                	   Placeholder="Username"
+                       Text="{Binding Username}"/>
+
+                <Entry x:Name="passwordConnexionEntry"
+                	   Placeholder="Password"
+                       Text="{Binding Password}"
+                       IsPassword="true"/>
+
+                <Button Text="Connexion" 
+                		TextColor="Black"
+                        BackgroundColor="Gray"
+                        Command="{Binding LoginCommand}"
+                        Clicked="OnConnexionButtonClicked"/>
+
+                <Label x:Name="erreurConnexionMessageLabel"
+	            	    TextColor="Red" />
+
+            </StackLayout>
+        </ContentPage>
+
+        <ContentPage Title="Inscription" 
+        			 Icon="NewProfil.png">
+
+	        <StackLayout Spacing="20" 
+	        			 Padding="20"
+	                     VerticalOptions="Center">
+
+	            <Image x:Name="Poster"
+	                   HeightRequest="100"
+           			   WidthRequest="100"/>
+
+	            <Entry x:Name="firstNameEntry"
+	            	   Placeholder="FirstName"
+	                   Text="{Binding Username}"/>
+
+	            <Entry x:Name="lastNameEntry"
+	            	   Placeholder="LastName"
+	                   Text="{Binding Username}"/>
+
+	           	<Entry x:Name="userNameEntry"
+	           		   Placeholder="Username"
+	                   Text="{Binding Username}"/>
+
+	            <Entry x:Name="emailEntry"
+	            	   Placeholder="Email"
+	                   Text="{Binding Email}"/>
+
+	            <Entry x:Name="passwordEntry"
+	            	   Placeholder="Password"
+	                   Text="{Binding Password}"
+	                   IsPassword="true"/>
+
+	            <Entry x:Name="VerifyPasswordEntry"
+	            	   Placeholder="VerifPassword"
+	                   Text="{Binding VerifPassword}"
+	                   IsPassword="true"/>
+
+	            <Button Text="Inscription" 
+	            		TextColor="Black"
+	                    BackgroundColor="Gray"
+	                    Command="{Binding LoginCommand}"
+	                    Clicked="OnInscriptionButtonClicked"/>
+
+	            <Label x:Name="erreurInscriptionMessageLabel"
+	            	   TextColor="Red" />
+
+	        </StackLayout>
+        </ContentPage>
+    </TabbedPage.Children>
+</ContentPage>

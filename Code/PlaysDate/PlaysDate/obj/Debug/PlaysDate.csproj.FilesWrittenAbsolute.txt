@@ -9,3 +9,13 @@
 /Users/BOKSIC/Projects/PlaysDate/PlaysDate/bin/Debug/XLabs.Platform.dll
 /Users/BOKSIC/Projects/PlaysDate/PlaysDate/bin/Debug/XLabs.Serialization.dll
 /Users/BOKSIC/Projects/PlaysDate/PlaysDate/bin/Debug/XLabs.Forms.dll
+/Users/BOKSIC/Projects/PlaysDate/PlaysDate/obj/Debug/PlaysDate.Actualite.DetailActuPage.xaml.g.cs
+/Users/BOKSIC/Projects/PlaysDate/PlaysDate/obj/Debug/PlaysDate.Actualite.DetailActuPage.xaml
+/Users/BOKSIC/Projects/PlaysDate/PlaysDate/bin/Debug/PlaysDate.dll.mdb
+/Users/BOKSIC/Projects/PlaysDate/PlaysDate/bin/Debug/PlaysDate.dll
+/Users/BOKSIC/Projects/PlaysDate/PlaysDate/obj/Debug/PlaysDate.dll
+/Users/BOKSIC/Projects/PlaysDate/PlaysDate/obj/Debug/PlaysDate.dll.mdb
+/Users/BOKSIC/Projects/PlaysDate/PlaysDate/obj/Debug/PlaysDate.Connexion.Pages.ConnexionPage.xaml.g.cs
+/Users/BOKSIC/Projects/PlaysDate/PlaysDate/obj/Debug/PlaysDate.Connexion.Pages.ConnexionPage.xaml
+/Users/BOKSIC/Projects/PlaysDate/PlaysDate/bin/Debug/SQLite.Net.dll
+/Users/BOKSIC/Projects/PlaysDate/PlaysDate/bin/Debug/Xamarin.Forms.Labs.dll
