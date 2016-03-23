@@ -5,7 +5,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>PlaysDate</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.companyname.playsdate</string>
+	<string>com.Boksic.Rodrigo.test</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
@@ -44,5 +44,16 @@
 	<string>Can we use your location</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>We are using your location</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>MKDirectionsRequest</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.apple.maps.directionsrequest</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>
