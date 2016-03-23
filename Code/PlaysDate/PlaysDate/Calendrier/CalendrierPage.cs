@@ -21,13 +21,11 @@ namespace PlaysDate
 			//Definition du calendrier
 			calendarView = new CalendarView
 			{
-				MinDate = CalendarView.FirstDayOfMonth(new DateTime(2014, 1, 1)),
+				MinDate = CalendarView.FirstDayOfMonth(new DateTime(2016, 1, 1)),
 				MaxDate = CalendarView.LastDayOfMonth(DateTime.Now.AddYears(2)),
 				ShouldHighlightDaysOfWeekLabels = true,
 				SelectionBackgroundStyle = CalendarView.BackgroundStyle.CircleFill,
-				ShowNavigationArrows = true,
-				HeightRequest= 800,
-				WidthRequest= 800
+				ShowNavigationArrows = true
 			};
 
 			//Ajout du calendrier dans la vue

@@ -32,7 +32,7 @@ namespace PlaysDate
 			masterPageItems.Add (new MasterPageItem {
 				Title = "Maps",
 				//IconSource = "reminders.png",
-				TargetType = typeof(DefaultPage)
+				TargetType = typeof(MapPage)
 			});
 			masterPageItems.Add (new MasterPageItem {
 				Title = "Messagerie",

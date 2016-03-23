@@ -41,3 +41,6 @@
 /Users/BOKSIC/Playdate/Code/PlaysDate/PlaysDate/bin/Debug/Xamarin.Forms.Xaml.dll
 /Users/BOKSIC/Playdate/Code/PlaysDate/PlaysDate/bin/Debug/Xamarin.Forms.Platform.dll
 /Users/BOKSIC/Playdate/Code/PlaysDate/PlaysDate/bin/Debug/SQLite.Net.dll
+/Users/BOKSIC/Playdate/Code/PlaysDate/PlaysDate/bin/Debug/Plugin.Geolocator.dll
+/Users/BOKSIC/Playdate/Code/PlaysDate/PlaysDate/bin/Debug/Plugin.Geolocator.Abstractions.dll
+/Users/BOKSIC/Playdate/Code/PlaysDate/PlaysDate/bin/Debug/Xamarin.Forms.Maps.dll

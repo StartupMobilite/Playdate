@@ -11,6 +11,13 @@ namespace PlaysDate
 			MainPage = new ConnexionPage ();
 		}
 
+		public static Page GetMainPage ()
+		{	
+			return new NavigationPage(
+				new CalendrierPage()
+			);
+		}
+
 		protected override void OnStart ()
 		{
 			// Handle when your app starts
