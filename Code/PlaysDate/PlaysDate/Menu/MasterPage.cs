@@ -17,7 +17,7 @@ namespace PlaysDate
 			masterPageItems.Add (new MasterPageItem {
 				Title = "Profil",
 				//IconSource = "contacts.png",
-				TargetType = typeof(DefaultPage)
+				TargetType = typeof(ProfilPage)
 			});
 			masterPageItems.Add (new MasterPageItem {
 				Title = "Actualités",
@@ -42,7 +42,7 @@ namespace PlaysDate
 			masterPageItems.Add (new MasterPageItem {
 				Title = "Deconnexion",
 				//IconSource = "todo.png",
-				TargetType = typeof(DefaultPage)
+				TargetType = typeof(ConnexionPage)
 			});
 
 			listView = new ListView {

@@ -1,12 +1,14 @@
 ﻿<Properties StartupItem="iOS/PlaysDate.iOS.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.3" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="PlaysDate/Connexion/Pages/ConnexionPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PlaysDate/Connexion/Pages/ConnexionPage.xaml">
     <Files>
-      <File FileName="PlaysDate/Connexion/Pages/ConnexionPage.xaml.cs" Line="20" Column="18" />
-      <File FileName="PlaysDate/Connexion/Pages/ConnexionPage.xaml" Line="80" Column="15" />
-      <File FileName="PlaysDate/PlaysDate.cs" Line="11" Column="36" />
-      <File FileName="iOS/AppDelegate.cs" Line="17" Column="1" />
-      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="PlaysDate/Profil/ProfilPage.xaml.cs" Line="25" Column="42" />
+      <File FileName="PlaysDate/Profil/ProfilPage.xaml" Line="8" Column="14" />
+      <File FileName="PlaysDate/Connexion/Pages/ConnexionPage.xaml.cs" Line="28" Column="24" />
+      <File FileName="PlaysDate/PlaysDate.cs" Line="11" Column="32" />
+      <File FileName="PlaysDate/Menu/MasterPage.cs" Line="31" Column="7" />
+      <File FileName="PlaysDate/Connexion/Pages/ConnexionPage.xaml" Line="29" Column="23" />
+      <File FileName="PlaysDate/obj/Debug/PlaysDate.Connexion.Pages.ConnexionPage.xaml.g.cs" Line="17" Column="66" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

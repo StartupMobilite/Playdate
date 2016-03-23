@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PlaysDate.ProfilPage">
+	<ContentPage.Padding>
+    	<OnPlatform x:TypeArguments="Thickness"
+                	iOS="0, 20, 0, 0" />
+	</ContentPage.Padding>
+
+	<ScrollView>
+		<Grid>
+    		<Grid.RowDefinitions>
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+		    </Grid.RowDefinitions>
+
+		    <Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="*" />
+		    </Grid.ColumnDefinitions>
+
+		    <Image x:Name="ProfilImage"
+				Grid.Row="0" Grid.Column="0"
+				Grid.ColumnSpan="2"
+				HeightRequest="180"
+				WidthRequest="180"/>
+
+			<Label x:Name="Nom"
+				Grid.Row="2" Grid.Column="0"
+				FontSize="20"
+				FontAttributes="Bold" 
+				HorizontalTextAlignment="End"/>
+
+			<Label x:Name="Prenom"
+				Grid.Row="2" Grid.Column="1"
+				FontSize="20"
+				FontAttributes="Bold"/>
+
+			<Label x:Name="Email"
+				Grid.Row="4" Grid.Column="0"
+				Grid.ColumnSpan="2"
+				FontSize="20"
+				FontAttributes="Bold"
+				HorizontalTextAlignment="Center" />
+
+		</Grid>
+	</ScrollView>
+</ContentPage>

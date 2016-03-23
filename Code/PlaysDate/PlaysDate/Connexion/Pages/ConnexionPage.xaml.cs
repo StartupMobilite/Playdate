@@ -13,6 +13,8 @@ namespace PlaysDate
 {
 	public partial class ConnexionPage : TabbedPage
 	{
+		public static string personConnecte;
+
 		private PersonneBaseDeDonnees _database;
 
 		private readonly TaskScheduler _scheduler = TaskScheduler.FromCurrentSynchronizationContext();
@@ -22,6 +24,8 @@ namespace PlaysDate
 		public ConnexionPage()
 		{
 			InitializeComponent ();
+
+			personConnecte = "";
 
 			Poster.Source = ImageSource.FromFile("NoOne.jpg");
 
@@ -162,6 +166,8 @@ namespace PlaysDate
 			}
 			else 
 			{
+				personConnecte = userNameConnexionEntry.Text;
+
 				App.Current.MainPage = new MainPage ();
 			}
 		}
