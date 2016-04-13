@@ -42,7 +42,8 @@ namespace PlaysDate
 			masterPageItems.Add (new MasterPageItem {
 				Title = "Deconnexion",
 				//IconSource = "todo.png",
-				TargetType = typeof(ConnexionPage)
+				TargetType = typeof(DeconnexionPage)
+
 			});
 
 			listView = new ListView {
