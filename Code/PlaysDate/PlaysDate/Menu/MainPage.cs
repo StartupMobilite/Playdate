@@ -11,7 +11,7 @@ namespace PlaysDate
 		{
 			masterPage = new MasterPage ();
 			Master = masterPage;
-			Detail = new NavigationPage (new DefaultPage());
+			Detail = new NavigationPage (new ActualitePage());
 
 			masterPage.ListView.ItemSelected += OnItemSelected;
 		}

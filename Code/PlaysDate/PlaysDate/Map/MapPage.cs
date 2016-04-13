@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 using Plugin.Geolocator;
 using Plugin.Geolocator.Abstractions;
+using System.Reflection;
+using System.IO;
+using Newtonsoft.Json;
 
 namespace PlaysDate
 {
@@ -20,8 +23,6 @@ namespace PlaysDate
 			var customMap = new CustomMap 
 			{
 				MapType = MapType.Street,
-//				WidthRequest = App.ScreenWidth,
-//				HeightRequest = App.ScreenHeight
 			};
 
 			geoCoder = new Geocoder ();
