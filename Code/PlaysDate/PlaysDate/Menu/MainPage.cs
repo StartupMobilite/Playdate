@@ -18,11 +18,11 @@ namespace PlaysDate
 
 		void OnItemSelected (object sender, SelectedItemChangedEventArgs e)
 		{
-			var item = e.SelectedItem as MasterPageItem;
+			var masterpage = e.SelectedItem as MasterPageItem;
 
-			if (item != null) 
+			if (masterpage != null) 
 			{
-				Detail = new NavigationPage ((Page)Activator.CreateInstance (item.TargetType));
+				Detail = new NavigationPage ((Page)Activator.CreateInstance (masterpage.TargetType));
 				masterPage.ListView.SelectedItem = null;
 				IsPresented = false;
 			}

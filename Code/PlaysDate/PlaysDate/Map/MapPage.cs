@@ -10,7 +10,7 @@ using Plugin.Geolocator;
 using Plugin.Geolocator.Abstractions;
 using System.Reflection;
 using System.IO;
-using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace PlaysDate
 {
@@ -20,9 +20,15 @@ namespace PlaysDate
 
 		public MapPage ()
 		{
+			var fileCheminEquipement = "Maps.Json.EquipementIleDeFrance.json";
+			var fileCheminInstallement = "Maps.Json.InstallationIleDeFrance.json";
+
+			var assembly = typeof(MapType).GetTypeInfo().Assembly;
+			Stream stream = assembly.GetManifestResourceStream (fileCheminEquipement);
+
 			var customMap = new CustomMap 
 			{
-				MapType = MapType.Street,
+				MapType = MapType.Street
 			};
 
 			geoCoder = new Geocoder ();
@@ -49,6 +55,50 @@ namespace PlaysDate
 
 				Content = customMap;
 			}, TaskScheduler.FromCurrentSynchronizationContext());
+
+			using (StreamReader r = new StreamReader(stream))
+			{
+				string json = r.ReadToEnd();
+
+				JArray array = JArray.Parse (json);
+
+				foreach (JObject content in array.Children<JObject>())
+				{
+					foreach (JProperty prop in content.Properties())
+					{
+						if (prop.Name == "geo_point_2d") 
+						{
+							string s = (string)prop.Value;
+
+							string[] words = s.Split(',');
+
+							string latitudeString = words [0];
+							string longitudeString = words [1].TrimStart ();
+
+							double lat = Convert.ToDouble (latitudeString);
+							double lon = Convert.ToDouble (longitudeString);
+
+							var position = new Xamarin.Forms.Maps.Position (lat, lon);
+
+							var possibleAddresses = geoCoder.GetAddressesForPositionAsync (position);
+
+							var pin = new CustomPin {
+								Pin = new Pin {
+									Type = PinType.Place,
+									Position = position,
+									Label = ""
+										//Address = possibleAddresses.Result.ToString()
+								}
+							};
+
+							customMap.CustomPins = new List<CustomPin> { pin };
+							customMap.Pins.Add (pin.Pin);
+
+							Content = customMap;
+						}
+					}
+				}
+			}
 		}
 	}
 }

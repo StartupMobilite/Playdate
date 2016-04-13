@@ -133,6 +133,5 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Map\Json\EquipementIleDeFrance.json" />
-    <EmbeddedResource Include="Map\LoadJsonFile.cs" />
   </ItemGroup>
 </Project>
