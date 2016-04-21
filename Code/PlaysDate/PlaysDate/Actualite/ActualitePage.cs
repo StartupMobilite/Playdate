@@ -24,6 +24,11 @@ namespace PlaysDate
 
 			getActus ();
 
+			ToolbarItems.Add(new ToolbarItem("Ajout Actualité", "AddActu.png", async () =>
+			{
+					await Navigation.PushAsync(new NewActualite());
+			}));
+
 			listView.ItemSelected += async (sender, e) => {
 
 				if (e.SelectedItem != null)

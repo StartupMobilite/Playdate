@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PlaysDate.NewActualite">
+	<ContentPage.Content>
+
+	<ScrollView>
+
+		<Entry x:Name="newActuTitreEntry"
+        	   Placeholder="Titre"
+               Text="{Binding NewActuTitre}"
+               IsFocused="false"/>
+
+        <Entry x:Name="newActuDecription"
+	    	   Placeholder="Description"
+	           Text="{Binding NewActuDecription}"/>
+
+       <Button Text="Ajouter l'Actualité" 
+        		TextColor="Black"
+                BackgroundColor="Gray"
+                Command="{Binding AddNewActuCommand}"
+                Clicked="OnAddActuButtonClicked"/>
+
+	</ScrollView>
+
+	</ContentPage.Content>
+</ContentPage>

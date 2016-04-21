@@ -47,3 +47,5 @@
 /Users/BOKSIC/Playdate/Code/PlaysDate/PlaysDate/bin/Debug/Newtonsoft.Json.dll
 /Users/BOKSIC/Playdate/Code/PlaysDate/PlaysDate/obj/Debug/PlaysDate.Map.Json.EquipementIleDeFrance.json
 /Users/BOKSIC/Playdate/Code/PlaysDate/PlaysDate/obj/Debug/PlaysDate.Map.LoadJsonFile.cs
+/Users/BOKSIC/Playdate/Code/PlaysDate/PlaysDate/obj/Debug/PlaysDate.Actualite.NewActualite.xaml.g.cs
+/Users/BOKSIC/Playdate/Code/PlaysDate/PlaysDate/obj/Debug/PlaysDate.Actualite.NewActualite.xaml

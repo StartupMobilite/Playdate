@@ -173,5 +173,6 @@
     <BundleResource Include="Resources\Connexion.png" />
     <BundleResource Include="Resources\NewProfil.png" />
     <BundleResource Include="Resources\NoOne.jpg" />
+    <BundleResource Include="Resources\AddActu.png" />
   </ItemGroup>
 </Project>
