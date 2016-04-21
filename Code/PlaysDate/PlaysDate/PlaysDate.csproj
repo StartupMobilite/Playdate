@@ -55,14 +55,12 @@
     <Compile Include="Connexion\Pages\DeconnexionPage.cs" />
     <Compile Include="Actualite\Pages\ActualitePage.cs" />
     <Compile Include="Actualite\Pages\ActualiteViewModel.cs" />
-    <Compile Include="Actualite\Pages\DetailActuPage.xaml.cs">
-      <DependentUpon>DetailActuPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Actualite\Pages\NewActualite.xaml.cs">
       <DependentUpon>NewActualite.xaml</DependentUpon>
     </Compile>
     <Compile Include="Actualite\BaseDeDonnees\ActuBD.cs" />
     <Compile Include="Actualite\BaseDeDonnees\ActuBaseDeDonnees.cs" />
+    <Compile Include="Menu\DetailActuPage.xaml.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.1.0.6529\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.1.0.6529\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
