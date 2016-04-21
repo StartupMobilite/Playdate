@@ -49,3 +49,7 @@
 /Users/BOKSIC/Playdate/Code/PlaysDate/PlaysDate/obj/Debug/PlaysDate.Map.LoadJsonFile.cs
 /Users/BOKSIC/Playdate/Code/PlaysDate/PlaysDate/obj/Debug/PlaysDate.Actualite.NewActualite.xaml.g.cs
 /Users/BOKSIC/Playdate/Code/PlaysDate/PlaysDate/obj/Debug/PlaysDate.Actualite.NewActualite.xaml
+/Users/BOKSIC/Playdate/Code/PlaysDate/PlaysDate/obj/Debug/PlaysDate.Actualite.Pages.DetailActuPage.xaml.g.cs
+/Users/BOKSIC/Playdate/Code/PlaysDate/PlaysDate/obj/Debug/PlaysDate.Actualite.Pages.NewActualite.xaml.g.cs
+/Users/BOKSIC/Playdate/Code/PlaysDate/PlaysDate/obj/Debug/PlaysDate.Actualite.Pages.DetailActuPage.xaml
+/Users/BOKSIC/Playdate/Code/PlaysDate/PlaysDate/obj/Debug/PlaysDate.Actualite.Pages.NewActualite.xaml

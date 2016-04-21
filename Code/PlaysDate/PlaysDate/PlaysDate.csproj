@@ -37,11 +37,6 @@
     <Compile Include="Menu\MainPage.cs" />
     <Compile Include="Menu\MasterPage.cs" />
     <Compile Include="Menu\MasterPageItem.cs" />
-    <Compile Include="Actualite\ActualitePage.cs" />
-    <Compile Include="Actualite\ActualiteViewModel.cs" />
-    <Compile Include="Actualite\DetailActuPage.xaml.cs">
-      <DependentUpon>DetailActuPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Calendrier\CalendrierPage.cs" />
     <Compile Include="Calendrier\AjoutEvenement.cs" />
     <Compile Include="Connexion\BaseDeDonnees\ISQLite.cs" />
@@ -57,10 +52,17 @@
     <Compile Include="Map\CustomMap.cs" />
     <Compile Include="Map\CustomPin.cs" />
     <None Include="Map\Json\InstallationIleDeFrance.json" />
-    <Compile Include="Actualite\NewActualite.xaml.cs">
+    <Compile Include="Connexion\Pages\DeconnexionPage.cs" />
+    <Compile Include="Actualite\Pages\ActualitePage.cs" />
+    <Compile Include="Actualite\Pages\ActualiteViewModel.cs" />
+    <Compile Include="Actualite\Pages\DetailActuPage.xaml.cs">
+      <DependentUpon>DetailActuPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Actualite\Pages\NewActualite.xaml.cs">
       <DependentUpon>NewActualite.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Connexion\Pages\DeconnexionPage.cs" />
+    <Compile Include="Actualite\BaseDeDonnees\ActuBD.cs" />
+    <Compile Include="Actualite\BaseDeDonnees\ActuBaseDeDonnees.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.1.0.6529\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.1.0.6529\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
@@ -124,11 +126,10 @@
     <Folder Include="Connexion\Pages\" />
     <Folder Include="Profil\" />
     <Folder Include="Map\Json\" />
+    <Folder Include="Actualite\BaseDeDonnees\" />
+    <Folder Include="Actualite\Pages\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Actualite\DetailActuPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Include="Connexion\Pages\ConnexionPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -136,7 +137,10 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Map\Json\EquipementIleDeFrance.json" />
-    <EmbeddedResource Include="Actualite\NewActualite.xaml">
+    <EmbeddedResource Include="Actualite\Pages\DetailActuPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Actualite\Pages\NewActualite.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

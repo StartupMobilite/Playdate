@@ -6,13 +6,13 @@ using Xamarin.Forms;
 
 using PlaysDate.Android;
 
-[assembly: Dependency(typeof(SQLite_Android))]
+[assembly: Dependency(typeof(SQLite_Android_Person))]
 
 namespace PlaysDate.Android
 {
-	public class SQLite_Android: ISQLite
+	public class SQLite_Android_Person: ISQLite
 	{
-		public SQLite_Android ()
+		public SQLite_Android_Person ()
 		{
 
 		}

@@ -18,7 +18,7 @@
 			<Label Text="Desciption :"
 				   FontAttributes="Bold"/>
 
-	        <Editor x:Name="newActuDescription"
+	        <Editor x:Name="newActuDescriptionEntry"
 	        		FontSize="20"
 	        		HeightRequest="200"/>
 

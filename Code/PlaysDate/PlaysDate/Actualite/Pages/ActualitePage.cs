@@ -7,22 +7,34 @@ namespace PlaysDate
 {
 	public class ActualitePage : ContentPage
 	{
+		private ActuBaseDeDonnees _database;
+
 		public ObservableCollection<ActualiteViewModel> actus { get; set; }
+
+		public static ListView listView = new ListView ();
 
 		public ActualitePage ()
 		{
 			actus = new ObservableCollection<ActualiteViewModel> ();
 
+			_database = new ActuBaseDeDonnees ();
+
 			ListView listView = new ListView ();
 
-			listView.RowHeight = 300;
+			listView.RowHeight = 200;
 
-			listView.ItemsSource = actus;
+			listView.ItemsSource = _database.GetDatas();
 			listView.ItemTemplate = new DataTemplate (typeof(CustomActualiteCell));
 
-			Content = listView;
+			var stack = new StackLayout () 
+			{
+				Children = 
+				{
+					listView
+				}
+			};
 
-			getActus ();
+			Content = stack;
 
 			ToolbarItems.Add(new ToolbarItem("Ajout Actualité", "AddActu.png", async () =>
 			{
@@ -38,9 +50,21 @@ namespace PlaysDate
 
 					//Ouvre la page de detail
 					await Navigation.PushAsync (new DetailActuPage());
+
+					listView.IsEnabled = true;
 				}
 				return;
 			};
+		}
+
+		protected override void OnAppearing ()
+		{
+			listView.ItemsSource = _database.GetDatas ();
+		}
+
+		public static ListView getListView() 
+		{
+			return listView;
 		}
 
 		public class CustomActualiteCell : ViewCell
@@ -53,30 +77,24 @@ namespace PlaysDate
 				StackLayout cellWrapper = new StackLayout ();
 
 				//Set Labels et Image
-				var image = new Image ();
 				var nameLabel = new Label ();
+				var webimage = new Image { Aspect = Aspect.AspectFit };
+
+				webimage.Source = ImageSource.FromUri (new Uri ("http://nouvellecaledonie.la1ere.fr/sites/regions_outremer/files/styles/top_big/public/assets/images/2015/08/18/actu-en-bref2015_660x367_1.png?itok=MrFW1r47"));
+
+				webimage.WidthRequest = 250.0;
 
 				//Set bindings
-				image.SetBinding (Image.SourceProperty, "Image");
-				nameLabel.SetBinding (Label.TextProperty, "Titre");
+				//webimage.SetBinding (Image.SourceProperty, "Image");
+				nameLabel.SetBinding (Label.TextProperty, "ActuTitre");
 
 				//Add to cells
-				cellView.Children.Add (image);
+				cellView.Children.Add (webimage);
 				cellView.Children.Add (nameLabel);
 				cellWrapper.Children.Add (cellView);
 				View = cellWrapper;
 
 				this.View = cellView;
-			}
-		}
-
-		public void getActus()
-		{
-			for (int i = 0; i < 10; i++) 
-			{
-				var webimage = new Image { Aspect = Aspect.AspectFit };
-				webimage.Source = ImageSource.FromUri (new Uri ("http://nouvellecaledonie.la1ere.fr/sites/regions_outremer/files/styles/top_big/public/assets/images/2015/08/18/actu-en-bref2015_660x367_1.png?itok=MrFW1r47"));
-				actus.Add (new ActualiteViewModel{ Identifiant = "1", Titre = "1er Actu !!!", Image = webimage.Source});
 			}
 		}
 	}
