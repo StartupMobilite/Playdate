@@ -4,20 +4,31 @@
 
 	<ScrollView>
 
-		<Entry x:Name="newActuTitreEntry"
-        	   Placeholder="Titre"
-               Text="{Binding NewActuTitre}"
-               IsFocused="false"/>
+		<StackLayout Spacing="20" 
+        			 Padding="20"
+                     VerticalOptions="Center">
 
-        <Entry x:Name="newActuDecription"
-	    	   Placeholder="Description"
-	           Text="{Binding NewActuDecription}"/>
+            <Label Text="Titre :"
+		           FontAttributes="Bold"/>
 
-       <Button Text="Ajouter l'Actualité" 
-        		TextColor="Black"
-                BackgroundColor="Gray"
-                Command="{Binding AddNewActuCommand}"
-                Clicked="OnAddActuButtonClicked"/>
+			<Entry x:Name="newActuTitreEntry"
+	        	   Placeholder="Titre"
+	               Text="{Binding NewActuTitre}"/>
+
+			<Label Text="Desciption :"
+				   FontAttributes="Bold"/>
+
+	        <Editor x:Name="newActuDescription"
+	        		FontSize="20"
+	        		HeightRequest="200"/>
+
+			<Button Text="Ajouter l'Actualité" 
+					TextColor="Black"
+					BackgroundColor="Gray"
+					Command="{Binding AddNewActuCommand}"
+					Clicked="OnAddActuButtonClicked"/>
+
+		</StackLayout>
 
 	</ScrollView>
 

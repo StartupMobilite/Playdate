@@ -9,8 +9,7 @@
 
                 <Entry x:Name="userNameConnexionEntry"
                 	   Placeholder="Username"
-                       Text="{Binding Username}"
-                       IsFocused="false"/>
+                       Text="{Binding Username}"/>
 
                 <Entry x:Name="passwordConnexionEntry"
                 	   Placeholder="Password"
@@ -43,8 +42,7 @@
 
 		            <Entry x:Name="firstNameEntry"
 		            	   Placeholder="FirstName"
-		                   Text="{Binding Username}"
-		                   IsFocused="true"/>
+		                   Text="{Binding Username}"/>
 
 		            <Entry x:Name="lastNameEntry"
 		            	   Placeholder="LastName"

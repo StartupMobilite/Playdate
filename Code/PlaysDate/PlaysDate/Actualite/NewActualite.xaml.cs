@@ -11,6 +11,11 @@ namespace PlaysDate
 		{
 			InitializeComponent ();
 		}
+
+		public void OnAddActuButtonClicked(object sender, EventArgs args)
+		{
+			System.Diagnostics.Debug.WriteLine ("Clicked !!!");
+		}
 	}
 }
 
