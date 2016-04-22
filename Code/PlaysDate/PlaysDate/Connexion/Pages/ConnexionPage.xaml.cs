@@ -1,7 +1,5 @@
 ﻿using Playsdate;
 
-using Xamarin.Forms;
-
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using System;
@@ -9,17 +7,17 @@ using System;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
 
+using Xamarin.Forms;
+
 namespace PlaysDate
 {
 	public partial class ConnexionPage : TabbedPage
 	{
 		public static string personConnecte;
 
+		public static string filePath;
+
 		private PersonneBaseDeDonnees _database;
-
-		private readonly TaskScheduler _scheduler = TaskScheduler.FromCurrentSynchronizationContext();
-
-		private ImageSource imageSource;
 
 		public ConnexionPage()
 		{
@@ -31,15 +29,14 @@ namespace PlaysDate
 
 			var profilImage = new TapGestureRecognizer ();
 			profilImage.Tapped += async (sender, e) => {
-				System.Diagnostics.Debug.WriteLine("Image Clicked !!!");
+				
+				var action =  await DisplayActionSheet("Choisir une action", "Annuler", null, "Phototheque", "Prendre une photo");
 
-				var action =  await DisplayActionSheet("Choose action", "Cancel", null, "Take a picture", "Choose a picture");
-
-				if (action == "Choose a picture") 
+				if (action == "Phototheque") 
 				{
 					await SelectPicture();
 				}
-				else if (action == "Take a picture") 
+				else if (action == "Prendre une photo") 
 				{
 					await TakePicture();
 				} 
