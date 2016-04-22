@@ -55,3 +55,6 @@
 /Users/BOKSIC/Playdate/Code/PlaysDate/PlaysDate/obj/Debug/PlaysDate.Actualite.Pages.NewActualite.xaml
 /Users/BOKSIC/Playdate/Code/PlaysDate/PlaysDate/obj/Debug/PlaysDate.Actualite.Pages.DetailsActuPage.xaml.g.cs
 /Users/BOKSIC/Playdate/Code/PlaysDate/PlaysDate/obj/Debug/PlaysDate.Actualite.Pages.DetailsActuPage.xaml
+/Users/BOKSIC/Playdate/Code/PlaysDate/PlaysDate/bin/Debug/Xamarin.Forms.Labs.dll
+/Users/BOKSIC/Playdate/Code/PlaysDate/PlaysDate/bin/Debug/Plugin.Media.dll
+/Users/BOKSIC/Playdate/Code/PlaysDate/PlaysDate/bin/Debug/Plugin.Media.Abstractions.dll

@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-
-using System.Threading.Tasks;
-using System.Linq;
-using System.Text.RegularExpressions;
-using Playsdate;
+﻿using Playsdate;
 
 using Xamarin.Forms;
-using XLabs.Platform.Services.Media;
+
+using System.Threading.Tasks;
+using System.Text.RegularExpressions;
+using System;
+
+using Plugin.Media;
+using Plugin.Media.Abstractions;
 
 namespace PlaysDate
 {
@@ -19,7 +19,7 @@ namespace PlaysDate
 
 		private readonly TaskScheduler _scheduler = TaskScheduler.FromCurrentSynchronizationContext();
 
-		private IMediaPicker mediaPicker;
+		private ImageSource imageSource;
 
 		public ConnexionPage()
 		{
@@ -45,7 +45,7 @@ namespace PlaysDate
 				} 
 				else 
 				{
-					//Poster.Source = ImageSource.FromFile ("NoOne.jpg");
+					Poster.Source = ImageSource.FromFile ("NoOne.jpg");
 				}
 			};
 
@@ -54,57 +54,44 @@ namespace PlaysDate
 			Poster.GestureRecognizers.Add(profilImage);
 		}
 
-		private async Task SelectPicture()
+		private async Task TakePicture()
 		{
-			mediaPicker = DependencyService.Get<IMediaPicker>();
+			await CrossMedia.Current.Initialize();
 
-			Poster.Source = null;
-
-			try
+			if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
 			{
-				var mediaFile = await mediaPicker.SelectPhotoAsync (new CameraMediaStorageOptions {
-					DefaultCamera = CameraDevice.Front,
-					MaxPixelDimension = 400
+				await DisplayAlert("Pas de Camera", "Camera non disponible.", "OK");
+				return;
+			}
+
+			var file = await CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions
+				{
+					SaveToAlbum = true
 				});
-				Poster.Source = ImageSource.FromStream (() => mediaFile.Source);
-			}
-			catch (System.Exception ex) 
-			{
-				Poster.Source = ImageSource.FromFile ("NoOne.jpg");
-				System.Diagnostics.Debug.WriteLine("Erreur : " + ex.Message);
-			}
+
+			if (file == null)
+				return;
+
+			await DisplayAlert("Emplacement du fichier", file.Path, "OK");
+
+			Poster.Source = ImageSource.FromStream(() =>
+				{
+					var stream = file.GetStream();
+					file.Dispose();
+					return stream;
+				}); 
 		}
 
-		private async Task<MediaFile> TakePicture()
+		private async Task SelectPicture()
 		{
-			Poster.Source = null;
+			var file = await CrossMedia.Current.PickPhotoAsync ();
 
-			return await mediaPicker.TakePhotoAsync(new CameraMediaStorageOptions 
-				{ 
-					DefaultCamera = CameraDevice.Front,
-					MaxPixelDimension = 400 }).ContinueWith(t =>
-						{
-							if (t.IsFaulted)
-							{
-								Poster.Source = ImageSource.FromFile ("NoOne.jpg");
-								//Status = t.Exception.InnerException.ToString();
-							}
-							else if (t.IsCanceled)
-							{
-								Poster.Source = ImageSource.FromFile ("NoOne.jpg");
-								//Status = "Canceled";
-							}
-							else
-							{
-								var mediaFile = t.Result;
-
-								Poster.Source = ImageSource.FromStream(() => mediaFile.Source);
-
-								return mediaFile;
-							}
-
-							return null;
-						}, _scheduler);
+			Poster.Source = ImageSource.FromStream(() =>
+				{
+					var stream = file.GetStream();
+					file.Dispose();
+					return stream;
+				}); 
 		}
 
 		public void OnInscriptionButtonClicked(object sender, EventArgs args)
