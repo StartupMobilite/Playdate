@@ -1,10 +1,10 @@
 ﻿<Properties StartupItem="iOS/PlaysDate.iOS.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.3" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="PlaysDate/Menu/MainPage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PlaysDate/Actualite/Pages/DetailActuPage.xaml">
     <Files>
-      <File FileName="PlaysDate/Map/MapPage.cs" Line="26" Column="33" />
-      <File FileName="PlaysDate/Menu/MainPage.cs" Line="25" Column="1" />
-      <File FileName="PlaysDate/Menu/MasterPage.cs" Line="20" Column="36" />
+      <File FileName="PlaysDate/Connexion/Pages/ConnexionPage.xaml.cs" Line="170" Column="5" />
+      <File FileName="PlaysDate/Connexion/Pages/ConnexionPage.xaml" Line="37" Column="49" />
+      <File FileName="PlaysDate/Actualite/Pages/DetailActuPage.xaml" Line="38" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PlaysDate.DetailActuPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PlaysDate.DetailsActuPage">
 	<ContentPage.Padding>
     <OnPlatform x:TypeArguments="Thickness"
                 iOS="0, 20, 0, 0" />
@@ -7,11 +7,10 @@
 
 	<ScrollView>
 
-		<Grid>
+		<Grid Padding="5">
 
 			<Grid.RowDefinitions>
 
-				<RowDefinition Height="20" />
 				<RowDefinition Height="Auto" />
 				<RowDefinition Height="Auto" />
 				<RowDefinition Height="Auto" />
@@ -25,9 +24,7 @@
 			</Grid.ColumnDefinitions>
 
 				<Image x:Name="NewsImage"
-						Grid.Row="0" Grid.Column="0"
-						HeightRequest="180"
-						WidthRequest="150"/>
+						Grid.Row="0" Grid.Column="0"/>
 
 				<Label x:Name="NewsTitle"
 						Grid.Row="1" Grid.Column="0"
@@ -35,12 +32,11 @@
 						FontSize="20"
 						FontAttributes="Bold"/>
 
-				<Label x:Name="NewsNews"
+				<Label x:Name="NewsDescription"
 						Grid.Row="2" Grid.Column="0"
 						FontAttributes="Italic"/>
 
 		</Grid>
 
 	</ScrollView>
-
 </ContentPage>

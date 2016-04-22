@@ -53,3 +53,5 @@
 /Users/BOKSIC/Playdate/Code/PlaysDate/PlaysDate/obj/Debug/PlaysDate.Actualite.Pages.NewActualite.xaml.g.cs
 /Users/BOKSIC/Playdate/Code/PlaysDate/PlaysDate/obj/Debug/PlaysDate.Actualite.Pages.DetailActuPage.xaml
 /Users/BOKSIC/Playdate/Code/PlaysDate/PlaysDate/obj/Debug/PlaysDate.Actualite.Pages.NewActualite.xaml
+/Users/BOKSIC/Playdate/Code/PlaysDate/PlaysDate/obj/Debug/PlaysDate.Actualite.Pages.DetailsActuPage.xaml.g.cs
+/Users/BOKSIC/Playdate/Code/PlaysDate/PlaysDate/obj/Debug/PlaysDate.Actualite.Pages.DetailsActuPage.xaml

@@ -48,8 +48,10 @@ namespace PlaysDate
 					//Deselect row
 					listView.SelectedItem= null;
 
+					ActuBD a = (ActuBD)e.SelectedItem;
+
 					//Ouvre la page de detail
-					await Navigation.PushAsync (new DetailActuPage());
+					await Navigation.PushAsync (new DetailsActuPage(a.ActuTitre));
 
 					listView.IsEnabled = true;
 				}
@@ -91,6 +93,7 @@ namespace PlaysDate
 				//Add to cells
 				cellView.Children.Add (webimage);
 				cellView.Children.Add (nameLabel);
+				cellView.Padding = 5;
 				cellWrapper.Children.Add (cellView);
 				View = cellWrapper;
 
