@@ -17,6 +17,8 @@ namespace PlaysDate
 
 		public static string filePath;
 
+		public static MediaFile mediaFile;
+
 		private PersonneBaseDeDonnees _database;
 
 		public ConnexionPage()
@@ -69,6 +71,9 @@ namespace PlaysDate
 			if (file == null)
 				return;
 
+			filePath = System.IO.Path.GetFileName (file.Path);
+				
+
 			await DisplayAlert("Emplacement du fichier", file.Path, "OK");
 
 			Poster.Source = ImageSource.FromStream(() =>
@@ -83,12 +88,14 @@ namespace PlaysDate
 		{
 			var file = await CrossMedia.Current.PickPhotoAsync ();
 
+			filePath = System.IO.Path.GetFileName (file.Path);
+
 			Poster.Source = ImageSource.FromStream(() =>
 				{
 					var stream = file.GetStream();
 					file.Dispose();
 					return stream;
-				}); 
+				});
 		}
 
 		public void OnInscriptionButtonClicked(object sender, EventArgs args)
@@ -125,7 +132,7 @@ namespace PlaysDate
 			//Sinon on effectue l'inscription dans la base de données
 			else 
 			{
-				_database.AddData (firstNameEntry.Text, lastNameEntry.Text, userNameEntry.Text, emailEntry.Text, passwordEntry.Text);
+				_database.AddData (firstNameEntry.Text, lastNameEntry.Text, userNameEntry.Text, emailEntry.Text, passwordEntry.Text, filePath);
 
 				App.Current.MainPage = new ConnexionPage ();
 			}

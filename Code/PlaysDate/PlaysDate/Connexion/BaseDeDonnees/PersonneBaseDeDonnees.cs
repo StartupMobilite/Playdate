@@ -50,14 +50,15 @@ namespace PlaysDate
 			_connection.DeleteAll<PersonBD> ();
 		}
 
-		public void AddData(string nom, string prenom, string pseudo, string email, string mdp) 
+		public void AddData(string nom, string prenom, string pseudo, string email, string mdp, string imagePath) 
 		{
 			var newData = new PersonBD {
 				PersonNom = nom,
 				PersonPrenom = prenom,
 				PersonPseudo = pseudo,
 				PersonMail = email,
-				PersonMotDePasse = mdp
+				PersonMotDePasse = mdp,
+				PersonImagePath= imagePath
 			};
 
 			_connection.Insert (newData);

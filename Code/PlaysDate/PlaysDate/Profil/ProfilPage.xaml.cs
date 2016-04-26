@@ -18,7 +18,7 @@ namespace PlaysDate
 
 			PersonBD personConnecte = _database.GetData (ConnexionPage.personConnecte);
 
-			ProfilImage.Source = ImageSource.FromFile ("NoOne.jpg");
+			ProfilImage.Source = ImageSource.FromFile (personConnecte.PersonImagePath);
 
 			Nom.Text = personConnecte.PersonNom;
 			Prenom.Text = personConnecte.PersonPrenom;

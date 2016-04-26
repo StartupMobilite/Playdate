@@ -19,9 +19,11 @@ namespace Playsdate
 
 		public string PersonMotDePasse { get; set; }
 
+		public string PersonImagePath { get; set; }
+
 		public override string ToString()
 		{
-			return string.Format("[Person : ID={0}, PersonNom={1}, PersonPrenom={2}, PersonPseudo={3}, PersonMail={4}, PersonMotDePasse={5}", ID, PersonNom, PersonPrenom, PersonPseudo, PersonMail, PersonMotDePasse);
+			return string.Format("[Person : ID={0}, PersonNom={1}, PersonPrenom={2}, PersonPseudo={3}, PersonMail={4}, PersonMotDePasse={5}, PersonMotDePasse={6}", ID, PersonNom, PersonPrenom, PersonPseudo, PersonMail, PersonMotDePasse, PersonImagePath);
 		}
 
 		public PersonBD ()
