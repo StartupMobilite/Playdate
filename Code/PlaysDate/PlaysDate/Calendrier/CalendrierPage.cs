@@ -25,15 +25,11 @@ namespace PlaysDate
 			//Definition du calendrier
 			calendarView = new CalendarView ()
 			{
-				MinDate = CalendarView.FirstDayOfMonth(DateTime.Now),
-				MaxDate = CalendarView.LastDayOfMonth(DateTime.Now.AddMonths(3)),
-				HighlightedDateBackgroundColor = Color.FromRgb(227	,227,	227	),
-				ShouldHighlightDaysOfWeekLabels = false,
+				MinDate = CalendarView.FirstDayOfMonth(new DateTime(2016, 1, 1)),
+				MaxDate = CalendarView.LastDayOfMonth(DateTime.Now.AddYears(2)),
+				ShouldHighlightDaysOfWeekLabels = true,
 				SelectionBackgroundStyle = CalendarView.BackgroundStyle.CircleFill,
-				TodayBackgroundStyle = CalendarView.BackgroundStyle.CircleOutline,
-				HighlightedDaysOfWeek = new DayOfWeek[]{DayOfWeek.Saturday,DayOfWeek.Sunday},
-				ShowNavigationArrows = true,
-				MonthTitleFont = Font.OfSize("Open 24 Display St",NamedSize.Medium)
+				ShowNavigationArrows = true
 			};
 
 			//Ajout du calendrier dans la vue
